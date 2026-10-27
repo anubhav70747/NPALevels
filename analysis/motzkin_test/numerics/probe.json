@@ -1,0 +1,3126 @@
+{
+  "author": "Anubhav Chaturvedi",
+  "certified_exact": false,
+  "solver": "CLARABEL",
+  "options": {
+    "tol_gap_abs": 1e-09,
+    "tol_gap_rel": 1e-09,
+    "tol_feas": 1e-09,
+    "max_iter": 180
+  },
+  "runs": [
+    {
+      "name": "symmetric_1/2",
+      "exact_reference": 3.136937311309102,
+      "reference_kind": "published symmetric quartic",
+      "source": "sources/npa-prl/supplement.tex",
+      "bell_coefficients": [
+        "1/2",
+        "0",
+        "1/2",
+        "0",
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "physical": {
+        "value": 3.1369373112946155,
+        "concurrence": 0.76489085315953,
+        "angles": [
+          -1.323692283540027,
+          -1.323688223420867
+        ],
+        "state": [
+          -0.8843589366543465,
+          0.17077240565155216,
+          0.17077199553516784,
+          0.3994783876112843
+        ],
+        "behavior": [
+          0.6225078867448498,
+          0.31284090760234223,
+          0.6225076065989401,
+          0.3128441463542079,
+          0.8833474220178362,
+          0.6412356807258188,
+          0.6412322530004726,
+          -0.34861420887859174
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 3.136937294012945,
+          "dual": 3.1369373274490453,
+          "stationarity_inf": 4.440892098500626e-16,
+          "min_moment_eigenvalue": 1.9483776648656577e-09,
+          "min_dual_eigenvalue": 1.9410604767308117e-10,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 3.343610083250681e-08,
+          "moment_behavior": [
+            0.6224843867103013,
+            0.3128241920574182,
+            0.6224843890527175,
+            0.3128241731021799,
+            0.8833355434226634,
+            0.6412343412765127,
+            0.6412343591449388,
+            -0.3486486622873208
+          ],
+          "iterations": 10,
+          "duality_gap": 3.3436100110861844e-08,
+          "seconds": 0.024907400002120994,
+          "primal_minus_reference": -1.7296156951118746e-08,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.76489085315953,
+          "marginals": [
+            0.6224843867103013,
+            0.3128241920574182,
+            0.6224843890527175,
+            0.3128241731021799
+          ],
+          "canonical_CHSH": 2.514452906131436,
+          "CHSH_sector_values": [
+            2.514452906131436,
+            0.5346868632669166,
+            0.5346868990037688,
+            0.050484494711467265
+          ],
+          "primal_minus_local": 0.1369372940129452,
+          "primal_minus_reference_divided_by_L1": -3.459231390223749e-09,
+          "primal_minus_local_divided_by_L1": 0.027387458802589037
+        },
+        {
+          "level": "2",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 3.1369372119885974,
+          "dual": 3.1369373598590604,
+          "stationarity_inf": 2.220446049250313e-16,
+          "min_moment_eigenvalue": 1.7020480810092278e-09,
+          "min_dual_eigenvalue": 5.249913298905617e-10,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.4787046358211153e-07,
+          "moment_behavior": [
+            0.6226427992970702,
+            0.312951532908268,
+            0.6226427992450086,
+            0.31295153317553664,
+            0.8834593688689651,
+            0.641216792091869,
+            0.6412167918842897,
+            -0.348401459872434
+          ],
+          "iterations": 9,
+          "duality_gap": 1.4787046298536666e-07,
+          "seconds": 0.029211000000941567,
+          "primal_minus_reference": -9.932050470951026e-08,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.76489085315953,
+          "marginals": [
+            0.6226427992970702,
+            0.312951532908268,
+            0.6226427992450086,
+            0.31295153317553664
+          ],
+          "canonical_CHSH": 2.514294412717558,
+          "CHSH_sector_values": [
+            2.514294412717558,
+            0.5350579092041104,
+            0.5350579087889519,
+            0.05057275523475957
+          ],
+          "primal_minus_local": 0.13693721198859743,
+          "primal_minus_reference_divided_by_L1": -1.986410094190205e-08,
+          "primal_minus_local_divided_by_L1": 0.027387442397719487
+        }
+      ],
+      "exact_local_max": "3",
+      "coefficient_L1_norm": "5",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "symmetric_7/10",
+      "exact_reference": 3.4323240876328764,
+      "reference_kind": "published symmetric quartic",
+      "source": "sources/npa-prl/supplement.tex",
+      "bell_coefficients": [
+        "7/10",
+        "0",
+        "7/10",
+        "0",
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "physical": {
+        "value": 3.4323240876323693,
+        "concurrence": 0.5193900307590403,
+        "angles": [
+          1.0637420109106062,
+          -1.0637384837022863
+        ],
+        "state": [
+          -0.955984389115972,
+          0.09238506690309606,
+          -0.09238478126114291,
+          -0.2627239984683609
+        ],
+        "behavior": [
+          0.8448823056402552,
+          0.5222548950196835,
+          0.8448822000842147,
+          0.5222578381018887,
+          0.9658601032092828,
+          0.6658766481370324,
+          0.6658737094766127,
+          0.04812152719768675
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 3.4326991728231047,
+          "dual": 3.4326991734441856,
+          "stationarity_inf": 1.4519496716047797e-12,
+          "min_moment_eigenvalue": -2.8319437269928127e-10,
+          "min_dual_eigenvalue": 2.7139938381767053e-12,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 6.280669317959564e-10,
+          "moment_behavior": [
+            0.8512820490304589,
+            0.47863559040478665,
+            0.8512820490122132,
+            0.4786355899297169,
+            0.9685141722067937,
+            0.6168112763645796,
+            0.6168112773674318,
+            -0.03876757825442912
+          ],
+          "iterations": 11,
+          "duality_gap": 6.210809644358051e-10,
+          "seconds": 0.015108900013728999,
+          "primal_minus_reference": 0.0003750851902282193,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.5193900307590403,
+          "marginals": [
+            0.8512820490304589,
+            0.47863559040478665,
+            0.8512820490122132,
+            0.4786355899297169
+          ],
+          "canonical_CHSH": 2.240904304193234,
+          "CHSH_sector_values": [
+            2.240904304193234,
+            0.9297465929495123,
+            0.9297465949552168,
+            0.22634080327078854
+          ],
+          "primal_minus_local": 0.03269917282310475,
+          "primal_minus_reference_divided_by_L1": 6.94602204126332e-05,
+          "primal_minus_local_divided_by_L1": 0.006055402374649028
+        },
+        {
+          "level": "2",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 3.4323240422464143,
+          "dual": 3.432324107334191,
+          "stationarity_inf": 2.2502832930371142e-14,
+          "min_moment_eigenvalue": 3.1617096957381113e-09,
+          "min_dual_eigenvalue": 2.6995448878204337e-10,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 6.508777533609234e-08,
+          "moment_behavior": [
+            0.8448622180248104,
+            0.5222249207369638,
+            0.8448621966935311,
+            0.5222249362270728,
+            0.9658584594661908,
+            0.6658588461304611,
+            0.6658588811948948,
+            0.048059234847971304
+          ],
+          "iterations": 11,
+          "duality_gap": 6.508777650182651e-08,
+          "seconds": 0.022666999997454695,
+          "primal_minus_reference": -4.5386462144136885e-08,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.5193900307590403,
+          "marginals": [
+            0.8448622180248104,
+            0.5222249207369638,
+            0.8448621966935311,
+            0.5222249362270728
+          ],
+          "canonical_CHSH": 2.2495169519435754,
+          "CHSH_sector_values": [
+            2.2495169519435754,
+            1.0139176592497283,
+            1.0139177293785957,
+            0.4139185027071364
+          ],
+          "primal_minus_local": 0.032324042246414386,
+          "primal_minus_reference_divided_by_L1": -8.404900397062385e-09,
+          "primal_minus_local_divided_by_L1": 0.0059859337493359975
+        }
+      ],
+      "exact_local_max": "17/5",
+      "coefficient_L1_norm": "27/5",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "symmetric_9/10",
+      "exact_reference": 3.801289075018379,
+      "reference_kind": "published symmetric quartic",
+      "source": "sources/npa-prl/supplement.tex",
+      "bell_coefficients": [
+        "9/10",
+        "0",
+        "9/10",
+        "0",
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "physical": {
+        "value": 3.8012890749990698,
+        "concurrence": 0.19121103991863936,
+        "angles": [
+          -0.6281100458994324,
+          0.6281191897485202
+        ],
+        "state": [
+          -0.9950091917552308,
+          -0.020020052813357503,
+          0.020020342417340582,
+          -0.09568224337590148
+        ],
+        "behavior": [
+          0.9808881883840945,
+          0.8148353085768472,
+          0.9808882115758103,
+          0.8148299521193964,
+          0.9983967667496858,
+          0.8334993113965149,
+          0.8335046588724204,
+          0.6297104219834655
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 3.802296693296979,
+          "dual": 3.802296695342292,
+          "stationarity_inf": 1.974692636170804e-12,
+          "min_moment_eigenvalue": -1.165612082237383e-10,
+          "min_dual_eigenvalue": 1.521880573253424e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 2.036802670968285e-09,
+          "moment_behavior": [
+            0.9745961083683932,
+            0.5000612908238472,
+            0.9745961084096183,
+            0.5000612908096586,
+            0.9982683254949575,
+            0.5249891912599821,
+            0.5249891912008504,
+            0.00022300975902182915
+          ],
+          "iterations": 12,
+          "duality_gap": 2.045312808007793e-09,
+          "seconds": 0.016382900008466095,
+          "primal_minus_reference": 0.0010076182785998533,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.19121103991863936,
+          "marginals": [
+            0.9745961083683932,
+            0.5000612908238472,
+            0.9745961084096183,
+            0.5000612908096586
+          ],
+          "canonical_CHSH": 2.048023698196768,
+          "CHSH_sector_values": [
+            2.048023698196768,
+            0.998491335313111,
+            0.9984913351948476,
+            0.05193306672489688
+          ],
+          "primal_minus_local": 0.0022966932969792353,
+          "primal_minus_reference_divided_by_L1": 0.0001737272894137678,
+          "primal_minus_local_divided_by_L1": 0.0003959816029274544
+        },
+        {
+          "level": "2",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 3.8015830919979883,
+          "dual": 3.8015830925642144,
+          "stationarity_inf": 1.759259404821023e-12,
+          "min_moment_eigenvalue": -2.361744549862273e-09,
+          "min_dual_eigenvalue": 5.099465971308702e-12,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 5.511882616993091e-10,
+          "moment_behavior": [
+            0.9810735040398427,
+            0.636667205693862,
+            0.981073495883199,
+            0.6366669859070953,
+            0.9987176601030674,
+            0.6551712755888883,
+            0.6551715033354314,
+            0.2734096469601364
+          ],
+          "iterations": 12,
+          "duality_gap": 5.662261770567056e-10,
+          "seconds": 0.024329099993337877,
+          "primal_minus_reference": 0.0002940169796090686,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.19121103991863936,
+          "marginals": [
+            0.9810735040398427,
+            0.636667205693862,
+            0.981073495883199,
+            0.6366669859070953
+          ],
+          "canonical_CHSH": 2.0356507920672504,
+          "CHSH_sector_values": [
+            2.0356507920672504,
+            1.2721270793166608,
+            1.272127534809747,
+            0.5850347657813888
+          ],
+          "primal_minus_local": 0.0015830919979884506,
+          "primal_minus_reference_divided_by_L1": 5.069258269121872e-05,
+          "primal_minus_local_divided_by_L1": 0.0002729468962049053
+        }
+      ],
+      "exact_local_max": "19/5",
+      "coefficient_L1_norm": "29/5",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "two_sided_4/5_1/5",
+      "bell_coefficients": [
+        "4/5",
+        "0",
+        "1/5",
+        "0",
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "physical": {
+        "value": 3.1446178033811183,
+        "concurrence": 0.7699553545197397,
+        "angles": [
+          1.4251697850452216,
+          -1.2925798665698853
+        ],
+        "state": [
+          -0.8760934200066313,
+          0.22168460970352916,
+          -0.1460971734092167,
+          -0.4024572886201908
+        ],
+        "behavior": [
+          0.6333674935166433,
+          0.1686409497563175,
+          0.5777681293141568,
+          0.41910144931563975,
+          0.8590230994848624,
+          0.7224932559057675,
+          0.5544832665732801,
+          -0.3863705607410618
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 3.14461779662438,
+          "dual": 3.144617805439165,
+          "stationarity_inf": 2.433269141732808e-10,
+          "min_moment_eigenvalue": -2.124771411468372e-09,
+          "min_dual_eigenvalue": 8.652087965943693e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 9.910773812737972e-09,
+          "moment_behavior": [
+            0.633354447509272,
+            0.16862842469097453,
+            0.5777566194537295,
+            0.41910268141535806,
+            0.8590225794541129,
+            0.7225088437240476,
+            0.5544754626722789,
+            -0.38637602887577693
+          ],
+          "iterations": 11,
+          "duality_gap": 8.814784902000383e-09,
+          "seconds": 0.030857099991408177,
+          "primal_minus_reference": -6.756738279989349e-09,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "physical_lower_bound_concurrence": 0.7699553545197397,
+          "marginals": [
+            0.633354447509272,
+            0.16862842469097453,
+            0.5777566194537295,
+            0.41910268141535806
+          ],
+          "canonical_CHSH": 2.522382914726216,
+          "CHSH_sector_values": [
+            2.522382914726216,
+            0.6406799316301048,
+            0.30461316952656725,
+            0.03158569806643663
+          ],
+          "primal_minus_local": 0.14461779662438,
+          "primal_minus_reference_divided_by_L1": -1.3513476559978698e-09,
+          "primal_minus_local_divided_by_L1": 0.028923559324876003
+        },
+        {
+          "level": "2",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 3.144617721055747,
+          "dual": 3.144617846314565,
+          "stationarity_inf": 1.2706849461530112e-16,
+          "min_moment_eigenvalue": 2.1744266728977843e-09,
+          "min_dual_eigenvalue": 5.607942509220211e-10,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.252588183592307e-07,
+          "moment_behavior": [
+            0.6334343935066535,
+            0.16866682645745465,
+            0.5778746564389641,
+            0.41918156268131823,
+            0.8591215154112729,
+            0.7225315000778382,
+            0.5543748144350922,
+            -0.38626744503842775
+          ],
+          "iterations": 9,
+          "duality_gap": 1.2525881798453042e-07,
+          "seconds": 0.024176899998565204,
+          "primal_minus_reference": -8.232537140884233e-08,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "physical_lower_bound_concurrence": 0.7699553545197397,
+          "marginals": [
+            0.6334343935066535,
+            0.16866682645745465,
+            0.5778746564389641,
+            0.41918156268131823
+          ],
+          "canonical_CHSH": 2.522295274962631,
+          "CHSH_sector_values": [
+            2.522295274962631,
+            0.6410107560155911,
+            0.30469738473009916,
+            0.0315173540632297
+          ],
+          "primal_minus_local": 0.14461772105574688,
+          "primal_minus_reference_divided_by_L1": -1.6465074281768467e-08,
+          "primal_minus_local_divided_by_L1": 0.028923544211149378
+        }
+      ],
+      "exact_local_max": "3",
+      "coefficient_L1_norm": "5",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "two_sided_4/5_1/2",
+      "bell_coefficients": [
+        "4/5",
+        "0",
+        "1/2",
+        "0",
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "physical": {
+        "value": 3.3510519881335865,
+        "concurrence": 0.5915702826076847,
+        "angles": [
+          -1.1824759700211305,
+          -1.111573166593383
+        ],
+        "state": [
+          -0.9396314780400954,
+          0.1260031946739792,
+          0.10316057555613979,
+          0.30095477410910604
+        ],
+        "behavior": [
+          0.7975682391837259,
+          0.411222795041323,
+          0.7870988377457765,
+          0.5054834379312038,
+          0.9469621811657546,
+          0.6876637381268893,
+          0.6081800190326117,
+          -0.07664203958846175
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 3.3510519761350137,
+          "dual": 3.351051997285643,
+          "stationarity_inf": 3.3306690738754696e-16,
+          "min_moment_eigenvalue": 1.408512269588253e-09,
+          "min_dual_eigenvalue": 7.397982401547142e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 2.1150630302724238e-08,
+          "moment_behavior": [
+            0.7975681795217555,
+            0.41122168080847143,
+            0.7870980012426351,
+            0.5054901323562178,
+            0.9469613772559419,
+            0.6876714253138856,
+            0.6081806522298043,
+            -0.07663497709665977
+          ],
+          "iterations": 12,
+          "duality_gap": 2.1150629248012365e-08,
+          "seconds": 0.014714000004460104,
+          "primal_minus_reference": -1.1998572801985574e-08,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "physical_lower_bound_concurrence": 0.5915702826076847,
+          "marginals": [
+            0.7975681795217555,
+            0.41122168080847143,
+            0.7870980012426351,
+            0.5054901323562178
+          ],
+          "canonical_CHSH": 2.3194484318962916,
+          "CHSH_sector_values": [
+            2.3194484318962916,
+            0.9498171732433632,
+            0.7908356270752008,
+            0.27225572319108826
+          ],
+          "primal_minus_local": 0.05105197613501389,
+          "primal_minus_reference_divided_by_L1": -2.263881660751995e-09,
+          "primal_minus_local_divided_by_L1": 0.00963244832736111
+        },
+        {
+          "level": "2",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 3.351051757139703,
+          "dual": 3.3510521047471595,
+          "stationarity_inf": 2.220446049250313e-16,
+          "min_moment_eigenvalue": 6.963982760442786e-09,
+          "min_dual_eigenvalue": 5.1718918740417786e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 3.4760745656892134e-07,
+          "moment_behavior": [
+            0.7974756947677183,
+            0.41109481646677615,
+            0.7869948954664775,
+            0.505377698050953,
+            0.946924059601512,
+            0.6876316489427832,
+            0.6081463093119248,
+            -0.07687173573606931
+          ],
+          "iterations": 10,
+          "duality_gap": 3.476074565966769e-07,
+          "seconds": 0.024654199994984083,
+          "primal_minus_reference": -2.309938835765024e-07,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "physical_lower_bound_concurrence": 0.5915702826076847,
+          "marginals": [
+            0.7974756947677183,
+            0.41109481646677615,
+            0.7869948954664775,
+            0.505377698050953
+          ],
+          "canonical_CHSH": 2.319573753592289,
+          "CHSH_sector_values": [
+            2.319573753592289,
+            0.9495376634963011,
+            0.7905669842345844,
+            0.2719821629171266
+          ],
+          "primal_minus_local": 0.05105175713970311,
+          "primal_minus_reference_divided_by_L1": -4.3583751618208e-08,
+          "primal_minus_local_divided_by_L1": 0.009632407007491154
+        }
+      ],
+      "exact_local_max": "33/10",
+      "coefficient_L1_norm": "53/10",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "two_sided_19/20_7/10",
+      "bell_coefficients": [
+        "19/20",
+        "0",
+        "7/10",
+        "0",
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "physical": {
+        "value": 3.6568110468451893,
+        "concurrence": 0.3246763856581851,
+        "angles": [
+          -0.8561159255368286,
+          -0.8011761418063771
+        ],
+        "state": [
+          -0.9845785519570845,
+          0.048783353868766144,
+          0.04136714447655922,
+          0.1628312585754358
+        ],
+        "behavior": [
+          0.9435494811771897,
+          0.6679060688215567,
+          0.9422123312321083,
+          0.7149645757063084,
+          0.99181788748634,
+          0.7688333404823848,
+          0.7235388795331762,
+          0.3832996996375186
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 3.6583515425247732,
+          "dual": 3.65835154321741,
+          "stationarity_inf": 8.08553224374009e-12,
+          "min_moment_eigenvalue": -1.5601578007623352e-10,
+          "min_dual_eigenvalue": 9.083982787279307e-12,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 7.30514038149721e-10,
+          "moment_behavior": [
+            0.9432861467871673,
+            0.46908593877212934,
+            0.9422772263499694,
+            0.5246887850929873,
+            0.9929232858385894,
+            0.5791268232876158,
+            0.5249971351386877,
+            -0.005588400367092556
+          ],
+          "iterations": 12,
+          "duality_gap": 6.926366147297358e-10,
+          "seconds": 0.0155057000083616,
+          "primal_minus_reference": 0.0015404956795839198,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "physical_lower_bound_concurrence": 0.3246763856581851,
+          "marginals": [
+            0.9432861467871673,
+            0.46908593877212934,
+            0.9422772263499694,
+            0.5246887850929873
+          ],
+          "canonical_CHSH": 2.1026356446319854,
+          "CHSH_sector_values": [
+            2.1026356446319854,
+            1.0414645736204249,
+            0.9332051973225688,
+            0.1056122722206216
+          ],
+          "primal_minus_local": 0.008351542524773325,
+          "primal_minus_reference_divided_by_L1": 0.0002726541025812247,
+          "primal_minus_local_divided_by_L1": 0.001478149119428907
+        },
+        {
+          "level": "2",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 3.6568231714158954,
+          "dual": 3.656823171790089,
+          "stationarity_inf": 7.776002064474596e-13,
+          "min_moment_eigenvalue": -2.109445526879808e-09,
+          "min_dual_eigenvalue": 1.7349260889034385e-12,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 3.668077230845057e-10,
+          "moment_behavior": [
+            0.9449051734380401,
+            0.6498294506898036,
+            0.943526667800726,
+            0.6953010930949263,
+            0.9921782966293745,
+            0.7478859609278017,
+            0.704213188085133,
+            0.34558285645306014
+          ],
+          "iterations": 14,
+          "duality_gap": 3.741935650225514e-10,
+          "seconds": 0.025198299990734085,
+          "primal_minus_reference": 1.2124570706095739e-05,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "physical_lower_bound_concurrence": 0.3246763856581851,
+          "marginals": [
+            0.9449051734380401,
+            0.6498294506898036,
+            0.943526667800726,
+            0.6953010930949263
+          ],
+          "canonical_CHSH": 2.098694589189249,
+          "CHSH_sector_values": [
+            2.098694589189249,
+            1.3814339259251034,
+            1.294088380239766,
+            0.8055037088366204
+          ],
+          "primal_minus_local": 0.0068231714158955015,
+          "primal_minus_reference_divided_by_L1": 2.145941717893051e-06,
+          "primal_minus_local_divided_by_L1": 0.0012076409585655755
+        }
+      ],
+      "exact_local_max": "73/20",
+      "coefficient_L1_norm": "113/20",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "two_sided_19/20_19/20",
+      "exact_reference": 3.900163899372656,
+      "reference_kind": "published symmetric quartic",
+      "source": "sources/npa-prl/supplement.tex",
+      "bell_coefficients": [
+        "19/20",
+        "0",
+        "19/20",
+        "0",
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "physical": {
+        "value": 3.9001638993713774,
+        "concurrence": 0.09779371796076332,
+        "angles": [
+          -0.4458381513955306,
+          -0.44580961870696717
+        ],
+        "state": [
+          -0.9987505581476498,
+          0.007266868621511276,
+          0.007266404260147821,
+          0.0489051591278826
+        ],
+        "behavior": [
+          0.9951109695596089,
+          0.9037908619983055,
+          0.9951109560622281,
+          0.9038031571780405,
+          0.9997887839791314,
+          0.9086366995351384,
+          0.9086244103891621,
+          0.8075968238728007
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 3.900517611809242,
+          "dual": 3.900517613478875,
+          "stationarity_inf": 1.2212453270876722e-15,
+          "min_moment_eigenvalue": -7.480909777960921e-10,
+          "min_dual_eigenvalue": 2.4992549882773978e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.6696354854239814e-09,
+          "moment_behavior": [
+            0.9891233206357958,
+            0.5004595165845002,
+            0.9891233204070343,
+            0.5004596585987775,
+            0.999633547252636,
+            0.5112401513761019,
+            0.5112400085792228,
+            0.0009304043894068248
+          ],
+          "iterations": 13,
+          "duality_gap": 1.6696328763998736e-09,
+          "seconds": 0.015278899998520501,
+          "primal_minus_reference": 0.00035371243658621765,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.09779371796076332,
+          "marginals": [
+            0.9891233206357958,
+            0.5004595165845002,
+            0.9891233204070343,
+            0.5004596585987775
+          ],
+          "canonical_CHSH": 2.021183302818554,
+          "CHSH_sector_values": [
+            2.021183302818554,
+            1.0005640944389218,
+            1.0005638088451636,
+            0.023777017092095554
+          ],
+          "primal_minus_local": 0.0005176118092422577,
+          "primal_minus_reference_divided_by_L1": 5.995126043834197e-05,
+          "primal_minus_local_divided_by_L1": 8.773081512580639e-05
+        },
+        {
+          "level": "2",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 3.9003296639674447,
+          "dual": 3.9003296815947417,
+          "stationarity_inf": 3.951415751504649e-13,
+          "min_moment_eigenvalue": -4.248477784192458e-10,
+          "min_dual_eigenvalue": 8.556391990117611e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.7626001824755377e-08,
+          "moment_behavior": [
+            0.9928419743144408,
+            0.6201315978913424,
+            0.9928418573922587,
+            0.6201302068481103,
+            0.999776877747393,
+            0.6272108048095476,
+            0.6272123200764838,
+            0.24026997878734402
+          ],
+          "iterations": 14,
+          "duality_gap": 1.7627296955424754e-08,
+          "seconds": 0.025461099998210557,
+          "primal_minus_reference": 0.00016576459478878647,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.09779371796076332,
+          "marginals": [
+            0.9928419743144408,
+            0.6201315978913424,
+            0.9928418573922587,
+            0.6201302068481103
+          ],
+          "canonical_CHSH": 2.01393002384608,
+          "CHSH_sector_values": [
+            2.01393002384608,
+            1.2400453412678007,
+            1.2400483718016733,
+            0.4949162259259824
+          ],
+          "primal_minus_local": 0.0003296639674448265,
+          "primal_minus_reference_divided_by_L1": 2.8095694031997706e-05,
+          "primal_minus_local_divided_by_L1": 5.5875248719462116e-05
+        }
+      ],
+      "exact_local_max": "39/10",
+      "coefficient_L1_norm": "59/10",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "native_C1_interior",
+      "exact_reference": 3.3620689655172415,
+      "reference_kind": "preserved exact globally valid slack plus contact",
+      "source": "sources/q222/independent-review/C1_NPA_OBSTRUCTION.md",
+      "native_contact": [
+        1,
+        -0.5,
+        0.5,
+        1
+      ],
+      "native_halfangles": [
+        1,
+        0.5
+      ],
+      "source_coefficients": [
+        "1",
+        "20/29",
+        "12/29",
+        "13/58",
+        "51/58",
+        "3/29",
+        "3/58"
+      ],
+      "bell_coefficients": [
+        "19/58",
+        "16/29",
+        "-17/29",
+        "-5/58",
+        "21/29",
+        "-35/58",
+        "28/29",
+        "60/29"
+      ],
+      "physical": {
+        "value": 3.362068965449894,
+        "concurrence": 4.1813090847306125e-10,
+        "angles": [
+          1.3682402290256512e-05,
+          -9.901361724497463e-06
+        ],
+        "state": [
+          -0.9999999999777281,
+          2.750378255314475e-06,
+          -6.0810676840870845e-06,
+          2.2579069056896807e-10
+        ],
+        "behavior": [
+          0.9999999999260415,
+          0.9999999999988448,
+          0.9999999999848711,
+          0.9999999999903176,
+          0.9999999999109123,
+          0.9999999999163588,
+          0.9999999999837156,
+          0.9999999999891621
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "known_contact_concurrence": 1.0,
+      "known_contact_sine_distance_to_product": 0.7071067811865476,
+      "known_contact_behavior": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.6000000000000001,
+        -0.27999999999999986,
+        0.8000000000000002,
+        0.9600000000000001
+      ],
+      "known_contact_objective": 3.362068965517242,
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 3.3991679607618637,
+          "dual": 3.3991679617701718,
+          "stationarity_inf": 6.578071420904053e-13,
+          "min_moment_eigenvalue": 1.27489691508572e-11,
+          "min_dual_eigenvalue": 1.4631615965776118e-12,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.0057326638168718e-09,
+          "moment_behavior": [
+            0.40747970686728346,
+            0.023376788457050632,
+            -0.05106671967291626,
+            0.02648513323370026,
+            0.34090892921546007,
+            -0.24533197206299112,
+            0.8198963869166384,
+            0.9853227961982306
+          ],
+          "iterations": 11,
+          "duality_gap": 1.008308103678246e-09,
+          "seconds": 0.01872370000637602,
+          "primal_minus_reference": 0.037098995244622124,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 4.1813090847306125e-10,
+          "marginals": [
+            0.40747970686728346,
+            0.023376788457050632,
+            -0.05106671967291626,
+            0.02648513323370026
+          ],
+          "canonical_CHSH": -0.0698494521291233,
+          "CHSH_sector_values": [
+            -0.0698494521291233,
+            0.2610033664340612,
+            2.3914600843933203,
+            1.2189782818364177
+          ],
+          "primal_minus_local": 0.037098995244622124,
+          "primal_minus_reference_divided_by_L1": 0.006273299487428814,
+          "primal_minus_local_divided_by_L1": 0.006273299487428814
+        },
+        {
+          "level": "2",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 3.3885147907176663,
+          "dual": 3.388514791955485,
+          "stationarity_inf": 1.8312716402920661e-13,
+          "min_moment_eigenvalue": -3.707399013971371e-11,
+          "min_dual_eigenvalue": 2.6606018059637626e-12,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.2380181949045443e-09,
+          "moment_behavior": [
+            0.4641327902468224,
+            0.21557991276325247,
+            0.08784875865971081,
+            0.21903022398612498,
+            0.4084339586347307,
+            -0.10462860239990546,
+            0.7971405982160914,
+            0.9953557142176268
+          ],
+          "iterations": 14,
+          "duality_gap": 1.2378187363992765e-09,
+          "seconds": 0.026104000004124828,
+          "primal_minus_reference": 0.02644582520042471,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 4.1813090847306125e-10,
+          "marginals": [
+            0.4641327902468224,
+            0.21557991276325247,
+            0.08784875865971081,
+            0.21903022398612498
+          ],
+          "canonical_CHSH": 0.10559024023328978,
+          "CHSH_sector_values": [
+            0.10559024023328978,
+            0.5020204722363606,
+            2.3055588734683545,
+            1.279433751399082
+          ],
+          "primal_minus_local": 0.02644582520042471,
+          "primal_minus_reference_divided_by_L1": 0.004471888809401263,
+          "primal_minus_local_divided_by_L1": 0.004471888809401263
+        }
+      ],
+      "exact_local_max": "195/58",
+      "coefficient_L1_norm": "343/58",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "native_C2_nonmax",
+      "exact_reference": 2.6818181818181817,
+      "reference_kind": "preserved native C2 globally valid slack plus contact",
+      "source": "sources/q222/independent-review/C2_NONMAXIMAL_NPA_OBSTRUCTION.md",
+      "native_contact": [
+        1.25,
+        -0.25,
+        0.5,
+        1.0
+      ],
+      "native_halfangles": [
+        1,
+        1
+      ],
+      "source_coefficients": [
+        "1",
+        "7/66",
+        "5/33",
+        "5/22",
+        "10/33",
+        "16/33",
+        "9/22"
+      ],
+      "bell_coefficients": [
+        "20/33",
+        "37/66",
+        "-14/33",
+        "5/66",
+        "10/11",
+        "-10/11",
+        "8/11",
+        "25/22"
+      ],
+      "physical": {
+        "value": 2.681818181816282,
+        "concurrence": 0.9565219571984102,
+        "angles": [
+          1.5707980662059793,
+          1.570799028794159
+        ],
+        "state": [
+          0.7372094945463775,
+          -0.14744172447739012,
+          0.2948837328085512,
+          0.5897683300743631
+        ],
+        "behavior": [
+          0.13043380193238407,
+          0.2608690290924574,
+          0.2608685094488608,
+          0.1304345901081455,
+          0.7826090440160568,
+          -0.5652191662902302,
+          0.6086937332043463,
+          0.7826086313066642
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "known_contact_concurrence": 0.9565217391304348,
+      "known_contact_sine_distance_to_product": 0.5951213991516979,
+      "known_contact_behavior": [
+        0.13043478260869562,
+        0.26086956521739124,
+        0.26086956521739135,
+        0.13043478260869565,
+        0.7826086956521738,
+        -0.5652173913043478,
+        0.6086956521739131,
+        0.7826086956521738
+      ],
+      "known_contact_objective": 2.6818181818181817,
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 2.6993448667294,
+          "dual": 2.699344867187348,
+          "stationarity_inf": 2.8832491949515315e-13,
+          "min_moment_eigenvalue": 2.926550219782838e-11,
+          "min_dual_eigenvalue": 1.486952076536647e-12,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 4.5799483650021955e-10,
+          "moment_behavior": [
+            0.09248902743158784,
+            0.527686787376745,
+            0.1242691165586793,
+            0.46199149717612903,
+            0.8254571930451772,
+            -0.3561190515885693,
+            0.3815472661279479,
+            0.8919136439937791
+          ],
+          "iterations": 12,
+          "duality_gap": 4.579479018218535e-10,
+          "seconds": 0.01843120000557974,
+          "primal_minus_reference": 0.01752668491121856,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.9565219571984102,
+          "marginals": [
+            0.09248902743158784,
+            0.527686787376745,
+            0.1242691165586793,
+            0.46199149717612903
+          ],
+          "canonical_CHSH": -0.04102823640922337,
+          "CHSH_sector_values": [
+            -0.04102823640922337,
+            0.9797045193224391,
+            2.4550371547554737,
+            0.09188466548798058
+          ],
+          "primal_minus_local": 0.01752668491121856,
+          "primal_minus_reference_divided_by_L1": 0.003276943921077691,
+          "primal_minus_local_divided_by_L1": 0.003276943921077691
+        },
+        {
+          "level": "2",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 2.6917454075589653,
+          "dual": 2.6917454079337335,
+          "stationarity_inf": 4.215770381064033e-13,
+          "min_moment_eigenvalue": 8.554711112109991e-12,
+          "min_dual_eigenvalue": 9.418509743441284e-13,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 3.7443359524047537e-10,
+          "moment_behavior": [
+            0.08948815098796277,
+            0.6168138748123185,
+            0.12027692455651515,
+            0.5612214519037702,
+            0.8499832524271521,
+            -0.27578191608913954,
+            0.3195192645995367,
+            0.9190982574350096
+          ],
+          "iterations": 12,
+          "duality_gap": 3.747682164600974e-10,
+          "seconds": 0.024439600005280226,
+          "primal_minus_reference": 0.00992722574078364,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.9565219571984102,
+          "marginals": [
+            0.08948815098796277,
+            0.6168138748123185,
+            0.12027692455651515,
+            0.5612214519037702
+          ],
+          "canonical_CHSH": -0.025377656497460377,
+          "CHSH_sector_values": [
+            -0.025377656497460377,
+            1.1737803291734854,
+            2.3643826905508383,
+            0.11285235351825462
+          ],
+          "primal_minus_local": 0.00992722574078364,
+          "primal_minus_reference_divided_by_L1": 0.0018560818665487827,
+          "primal_minus_local_divided_by_L1": 0.0018560818665487827
+        }
+      ],
+      "exact_local_max": "59/22",
+      "coefficient_L1_norm": "353/66",
+      "maximizing_deterministic_behaviors": [
+        [
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "native_C2_maxent",
+      "exact_reference": 2.8333333333333335,
+      "reference_kind": "preserved native C2 globally valid slack plus contact",
+      "source": "sources/q222/independent-review/C2_MAXIMAL_NPA_OBSTRUCTION.md; rational source dictionary in checks/c2_nonmaximal_npa_obstruction.py",
+      "native_contact": [
+        1.0,
+        -0.25,
+        0.25,
+        1.0
+      ],
+      "native_halfangles": [
+        1,
+        1
+      ],
+      "source_coefficients": [
+        "1",
+        "1/8",
+        "3/8",
+        "1/6",
+        "5/8",
+        "3/8",
+        "1/6"
+      ],
+      "bell_coefficients": [
+        "2/3",
+        "1/6",
+        "-2/3",
+        "1/6",
+        "5/4",
+        "-2/3",
+        "2/3",
+        "5/4"
+      ],
+      "physical": {
+        "value": 2.8333333333252293,
+        "concurrence": 0.9999999999992208,
+        "angles": [
+          1.5707918995813865,
+          -1.5707903325675194
+        ],
+        "state": [
+          -0.6859946860127173,
+          -0.17149901986561755,
+          -0.17149875112893245,
+          0.6859938449495468
+        ],
+        "behavior": [
+          1.2461051075995933e-06,
+          -8.021534031454891e-08,
+          1.0617529397349834e-06,
+          -6.571800781340897e-07,
+          0.8823525290926986,
+          -0.4705837189202293,
+          0.4705929143083433,
+          0.8823532665104812
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "known_contact_concurrence": 0.9999999999999998,
+      "known_contact_sine_distance_to_product": 0.7071067737359669,
+      "known_contact_behavior": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.8823529411764703,
+        -0.4705882352941174,
+        0.47058823529411764,
+        0.8823529411764703
+      ],
+      "known_contact_objective": 2.833333333333332,
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 2.8459910043654526,
+          "dual": 2.845991005582738,
+          "stationarity_inf": 1.092459456231154e-13,
+          "min_moment_eigenvalue": 9.823241801412346e-11,
+          "min_dual_eigenvalue": 7.238108857846572e-12,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.2168296648074062e-09,
+          "moment_behavior": [
+            0.019224060908111067,
+            0.40966923248219317,
+            -0.01922406080877386,
+            0.40966923243856007,
+            0.892344546132784,
+            -0.29170629155991834,
+            0.29170629166596135,
+            0.9435440860673364
+          ],
+          "iterations": 11,
+          "duality_gap": 1.2172853836034392e-09,
+          "seconds": 0.018481299994164146,
+          "primal_minus_reference": 0.012657671032119122,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.9999999999992208,
+          "marginals": [
+            0.019224060908111067,
+            0.40966923248219317,
+            -0.01922406080877386,
+            0.40966923243856007
+          ],
+          "canonical_CHSH": -0.05119953982850933,
+          "CHSH_sector_values": [
+            -0.05119953982850933,
+            1.2524760489742408,
+            2.419301215426,
+            0.05119954004059546
+          ],
+          "primal_minus_local": 0.012657671032119122,
+          "primal_minus_reference_divided_by_L1": 0.0023013947331125676,
+          "primal_minus_local_divided_by_L1": 0.0023013947331125676
+        },
+        {
+          "level": "2",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 2.83569715603223,
+          "dual": 2.8356971573707197,
+          "stationarity_inf": 1.012138289846476e-12,
+          "min_moment_eigenvalue": 4.2470967269709624e-11,
+          "min_dual_eigenvalue": 1.1508288090797431e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.3324602254893847e-09,
+          "moment_behavior": [
+            0.004393801625568295,
+            0.8122723137797913,
+            -0.00439379635426718,
+            0.812272313699067,
+            0.9565680395316297,
+            -0.09382939345427412,
+            0.09382939815220426,
+            0.9906123271842724
+          ],
+          "iterations": 13,
+          "duality_gap": 1.338489763469397e-09,
+          "seconds": 0.026272699993569404,
+          "primal_minus_reference": 0.002363822698896456,
+          "gap_interpretation": "numerical gap relative to theorem reference",
+          "physical_lower_bound_concurrence": 0.9999999999992208,
+          "marginals": [
+            0.004393801625568295,
+            0.8122723137797913,
+            -0.00439379635426718,
+            0.812272313699067
+          ],
+          "canonical_CHSH": -0.03404428295471251,
+          "CHSH_sector_values": [
+            -0.03404428295471251,
+            1.7595215751094238,
+            2.1348391583223805,
+            0.034044292350572825
+          ],
+          "primal_minus_local": 0.002363822698896456,
+          "primal_minus_reference_divided_by_L1": 0.0004297859452539011,
+          "primal_minus_local_divided_by_L1": 0.0004297859452539011
+        }
+      ],
+      "exact_local_max": "17/6",
+      "coefficient_L1_norm": "11/2",
+      "maximizing_deterministic_behaviors": [
+        [
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "L1_endpoint_interpolation_1/4",
+      "bell_coefficients": [
+        "681/5192",
+        "1/44",
+        "-263/5192",
+        "1/44",
+        "1105/5192",
+        "-63/1298",
+        "173/1298",
+        "665/5192"
+      ],
+      "interpolation_parameter": "1/4",
+      "reference_kind": "two-angle physical lower bound only",
+      "physical": {
+        "value": 0.5516178736505121,
+        "concurrence": 1.5097499781475968e-12,
+        "angles": [
+          4.3961955285088735e-07,
+          5.726944911850138e-06
+        ],
+        "state": [
+          -0.999999999999723,
+          -7.363214886648018e-07,
+          -1.0774989040397622e-07,
+          -8.342135487797545e-13
+        ],
+        "behavior": [
+          0.9999999999999765,
+          0.9999999999999747,
+          0.9999999999989155,
+          0.9999999999909502,
+          0.9999999999988922,
+          0.9999999999909269,
+          0.9999999999988904,
+          0.9999999999909251
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "certified_exact": false,
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 0.5516178733099734,
+          "dual": 0.5516178739220066,
+          "stationarity_inf": 2.2154008761195156e-12,
+          "min_moment_eigenvalue": 9.13284772906559e-12,
+          "min_dual_eigenvalue": 3.386950411926872e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 6.47474289461325e-10,
+          "moment_behavior": [
+            0.9999999987134959,
+            0.9999999986284809,
+            0.9999999985446841,
+            0.999999998707267,
+            0.9999999994504959,
+            0.9999999986798964,
+            0.9999999993699182,
+            0.9999999996145528
+          ],
+          "iterations": 8,
+          "duality_gap": 6.120332018966224e-10,
+          "seconds": 0.02658299999893643,
+          "primal_minus_reference": -3.4053870834327427e-10,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.9999999987134959,
+            0.9999999986284809,
+            0.9999999985446841,
+            0.999999998707267
+          ],
+          "canonical_CHSH": 1.9999999978857579,
+          "primal_minus_local": -3.417985894316189e-10,
+          "primal_minus_reference_divided_by_L1": -4.540516111243657e-10,
+          "primal_minus_local_divided_by_L1": -4.5573145257549186e-10
+        },
+        {
+          "level": "2",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 0.5516178731143522,
+          "dual": 0.5516178741166426,
+          "stationarity_inf": 4.466866510943009e-15,
+          "min_moment_eigenvalue": 1.516106755931619e-10,
+          "min_dual_eigenvalue": 3.551715623548444e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.0023717411655753e-09,
+          "moment_behavior": [
+            0.9999999983807829,
+            0.9999999976922127,
+            0.9999999980557045,
+            0.99999999779413,
+            0.9999999991286892,
+            0.9999999974214266,
+            0.9999999987854634,
+            0.9999999992287548
+          ],
+          "iterations": 9,
+          "duality_gap": 1.0022904728401727e-09,
+          "seconds": 0.02796659999876283,
+          "primal_minus_reference": -5.361598942599244e-10,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.9999999983807829,
+            0.9999999976922127,
+            0.9999999980557045,
+            0.99999999779413
+          ],
+          "canonical_CHSH": 1.9999999961068244,
+          "primal_minus_local": -5.37419775348269e-10,
+          "primal_minus_reference_divided_by_L1": -7.148798590132325e-10,
+          "primal_minus_local_divided_by_L1": -7.165597004643587e-10
+        }
+      ],
+      "exact_local_max": "358/649",
+      "coefficient_L1_norm": "3/4",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "L1_endpoint_interpolation_1/2",
+      "bell_coefficients": [
+        "1099/7788",
+        "1/66",
+        "155/7788",
+        "1/66",
+        "515/2596",
+        "47/1947",
+        "283/1947",
+        "75/2596"
+      ],
+      "interpolation_parameter": "1/2",
+      "reference_kind": "two-angle physical lower bound only",
+      "physical": {
+        "value": 0.5880842321498887,
+        "concurrence": 7.870463050188197e-17,
+        "angles": [
+          5.862509347017962e-06,
+          -5.497585302298202e-10
+        ],
+        "state": [
+          -0.9999999999994961,
+          4.340198922880964e-11,
+          -1.0038543402414425e-06,
+          8.292159051343566e-17
+        ],
+        "behavior": [
+          0.9999999999979844,
+          0.9999999999925702,
+          0.9999999999999999,
+          0.9999999999999999,
+          0.9999999999979844,
+          0.9999999999979844,
+          0.9999999999925702,
+          0.9999999999925702
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "certified_exact": false,
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 0.5880842251943865,
+          "dual": 0.5880842387854048,
+          "stationarity_inf": 5.551115123125783e-17,
+          "min_moment_eigenvalue": 2.266728841336307e-09,
+          "min_dual_eigenvalue": 7.334270000751346e-10,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.3591018345471273e-08,
+          "moment_behavior": [
+            0.9999999844801619,
+            0.9999999783525794,
+            0.9999999817617972,
+            0.9999999835481511,
+            0.9999999923174991,
+            0.9999999859154993,
+            0.9999999893106108,
+            0.9999999858247044
+          ],
+          "iterations": 8,
+          "duality_gap": 1.3591018310776803e-08,
+          "seconds": 0.016955899991444312,
+          "primal_minus_reference": -6.955502174221806e-09,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.9999999844801619,
+            0.9999999783525794,
+            0.9999999817617972,
+            0.9999999835481511
+          ],
+          "canonical_CHSH": 1.9999999817189051,
+          "primal_minus_local": -6.957642240124073e-09,
+          "primal_minus_reference_divided_by_L1": -1.1827391033371053e-08,
+          "primal_minus_local_divided_by_L1": -1.1831030079931503e-08
+        },
+        {
+          "level": "2",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 0.5880842310829095,
+          "dual": 0.5880842331729037,
+          "stationarity_inf": 4.5925867420922245e-15,
+          "min_moment_eigenvalue": 4.0448377604441e-10,
+          "min_dual_eigenvalue": 7.72859816199393e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 2.0900898303755078e-09,
+          "moment_behavior": [
+            0.9999999982810412,
+            0.9999999967324802,
+            0.9999999979678794,
+            0.9999999972487216,
+            0.9999999987570956,
+            0.9999999973676702,
+            0.9999999979044617,
+            0.9999999972237621
+          ],
+          "iterations": 9,
+          "duality_gap": 2.0899941777230424e-09,
+          "seconds": 0.02268720000574831,
+          "primal_minus_reference": -1.066979171682192e-09,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.9999999982810412,
+            0.9999999967324802,
+            0.9999999979678794,
+            0.9999999972487216
+          ],
+          "canonical_CHSH": 1.9999999968054651,
+          "primal_minus_local": -1.0691192375844594e-09,
+          "primal_minus_reference_divided_by_L1": -1.8143305216290198e-09,
+          "primal_minus_local_divided_by_L1": -1.8179695681894694e-09
+        }
+      ],
+      "exact_local_max": "1145/1947",
+      "coefficient_L1_norm": "1145/1947",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "L1_endpoint_interpolation_3/4",
+      "bell_coefficients": [
+        "2353/15576",
+        "1/132",
+        "1409/15576",
+        "1/132",
+        "955/5192",
+        "377/3894",
+        "613/3894",
+        "-365/5192"
+      ],
+      "interpolation_parameter": "3/4",
+      "reference_kind": "two-angle physical lower bound only",
+      "physical": {
+        "value": 0.6245505906450065,
+        "concurrence": 3.89612060496242e-11,
+        "angles": [
+          1.169363371206027e-05,
+          -1.1164135119627689e-05
+        ],
+        "state": [
+          -0.9999999999993638,
+          4.0844396785526496e-07,
+          -1.0515857655122404e-06,
+          -1.9051089162218283e-11
+        ],
+        "behavior": [
+          0.9999999999977888,
+          0.9999999999540119,
+          0.9999999999996666,
+          0.9999999999464676,
+          0.999999999997455,
+          0.999999999944256,
+          0.9999999999536782,
+          0.9999999999004792
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "certified_exact": false,
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 0.6245505904878753,
+          "dual": 0.6245505908357271,
+          "stationarity_inf": 1.016755187236452e-15,
+          "min_moment_eigenvalue": 7.651153320085065e-11,
+          "min_dual_eigenvalue": 2.021921017254466e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 3.478617532914896e-10,
+          "moment_behavior": [
+            0.9999999996475625,
+            0.9999999993971961,
+            0.9999999995799976,
+            0.9999999995289841,
+            0.9999999997727232,
+            0.9999999996732122,
+            0.9999999996965727,
+            0.9999999992010286
+          ],
+          "iterations": 8,
+          "duality_gap": 3.4785174740648017e-10,
+          "seconds": 0.017571399992448278,
+          "primal_minus_reference": -1.5713119694282796e-10,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.9999999996475625,
+            0.9999999993971961,
+            0.9999999995799976,
+            0.9999999995289841
+          ],
+          "canonical_CHSH": 1.9999999999414797,
+          "primal_minus_local": -1.6441026318148033e-10,
+          "primal_minus_reference_divided_by_L1": -2.053595841232999e-10,
+          "primal_minus_local_divided_by_L1": -2.1487281920747924e-10
+        },
+        {
+          "level": "2",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 0.6245505896342428,
+          "dual": 0.6245505913616177,
+          "stationarity_inf": 5.551115123125783e-17,
+          "min_moment_eigenvalue": 2.602602223029298e-10,
+          "min_dual_eigenvalue": 5.361773084233103e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.727374999982434e-09,
+          "moment_behavior": [
+            0.9999999985857168,
+            0.999999995734519,
+            0.9999999984338902,
+            0.9999999932962184,
+            0.9999999987179483,
+            0.9999999940662058,
+            0.9999999968001299,
+            0.9999999895533179
+          ],
+          "iterations": 9,
+          "duality_gap": 1.7273749097768132e-09,
+          "seconds": 0.03483520000008866,
+          "primal_minus_reference": -1.0107636949641119e-09,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.9999999985857168,
+            0.999999995734519,
+            0.9999999984338902,
+            0.9999999932962184
+          ],
+          "canonical_CHSH": 2.000000000030966,
+          "primal_minus_local": -1.0180427612027643e-09,
+          "primal_minus_reference_divided_by_L1": -1.3209980963887403e-09,
+          "primal_minus_local_divided_by_L1": -1.3305113314729197e-09
+        }
+      ],
+      "exact_local_max": "1216/1947",
+      "coefficient_L1_norm": "101/132",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "aligned_endpoint_interpolation_1/4",
+      "bell_coefficients": [
+        "681/5192",
+        "-1/44",
+        "91/5192",
+        "-1/11",
+        "173/1298",
+        "1105/5192",
+        "1105/5192",
+        "-173/1298"
+      ],
+      "interpolation_parameter": "1/4",
+      "reference_kind": "two-angle physical lower bound only",
+      "physical": {
+        "value": 0.5150655683454535,
+        "concurrence": 0.9376605533981546,
+        "angles": [
+          -1.4299479606038936,
+          1.607438689032017
+        ],
+        "state": [
+          -0.7504549607044549,
+          -0.27480775965550186,
+          0.32472599405682867,
+          -0.505817235739356
+        ],
+        "behavior": [
+          0.2774039056256023,
+          0.2462488609165293,
+          0.33725923852424117,
+          0.07154611651527859,
+          0.6380674480338566,
+          0.7170932575277806,
+          0.8473839186874416,
+          -0.5016690162412804
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "certified_exact": false,
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 0.5150655619527739,
+          "dual": 0.515065573442644,
+          "stationarity_inf": 1.1102230246251565e-16,
+          "min_moment_eigenvalue": 5.0438282403796084e-09,
+          "min_dual_eigenvalue": 3.559138392511772e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.1489870489073128e-08,
+          "moment_behavior": [
+            0.27739157165356376,
+            0.24622315805555,
+            0.3372273246109242,
+            0.0715413346191871,
+            0.6380713381050881,
+            0.7170706924694146,
+            0.8473961052249148,
+            -0.5016903410303278
+          ],
+          "iterations": 10,
+          "duality_gap": 1.1489870166414562e-08,
+          "seconds": 0.03028679999988526,
+          "primal_minus_reference": -6.392679607891694e-09,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.27739157165356376,
+            0.24622315805555,
+            0.3372273246109242,
+            0.0715413346191871
+          ],
+          "canonical_CHSH": 2.7042284768297455,
+          "primal_minus_local": 0.03162950648282009,
+          "primal_minus_reference_divided_by_L1": -6.697092922553203e-09,
+          "primal_minus_local_divided_by_L1": 0.033135673458192474
+        },
+        {
+          "level": "2",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 0.5150655656687124,
+          "dual": 0.5150655702977245,
+          "stationarity_inf": 5.730682583989564e-15,
+          "min_moment_eigenvalue": 7.403088243777165e-11,
+          "min_dual_eigenvalue": 5.790696343906811e-12,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 4.629015656898439e-09,
+          "moment_behavior": [
+            0.27740909047871437,
+            0.24625035921250785,
+            0.33726285163682096,
+            0.07154490212066272,
+            0.6380528851646814,
+            0.7170855664870216,
+            0.8473889487384342,
+            -0.5016816577556934
+          ],
+          "iterations": 11,
+          "duality_gap": 4.629012062551396e-09,
+          "seconds": 0.030507700008456595,
+          "primal_minus_reference": -2.6767410510331047e-09,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.27740909047871437,
+            0.24625035921250785,
+            0.33726285163682096,
+            0.07154490212066272
+          ],
+          "canonical_CHSH": 2.7042090581458305,
+          "primal_minus_local": 0.03162951019875865,
+          "primal_minus_reference_divided_by_L1": -2.8042049106061096e-09,
+          "primal_minus_local_divided_by_L1": 0.033135677351080486
+        }
+      ],
+      "exact_local_max": "1255/2596",
+      "coefficient_L1_norm": "21/22",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "name": "aligned_endpoint_interpolation_1/2",
+      "bell_coefficients": [
+        "1099/7788",
+        "-1/66",
+        "509/7788",
+        "-2/33",
+        "283/1947",
+        "515/2596",
+        "515/2596",
+        "-283/1947"
+      ],
+      "interpolation_parameter": "1/2",
+      "reference_kind": "two-angle physical lower bound only",
+      "physical": {
+        "value": 0.5437099433253807,
+        "concurrence": 0.7117300837314703,
+        "angles": [
+          -1.0628810396777422,
+          -1.5194481372947297
+        ],
+        "state": [
+          -0.8949561694772074,
+          0.1358032288246977,
+          0.21857446815992596,
+          0.3644669252813987
+        ],
+        "behavior": [
+          0.6387781244890579,
+          0.5660196526397259,
+          0.6974426868334205,
+          0.11943584586607808,
+          0.8675653698187847,
+          0.4464001635068267,
+          0.8502816899135872,
+          -0.27836053736506433
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "certified_exact": false,
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 0.5437099417372284,
+          "dual": 0.5437099451081595,
+          "stationarity_inf": 2.8810259733447197e-11,
+          "min_moment_eigenvalue": -5.363684925666219e-10,
+          "min_dual_eigenvalue": 1.3809154555588104e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 3.5073573628752186e-09,
+          "moment_behavior": [
+            0.638777482200876,
+            0.5660303364622477,
+            0.6974473787715353,
+            0.11941405660531385,
+            0.8675636626483602,
+            0.4463791242176869,
+            0.8502871449745005,
+            -0.27837404586258024
+          ],
+          "iterations": 14,
+          "duality_gap": 3.370931089818896e-09,
+          "seconds": 0.017982999997911975,
+          "primal_minus_reference": -1.5881522763550038e-09,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.638777482200876,
+            0.5660303364622477,
+            0.6974473787715353,
+            0.11941405660531385
+          ],
+          "canonical_CHSH": 2.442603977703128,
+          "primal_minus_local": 0.0010802550397450705,
+          "primal_minus_reference_divided_by_L1": -1.6377820349910976e-09,
+          "primal_minus_local_divided_by_L1": 0.001114013009737104
+        },
+        {
+          "level": "2",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 0.5437099391628872,
+          "dual": 0.543709945984064,
+          "stationarity_inf": 4.688732515117716e-12,
+          "min_moment_eigenvalue": 1.6104885162887995e-10,
+          "min_dual_eigenvalue": 2.7254167950495872e-11,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 6.8212262123446e-09,
+          "moment_behavior": [
+            0.6387589486073675,
+            0.5659502603942417,
+            0.6974103738291342,
+            0.11949636442329598,
+            0.8675555229848517,
+            0.44647862939537875,
+            0.8502413153726667,
+            -0.27836951364918155
+          ],
+          "iterations": 11,
+          "duality_gap": 6.821176734561618e-09,
+          "seconds": 0.024108800003887154,
+          "primal_minus_reference": -4.162493461024042e-09,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.6387589486073675,
+            0.5659502603942417,
+            0.6974103738291342,
+            0.11949636442329598
+          ],
+          "canonical_CHSH": 2.4426449814020788,
+          "primal_minus_local": 0.0010802524654038859,
+          "primal_minus_reference_divided_by_L1": -4.292571381681043e-09,
+          "primal_minus_local_divided_by_L1": 0.0011140103549477573
+        }
+      ],
+      "exact_local_max": "2113/3894",
+      "coefficient_L1_norm": "32/33",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "name": "aligned_endpoint_interpolation_3/4",
+      "bell_coefficients": [
+        "2353/15576",
+        "-1/132",
+        "1763/15576",
+        "-1/33",
+        "613/3894",
+        "955/5192",
+        "955/5192",
+        "-613/3894"
+      ],
+      "interpolation_parameter": "3/4",
+      "reference_kind": "two-angle physical lower bound only",
+      "physical": {
+        "value": 0.6018233179242937,
+        "concurrence": 1.052577699999944e-11,
+        "angles": [
+          -3.879209427835415e-06,
+          -3.1415882243335043
+        ],
+        "state": [
+          -0.9999999999990022,
+          -1.830271192853349e-08,
+          1.4125234497291385e-06,
+          5.288741509797687e-12
+        ],
+        "behavior": [
+          0.9999999999960096,
+          0.9999999999994444,
+          0.9999999999999993,
+          -0.9999999999903523,
+          0.999999999996009,
+          -0.9999999999863619,
+          0.9999999999994438,
+          -0.9999999999897967
+        ],
+        "optimizer_success": true,
+        "reference_scope": "physical lower bound only"
+      },
+      "certified_exact": false,
+      "relaxations": [
+        {
+          "level": "1+AB",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1"
+          ],
+          "certified_exact": false,
+          "primal": 0.6018233128429049,
+          "dual": 0.6018233233014944,
+          "stationarity_inf": 5.551115123125783e-17,
+          "min_moment_eigenvalue": 2.6405399923262943e-09,
+          "min_dual_eigenvalue": 5.676866269205993e-10,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.045858966097768e-08,
+          "moment_behavior": [
+            0.9999999663192596,
+            0.9999999320771987,
+            0.9999999769783031,
+            -0.9999998263375338,
+            0.9999999833146765,
+            -0.999999799695594,
+            0.9999999511869134,
+            -0.999999886428506
+          ],
+          "iterations": 9,
+          "duality_gap": 1.0458589438933075e-08,
+          "seconds": 0.017203000010340475,
+          "primal_minus_reference": -5.0813887542133784e-09,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.9999999663192596,
+            0.9999999320771987,
+            0.9999999769783031,
+            -0.9999998263375338
+          ],
+          "canonical_CHSH": 2.000000021234502,
+          "primal_minus_local": -5.082107956688731e-09,
+          "primal_minus_reference_divided_by_L1": -5.1595639658166615e-09,
+          "primal_minus_local_divided_by_L1": -5.16029423294548e-09
+        },
+        {
+          "level": "2",
+          "status": "optimal_inaccurate",
+          "word_list": [
+            "1",
+            "A0",
+            "A1",
+            "B0",
+            "B1",
+            "A0*B0",
+            "A0*B1",
+            "A1*B0",
+            "A1*B1",
+            "A0*A1",
+            "A1*A0",
+            "B0*B1",
+            "B1*B0"
+          ],
+          "certified_exact": false,
+          "primal": 0.6018233055993284,
+          "dual": 0.6018233237752189,
+          "stationarity_inf": 2.7755575615628914e-17,
+          "min_moment_eigenvalue": 3.5850599824591397e-09,
+          "min_dual_eigenvalue": 4.002842792326711e-10,
+          "diagonal_residual_inf": 0.0,
+          "complementarity": 1.8175890716121135e-08,
+          "moment_behavior": [
+            0.9999998865490309,
+            0.9999997191515165,
+            0.9999998965338035,
+            -0.9999989835255801,
+            0.9999999469637023,
+            -0.9999988840514794,
+            0.9999998137101802,
+            -0.9999992539089738
+          ],
+          "iterations": 9,
+          "duality_gap": 1.817589045938206e-08,
+          "seconds": 0.03794579999521375,
+          "primal_minus_reference": -1.232496527059368e-08,
+          "gap_interpretation": "outer minus physical lower bound; not a quantum gap proof",
+          "marginals": [
+            0.9999998865490309,
+            0.9999997191515165,
+            0.9999998965338035,
+            -0.9999989835255801
+          ],
+          "canonical_CHSH": 2.000000130531377,
+          "primal_minus_local": -1.2325684473069032e-08,
+          "primal_minus_reference_divided_by_L1": -1.2514580120910506e-08,
+          "primal_minus_local_divided_by_L1": -1.2515310388039324e-08
+        }
+      ],
+      "exact_local_max": "4687/7788",
+      "coefficient_L1_norm": "65/66",
+      "maximizing_deterministic_behaviors": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ]
+      ]
+    }
+  ],
+  "wall_limit_seconds": 175,
+  "maximum_sdps": 20,
+  "versions": {
+    "numpy": "2.4.4",
+    "sympy": "1.14.0",
+    "scipy": "1.17.1",
+    "cvxpy": "1.8.2",
+    "clarabel": "0.11.1",
+    "ncpol2sdpa": "1.14.0"
+  },
+  "preserved_exact_witnesses": [
+    "analysis/ncpol_bounds/rational_certificate_1plusAB_alpha_3_4.json",
+    "analysis/ncpol_bounds/rational_certificate_2_alpha_19_20.json"
+  ],
+  "algebra": "Universal reflection identities and opposite-party commutation only; real moments; no qubit identities in SDP",
+  "optimizer_note": "A single seeded differential-evolution run supplies only a physical lower bound; local deterministic ties may be selected for native slacks.",
+  "elapsed_seconds": 1.2477405999961775,
+  "total_sdps": 32,
+  "path_followup_seconds": 0.37586120000923984,
+  "total_distinct_sdps": 32,
+  "actual_solve_call_accounting": "20 initial +20 duplicate +6 raw path +6 explicitly authorized aligned path =52actual;32distinctpairs. No baseline reruns in either follow-up.",
+  "symmetry_alignment": {
+    "group_index": 25,
+    "images": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        3,
+        -1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "rule": "Among all physical relabelings mapping the violated CHSH sector to positive standard CHSH, maximize exact dot of L1-normalized objectives; first index breaks ties.",
+    "eligible_relabelings": 16,
+    "exact_normalized_dot": "47/354",
+    "original_behavior": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "15/17",
+      "-8/17",
+      "8/17",
+      "15/17"
+    ],
+    "aligned_behavior": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "8/17",
+      "15/17",
+      "15/17",
+      "-8/17"
+    ],
+    "original_objective": [
+      "2/3",
+      "1/6",
+      "-2/3",
+      "1/6",
+      "5/4",
+      "-2/3",
+      "2/3",
+      "5/4"
+    ],
+    "aligned_objective": [
+      "2/3",
+      "-1/6",
+      "-1/6",
+      "-2/3",
+      "2/3",
+      "5/4",
+      "5/4",
+      "-2/3"
+    ],
+    "source_objective_L1": "11/2",
+    "target_objective_L1": "59/10",
+    "original_CHSH_sectors": [
+      {
+        "signs": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "value": "0"
+      },
+      {
+        "signs": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "value": "-14/17"
+      },
+      {
+        "signs": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "value": "-46/17"
+      },
+      {
+        "signs": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "value": "0"
+      },
+      {
+        "signs": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "value": "0"
+      },
+      {
+        "signs": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "value": "46/17"
+      },
+      {
+        "signs": [
+          1,
+          1,
+          -1,
+          1
+        ],
+        "value": "14/17"
+      },
+      {
+        "signs": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "value": "0"
+      }
+    ],
+    "aligned_standard_CHSH": "46/17",
+    "original_contact_state": [
+      "1",
+      "-1/4",
+      "1/4",
+      "1"
+    ],
+    "original_halfangles": [
+      "1",
+      "1"
+    ],
+    "joint_pairing_preserved": true,
+    "transformed_contact_state": [
+      "1",
+      "-1/4",
+      "1/4",
+      "1"
+    ],
+    "transformed_measurements": [
+      "A0=Z",
+      "A1=-X",
+      "B0=-X",
+      "B1=Z"
+    ]
+  },
+  "aligned_path_followup_seconds": 0.43030829999770503,
+  "baseline_distinct_sdps": 20,
+  "actual_solve_calls": 52
+}

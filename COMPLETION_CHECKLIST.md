@@ -25,6 +25,8 @@
 - [x] Correct the partial-entanglement reflection domain at one-zero and two-zero axis seams, retaining exact counterexamples to the old rule.
 - [x] Give the complete homogeneous Q1+AB primal PSD9 matrix and its universal SOS dual, with all 17 moment/coefficient classes and all 128 congruence actions.
 - [x] Eliminate two primal auxiliary moments exactly by four-cycle completion; cover singular PSD5 and zero residual diagonals, and construct the remaining moments from six supplied auxiliaries.
+- [x] Prove the exact nonsignaling CHSH-cap simplex: one PR vertex, eight deterministic vertices, unique event-probability barycentrics, and covariance under all 128 relabelings.
+- [x] Supply two exact radial discrepancy intervals, with explicit feasible moment completions and quantum separation at every point; retain the seven-dimensional local remainder.
 
 ## Immediate mathematical target: tilt and 1+AB
 
@@ -37,6 +39,9 @@
 - [ ] Determine the exact 1+AB admission region in the full asymmetric two-tilt domain.
 - [ ] Extend the symmetry-specific compressed formulation to asymmetric two-sided tilt, where party-exchange averaging is unavailable.
 - [x] Prove the symmetric interval structure by exhaustive transition analysis, including its isolated re-admitted endpoint, without assuming monotonicity from solver plots.
+- [x] Prove that the first symmetric departure has finite entanglement, strictly positive probabilities and a nondegenerate two-angle Hessian, while the excluded segment approaches the Motzkin product endpoint.
+- [x] Prove the asymmetric positive product-transition edge `a+b=2`, global localization of every violating measurement pair, cubic quantum violation and the actual Motzkin gap limit across that edge.
+- [x] Transfer the asymmetric limit to every fixed standard NPA level, including `1+AB`, along the inward normal at each positive critical-edge point, with an explicit polynomial test vector and audited trace/Taylor-limit hypotheses.
 - [ ] Identify which loss-of-PSD branches approach the verified Motzkin scaling regime and which need a different obstruction.
 - [ ] Establish a quantitative level/error relation if sought; the current divergence theorem does not provide one.
 

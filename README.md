@@ -7,6 +7,7 @@ The geometric reduction, current literature inventory, and exact contact-SOS red
 ## Start here
 
 * [Tilt, low-level certificates, and the Motzkin mechanism](TILT_AND_MOTZKIN.md): the current organizing question, what our proof establishes, and the exact missing implications.
+* [PR-simplex and Motzkin tests](analysis/motzkin_test/README.md): exact sector coordinates, certified radial discrepancies, the regular first departure from `1+AB`, and the global asymmetric critical-edge Motzkin limit.
 * [Known results and primary sources](KNOWN_RESULTS.md): geometry, exact NPA certificates, prior C1/C2 exclusions, and limits of recent claims.
 * [Minimal representations under all relabelings](analysis/representation/MINIMAL_REPRESENTATION.md): exact canonical domains, corrected axis seams, and the distinct minimal dimensions 8, 5 and 7.
 * [Complete Q1+AB primal and dual cones](analysis/q1ab_cone/CONE_CHARACTERIZATION.md): the full PSD9 matrix, eight auxiliary moments, and an exact six-auxiliary completion criterion with a constructive implementation.
@@ -49,6 +50,10 @@ E_{xy}=\cos\alpha_x\cos\beta_y+
 The five parameters are necessary generically in the smooth/semialgebraic sense. Quotient the 128 physical relabelings; retain maximally entangled, zero-probability, non-exposed, and deterministic strata. For a fixed Bell functional, eliminate the state by taking the largest eigenvalue of its real 4x4 Bell operator, leaving a two-angle maximization. These are distinct reductions; arbitrary strategies are not all locally isometric to a single qubit pair.
 
 The [geometric review](analysis/local_isometry_reduction_review.md) gives the dimension proof, exact full-alternation test, domains and endpoints. The [classification review](analysis/npa_classification_review.md) defines the correct NPA objects and proves why exact certificate nonmembership implies a strict Bell gap.
+
+The latest [geometric test](analysis/motzkin_test/geometry/CHSH_SECTOR.md) proves that each nonsignaling CHSH cap is exactly the simplex of one PR vertex and eight deterministic vertices. Each nonlocal behavior has a unique PR weight `(S-2)/2` and a local remainder on a seven-dimensional facet. [Two exact radial intervals](analysis/motzkin_test/geometry/RADIAL_SHELLS.md) now exhibit entire families inside `1+AB` or level 2 but outside the quantum set, with explicit rational moment completions.
+
+The [asymmetric critical-edge theorem](analysis/motzkin_test/analytic/ASYMMETRIC_CRITICAL_EDGE.md) proves that for positive tilts the product transition is `a+b=2`. Every violating measurement pair localizes to the aligned corner as this edge is approached. The global quantum violation is cubic, and the rescaled quantum gap is the standard Motzkin polynomial throughout the positive edge. The [finite-word extension](analysis/motzkin_test/analytic/ASYMMETRIC_NPA_DIVERGENCE.md) proves that the relative error of every fixed NPA level, including `1+AB`, diverges along the inward normal at every positive edge point. A theorem covering every excluded supporting direction remains open.
 
 ## Exact tools
 

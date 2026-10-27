@@ -110,6 +110,28 @@ py -3.14 analysis/tilt_boundary/boundary_interval.py
 
 The theorem is the symmetric admission region [0,alpha_*] union {1}. The exact definition of alpha_* is the isolated polynomial root and rational map in TRANSITION_PROOF.md. Exact rational refinement additionally proves 0.65096704837165489 < alpha_* < 0.65096704837165490, with full data in transition_boundary.json. The two prior point certificates and imported quantum-optimum theorem remain explicit dependencies.
 
-## Scope audit
+## PR coordinates and asymmetric Motzkin tests
+
+The CHSH-sector simplex proof was checked coefficient by coefficient on an affine basis and under all 128 relabelings. Its unique local remainder was used to construct two entire rational radial discrepancy intervals from the preserved moment witnesses. Their explicit moment completions are convex combinations with deterministic facet matrices. Independent exact Sturm comparisons certify separation from the quantum set throughout each interval.
+
+The finite-contact calculation independently derives the physical characteristic polynomial, the two angular Hessian eigenvalues, and their signs on the complete symmetric branch. Exact interval arithmetic at the isolated transition proves finite concurrence and positivity of every joint event. The endpoint expansions match the known Motzkin scales.
+
+The asymmetric calculation was replayed and analytically reviewed. Positive nonconstant coefficients of the shifted characteristic polynomial justify using its constant-term sign to detect quantum violation. An explicit nonnegative identity then localizes every violating pair of angles. The simple top root, uniform scaled expansion and compact maximization prove the global cubic coefficient and actual Motzkin gap limit. Principal angle representatives, positive critical tilts, and shared tangential-rate bounds for uniform error estimates are explicit hypotheses.
+
+New solver-free replays:
+
+```
+py -3.14 analysis/motzkin_test/geometry/check_sector.py
+py -3.14 analysis/motzkin_test/geometry/radial_witness.py --verify
+py -3.14 analysis/motzkin_test/analytic/geometry_check.py
+py -3.14 analysis/motzkin_test/analytic/asymmetric_normal_form.py
+py -3.14 analysis/motzkin_test/analytic/asymmetric_npa_divergence_check.py
+```
+
+The asymmetric divergence extension supplies the degree-three polynomial eigenvector approximation, exact norm and parity, and sixth-order Motzkin gap coefficient. Its checker was independently replayed. The analytical proof checks dual attainment for the fixed universal word list, the canonical trace bound, the polynomial degree/order property and the locally uniform limiting squared norm. These justify applying the preserved Taylor-limit lemma. The elementary coefficient obstruction then proves fixed-level divergence along every positive critical-edge inward normal; the level and edge point are fixed before taking the limit.
+
+The numerical probe separately records 32 distinct objective-level pairs and 52 actual solver calls, including the repeated initial batch. All statuses, moments, residuals, exact or physical reference types, and symmetry-aligned path choices are retained. The extra numerical results do not establish exact admission or topology of the failure region. No new solves are required for the analytical checks above.
+
+## Current scope
 
 Recent literature was read for exact hypotheses and quantifiers. Previously reported numerical thresholds, a proposed commutative-to-noncommutative finite-convergence transfer, and abstract-only claims are labeled accordingly. Full publisher reconciliation of the extremality theorem remains pending. The new exact transition theorem concerns symmetric double tilt at 1+AB. No universal H1/H2 admission, complete higher-level classification, or classification of every missing slack as Motzkin-equivalent is inferred.

@@ -66,6 +66,18 @@ This is a concrete reason the two-angle physical reduction is useful and why a f
 
 ## 4. The exact classification target
 
+The [asymmetric critical-edge calculation](analysis/motzkin_test/analytic/ASYMMETRIC_CRITICAL_EDGE.md) now extends the physical Motzkin limit to every positive point `a0+b0=2`. Set `tau=2-a-b` and approach with `a-a0,b-b0=O(tau)`. The true quantum advantage is
+
+\[
+\omega_Q(a,b)-(2+a+b)=\frac{(a_0+2)(b_0+2)}{54a_0b_0}\tau^3+O(\tau^4).
+\]
+
+An exact characteristic-polynomial factorization forces every violating pair of measurements into an `O(sqrt(tau))` neighborhood of the aligned corner. This supplies the global optimization step. Rescaling the independent angles by their optimal scales gives the actual Motzkin polynomial, with uniform control on compact positive-edge subsets. The one-sided endpoints remain excluded from this argument. The [independent analytical review](analysis/motzkin_test/analytic/ASYMMETRIC_REVIEW.md) records the sign, uniformity and global-maximization arguments.
+
+The [asymmetric fixed-level theorem](analysis/motzkin_test/analytic/ASYMMETRIC_NPA_DIVERGENCE.md) now completes the finite-word implication on every straight inward normal `a=a0-tau/2`, `b=b0-tau/2`: for each fixed standard NPA level `W`, including `1+AB`, `(omega_W-omega_Q)/tau^3` tends to positive infinity. An explicit degree-three test vector produces the Motzkin gap. The canonical trace bounds the universal Gram factors, and the preserved Taylor-limit lemma would turn any bounded normalized error into a forbidden SOS for `M+c`. This proves fixed-level failure near every positive critical-edge point, with level- and point-dependent neighborhoods. It does not locate the first asymmetric `1+AB` transition or prove a common failure component for all Bell directions.
+
+On the symmetric path, the first `1+AB` departure is nevertheless a regular finite contact: concurrence about `0.587754`, every joint probability greater than `1/625`, and a strictly negative two-angle Hessian. The [contact calculation](analysis/motzkin_test/analytic/FINITE_CONTACT_AND_MOTZKIN.md) proves both this fact and continuous approach of the excluded interval to the Motzkin endpoint. Loss of a low-level Gram certificate and degeneracy of the physical optimum are distinct events.
+
 Define, in the specified tilt domain,
 
 \[
