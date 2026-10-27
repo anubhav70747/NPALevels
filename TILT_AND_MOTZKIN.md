@@ -24,9 +24,9 @@ On the symmetric two-sided path a=b=alpha<1, our [no-finite-level paper](https:/
 
 This is stronger than failure of 1+AB near the critical point. It excludes a uniformly adequate finite word list along that limiting family.
 
-An interior interval of exact 1+AB certification for the two-sided path requires a separate proof. We now provide one: the [half-tilt certificate](analysis/tilt_sos/half_tilt_certificate_proof.md) gives five exact squares at alpha=1/2 with positive-definite compressed blocks. Keeping the rational Gram gauges g=1/12 and h=1/10 and analytically continuing the complete coefficient system proves exactness on some open neighborhood of 1/2. No explicit radius is claimed.
+The entire symmetric 1+AB admission region is now proved separately from the Motzkin limit. The [transition theorem](analysis/tilt_boundary/TRANSITION_PROOF.md) gives exactly [0,alpha_*] union {1}, where alpha_*=0.6509670484... is specified by an isolated algebraic root. The [half-tilt certificate](analysis/tilt_sos/half_tilt_certificate_proof.md), with rational Gram gauges g=1/12 and h=1/10, supplies one strict admission witness. A second rational strict witness and the exact three-quarter exclusion fix all connected parameter cells after exhaustive singular-block elimination. There is one interior transition and a separately admitted endpoint at one.
 
-Conversely, [rational moment witnesses](analysis/ncpol_bounds/INTERVAL_PROOF.md) prove strict 1+AB failure on [0.7498,0.7502] and strict level-2 failure on [0.94998,0.95002]. These are interval-wide statements obtained by exact root comparisons and a Lipschitz bound. They do not establish the first transition or a single-interval admission structure.
+The earlier [rational moment witnesses](analysis/ncpol_bounds/INTERVAL_PROOF.md) also retain explicit strict 1+AB failure on [0.7498,0.7502] and strict level-2 failure on [0.94998,0.95002]. Those local interval proofs use exact root comparisons and a Lipschitz bound. The full 1+AB transition requires the additional elimination and connected-cell proof; the level-2 transition is still open.
 
 The companion [July preprint, Section 3](https://arxiv.org/html/2607.13774v1) reports numerical exactness thresholds. No threshold from that discussion is promoted here to a theorem. Our source audit also identifies an unproved transfer in its pointwise finite-convergence argument; see [the scope review](analysis/recent_literature_scope.md).
 
@@ -73,13 +73,13 @@ Define, in the specified tilt domain,
 \in\Sigma_{1+AB}\}.
 \]
 
-The next decisive result is an exact description of this set, followed by the higher-level regions E_L. Solve for universal Grams using the known physical contact kernel; retain PSD inequalities and every forbidden-word coefficient. A numerical fit or a zero residual at one source is not enough to prove an interval.
+The symmetric slice of this set is now exactly described above. Its full asymmetric two-tilt domain and the higher-level regions E_L remain to be determined. Solve for universal Grams using the known physical contact kernel; retain PSD inequalities and every forbidden-word coefficient. A numerical fit or a zero residual at one source is not enough to prove an interval.
 
 The first priorities are:
 
-1. Determine the symmetric path's exact 1+AB admission region, including its boundary. Do not assume it is a single interval or that numerical thresholds are exact.
+1. Extend the completed symmetric transition analysis to the asymmetric two-tilt domain. Its topology and active-rank branches require proof; they cannot be inferred from the diagonal slice.
 2. Separate genuine failure from failure of a selected Gram parameterization by using the full compressed cone.
 3. Relate any proven transition to loss of PSD and to the critical two-angle jet. Motzkin already explains the near-critical fixed-degree obstruction; a theorem identifying **every** non-1+AB case with that mechanism is absent.
 4. Establish quantitative word-length requirements for a specified error, or pointwise finite exactness, only with the necessary certificate arguments. The existing theorem gives neither an explicit growth law nor a fixed functional of infinite depth.
 
-Our generic C1/C2 exclusions provide additional finite-level information away from this asymptotic argument. They must be reconciled with the tilt subfamilies rather than assumed to be equivalent to a Motzkin limit. The current verified structure therefore has low-level exact certificates, exact finite-level exclusions, and a near-critical unbounded-degree obstruction; collapsing those into a proved two-case dichotomy would go beyond the evidence.
+Our generic C1/C2 exclusions provide additional finite-level information away from this asymptotic argument. They must be reconciled with the tilt subfamilies rather than assumed to be equivalent to a Motzkin limit. The [complete Q1+AB cone and its dual](analysis/q1ab_cone/CONE_CHARACTERIZATION.md) now identify exactly which algebraic certificate cone is involved. The remaining quantum-valid slacks outside that cone are not proved equivalent to one polynomial normal form. A Motzkin-based classification would require an explicit equivalence and a coverage theorem for those slacks. The symmetric transition theorem does not supply that global claim.

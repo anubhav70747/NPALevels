@@ -12,6 +12,7 @@ The geometric reduction, current literature inventory, and exact contact-SOS red
 * [Complete Q1+AB primal and dual cones](analysis/q1ab_cone/CONE_CHARACTERIZATION.md): the full PSD9 matrix, eight auxiliary moments, and an exact six-auxiliary completion criterion with a constructive implementation.
 * [Minimal regions](analysis/MINIMAL_REGIONS.md): an ordered-simplex chart, residual reflection cut, maximal-entanglement gap simplex and all boundary types.
 * [Generic contact SOS](analysis/GENERIC_CONTACT_SOS.md) and [symmetric tilt SOS](analysis/SYMMETRIC_TILT_SOS.md): exact small Gram formulations retaining every universal word equation.
+* [Exact symmetric 1+AB transition](analysis/tilt_boundary/TRANSITION_PROOF.md): complete admission region `[0,alpha_*] union {1}`, with `alpha_* = 0.650967...` specified by an isolated algebraic root.
 * [Exact half-tilt admission](analysis/tilt_sos/half_tilt_certificate_proof.md) and [exact failure intervals](analysis/ncpol_bounds/INTERVAL_PROOF.md): analytical certificates obtained from a bounded numerical batch.
 * [Completion checklist](COMPLETION_CHECKLIST.md): completed reductions and the substantive remaining classification.
 * [Verification record](VERIFICATION.md) and [source manifest](sources/manifest.json).
@@ -26,11 +27,12 @@ For the symmetric path `H_alpha=CHSH+alpha(A0+B0)`, the current exact results in
 
 | Region | Proven statement | Evidence |
 |---|---|---|
-| An open neighborhood of `alpha=1/2` | `1+AB` is exact. The neighborhood radius is not evaluated. | Five-square universal SOS, a physical attaining strategy, and strictly positive compressed Gram blocks continued analytically. |
-| `0.7498 <= alpha <= 0.7502` | `1+AB` has a strict quantum gap. | Rational positive-definite moment witness, exact Sturm comparison and a Lipschitz extension. |
+| `0 <= alpha <= alpha_*`, where `alpha_*=0.650967...` | `1+AB` is exact, including the algebraic transition. | Rational contact pencil, exhaustive singular-block elimination, exact Sturm counts and strict certificates fixing the connected cells. |
+| `alpha_* < alpha < 1` | `1+AB` has a strict quantum gap. | The same exhaustive elimination and an exact rational moment witness fixing the excluded cell. |
+| `alpha=1` | `1+AB` is exact again; the bound is already nonsignaling-valid. | Explicit positive-event decomposition and an attaining deterministic strategy. |
 | `0.94998 <= alpha <= 0.95002` | Level 2 has a strict quantum gap. | A separate rational moment witness and the same exact extension argument. |
 
-These certified regions do not locate the first transition or prove that the admission set is a single interval. The next problem is elimination of the two Gram gauges in the complete symmetric contact formulation.
+The [transition proof](analysis/tilt_boundary/TRANSITION_PROOF.md) eliminates both Gram variables without assuming monotonicity. It isolates the active root of an explicit degree-32 polynomial and excludes the other candidate as a transition. The isolated admitted endpoint matters: the full admission region on `[0,1]` is not a single interval. The asymmetric two-tilt domain and higher-level transition boundaries remain open.
 
 Up to a behavior-preserving convex reduction, real pure two-qubit strategies suffice. Extreme behaviors have such a realization. In Schmidt coordinates,
 
@@ -85,6 +87,9 @@ py -3.14 analysis/ncpol_bounds/interval_check.py
 py -3.14 analysis/q1ab_cone/check_cone.py
 py -3.14 analysis/q1ab_cone/completion.py
 py -3.14 analysis/representation/check_representation.py
+py -3.14 analysis/tilt_boundary/transition_check.py
+py -3.14 analysis/tilt_boundary/contact_kernel_check.py
+py -3.14 analysis/tilt_boundary/endpoint.py
 ```
 
 The first requires SymPy; the two rational gap replays use only the Python standard library. The diagnostic batch uses ncpol2sdpa/CVXPY/CLARABEL; its full settings, actual solver statuses, moments and residuals are retained in [bounds.json](analysis/ncpol_bounds/bounds.json). No optimization is needed to replay the proofs.

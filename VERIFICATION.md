@@ -91,6 +91,25 @@ py -3.14 analysis/q1ab_cone/completion.py
 py -3.14 analysis/representation/check_representation.py
 ```
 
+## Complete symmetric transition verification
+
+The exact elimination was replayed and its full argument independently reviewed. The rational contact map is monotone and bijective on its stated physical interval. Exact substitution and positive coefficients of the shifted quantum quartic identify its value as the largest root. Both individual Gram blocks have strict feasible points at every interior parameter. The weighted trace identity bounds all jointly feasible gauges on each compact parameter interval.
+
+Every feasible parameter without a joint strict certificate forces a rank-one odd block and a multiple root of the even determinant along that boundary. The lower-rank even case, the impossible zero odd block, all denominators and loss of polynomial degree are explicitly covered. The primitive sextic discriminant factors into nonvanishing physical factors and the stored degree-32 polynomial. Exact Sturm counts isolate precisely two physical candidates. Independently verified strict certificates at alpha=1/2 and T=-8, and the exact alpha=3/4 moment exclusion, settle the three connected cells. Closedness includes both candidate endpoints. A direct positive-event identity proves admission at alpha=1.
+
+An additional independent expansion verifies that both rational kernel matrices annihilate the physical contact, span their full kernels, and give all 25 ordered universal-word coefficients, without deleting forbidden words. This validates the complete pencil used in elimination rather than merely one fitted certificate.
+
+Commands, all replayed successfully:
+
+```
+py -3.14 analysis/tilt_boundary/transition_check.py
+py -3.14 analysis/tilt_boundary/contact_kernel_check.py
+py -3.14 analysis/tilt_boundary/endpoint.py
+py -3.14 analysis/tilt_boundary/boundary_interval.py
+```
+
+The theorem is the symmetric admission region [0,alpha_*] union {1}. The exact definition of alpha_* is the isolated polynomial root and rational map in TRANSITION_PROOF.md. Exact rational refinement additionally proves 0.65096704837165489 < alpha_* < 0.65096704837165490, with full data in transition_boundary.json. The two prior point certificates and imported quantum-optimum theorem remain explicit dependencies.
+
 ## Scope audit
 
-Recent literature was read for exact hypotheses and quantifiers. Reported thresholds, a proposed commutative-to-noncommutative finite-convergence transfer, and abstract-only claims are labeled accordingly. Full publisher reconciliation of the extremality theorem remains pending. No universal H1/H2 claim, higher-level classification, or completed theorem is inferred from this verification record.
+Recent literature was read for exact hypotheses and quantifiers. Previously reported numerical thresholds, a proposed commutative-to-noncommutative finite-convergence transfer, and abstract-only claims are labeled accordingly. Full publisher reconciliation of the extremality theorem remains pending. The new exact transition theorem concerns symmetric double tilt at 1+AB. No universal H1/H2 admission, complete higher-level classification, or classification of every missing slack as Motzkin-equivalent is inferred.

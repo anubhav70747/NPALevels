@@ -2,7 +2,7 @@
 
 27 October 2026. This note reduces exact `1+AB` admission to a two-variable
 semialgebraic feasibility problem at generic interior tilts. It does **not**
-claim an exact tilt threshold. Every universal-word equation is retained or
+claim an exact tilt threshold by itself. The subsequent [complete transition proof](tilt_boundary/TRANSITION_PROOF.md) gives the exact admission region and removes all interior chart exceptions using a rational contact parameter. Every universal-word equation is retained or
 proved redundant. No optimal-angle matrix identity is substituted for a
 universal identity.
 
@@ -261,5 +261,7 @@ At `alpha=0`, the familiar degree-one certificate is
 At `alpha=1`, formulas (3) and (7) degenerate. The uncompressed exact table
 (1), with `lambda=4`, remains an equivalent `1+AB` admission test with
 `E>=0,O>=0`; this note does not decide that endpoint by a new certificate.
-The Motzkin limit proves an eventual interval of failure near one, but does
-not identify the exact first failing tilt or prove a single transition.
+The Motzkin limit proves an eventual interval of failure near one. The separate
+[transition proof](tilt_boundary/TRANSITION_PROOF.md) now identifies the exact
+interior boundary and verifies the re-admitted endpoint alpha=1 by an explicit
+positive-event certificate. Its proof uses the full universal formulation above.

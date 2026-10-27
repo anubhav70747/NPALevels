@@ -1,0 +1,26 @@
+{
+  "author": "Anubhav Chaturvedi",
+  "family": "H_alpha=CHSH+alpha(A0+B0)",
+  "parameter_domain": "0<=alpha<=1",
+  "exact_admission_region": "[0,alpha_star] union {1}",
+  "T_polynomial": "2*T**32 + 45*T**31 + 174*T**30 - 1905*T**29 - 4228*T**28 + 107562*T**27 + 179396*T**26 - 1950226*T**25 - 66342*T**24 + 16841009*T**23 + 3951494*T**22 - 81773981*T**21 - 49570264*T**20 + 228979848*T**19 + 214856232*T**18 - 377089776*T**17 - 453848480*T**16 + 385403392*T**15 + 497937408*T**14 - 306725376*T**13 - 212066304*T**12 + 292392960*T**11 - 179171328*T**10 - 261677056*T**9 + 386449408*T**8 + 119078912*T**7 - 351141888*T**6 + 40828928*T**5 + 174587904*T**4 - 89653248*T**3 - 7864320*T**2 + 13631488*T - 2097152",
+  "T_initial_isolating_interval": [
+    "-4125/448",
+    "-25238/2741"
+  ],
+  "T_refined_isolating_interval": [
+    "-6446640297/700144256",
+    "-42746507155/4642530073"
+  ],
+  "alpha_squared_map": "T^2*(T^2+4*T-4)/((T-1)*(T^3-T^2+4))",
+  "alpha_strict_rational_interval": [
+    "65096704837165489/100000000000000000",
+    "6509670483716549/10000000000000000"
+  ],
+  "alpha_strict_decimal_interval": [
+    "0.65096704837165489",
+    "0.65096704837165490"
+  ],
+  "proof": "TRANSITION_PROOF.md",
+  "scope": "Symmetric 1+AB only; higher-level and asymmetric transitions are not classified."
+}

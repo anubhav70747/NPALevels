@@ -33,9 +33,10 @@
 - [x] Convert two numerical gap proposals into exact rational moment witnesses: 1+AB at alpha=3/4 and level 2 at alpha=19/20, with complete moment identities, positive LDL pivots and rational Sturm comparisons.
 - [x] Extend those witnesses to the explicit closed failure intervals [0.7498,0.7502] and [0.94998,0.95002], respectively.
 - [x] Archive the bounded twelve-run ncpol2sdpa batch, word lists, versions, actual solver statuses, primal/dual reconstructions and residuals; keep it separate from the exact replays.
-- [ ] Determine its exact 1+AB admission region, first on the symmetric path and then in the two-tilt domain. Establish any interval boundary with an exact PSD identity or exact separator.
+- [x] Eliminate both symmetric Gram gauges completely: prove admission precisely on [0,alpha_*] union {1}, isolate the exact algebraic transition, and cover every interior denominator and singular-rank branch.
+- [ ] Determine the exact 1+AB admission region in the full asymmetric two-tilt domain.
 - [ ] Extend the symmetry-specific compressed formulation to asymmetric two-sided tilt, where party-exchange averaging is unavailable.
-- [ ] Prove any proposed monotonicity/interval structure instead of reading it from solver plots.
+- [x] Prove the symmetric interval structure by exhaustive transition analysis, including its isolated re-admitted endpoint, without assuming monotonicity from solver plots.
 - [ ] Identify which loss-of-PSD branches approach the verified Motzkin scaling regime and which need a different obstruction.
 - [ ] Establish a quantitative level/error relation if sought; the current divergence theorem does not provide one.
 
