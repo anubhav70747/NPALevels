@@ -3,3 +3,6 @@
 numpy
 sympy
 cvxpy
+ncpol2sdpa
+clarabel
+mpmath

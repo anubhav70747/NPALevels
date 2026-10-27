@@ -10,10 +10,21 @@ The geometric reduction, current literature inventory, and exact contact-SOS red
 * [Known results and primary sources](KNOWN_RESULTS.md): geometry, exact NPA certificates, prior C1/C2 exclusions, and limits of recent claims.
 * [Minimal regions](analysis/MINIMAL_REGIONS.md): an ordered-simplex chart, residual reflection cut, maximal-entanglement gap simplex and all boundary types.
 * [Generic contact SOS](analysis/GENERIC_CONTACT_SOS.md) and [symmetric tilt SOS](analysis/SYMMETRIC_TILT_SOS.md): exact small Gram formulations retaining every universal word equation.
+* [Exact half-tilt admission](analysis/tilt_sos/half_tilt_certificate_proof.md) and [exact failure intervals](analysis/ncpol_bounds/INTERVAL_PROOF.md): analytical certificates obtained from a bounded numerical batch.
 * [Completion checklist](COMPLETION_CHECKLIST.md): completed reductions and the substantive remaining classification.
 * [Verification record](VERIFICATION.md) and [source manifest](sources/manifest.json).
 
 ## The reduction
+
+For the symmetric path `H_alpha=CHSH+alpha(A0+B0)`, the current exact results include:
+
+| Region | Proven statement | Evidence |
+|---|---|---|
+| An open neighborhood of `alpha=1/2` | `1+AB` is exact. The neighborhood radius is not evaluated. | Five-square universal SOS, a physical attaining strategy, and strictly positive compressed Gram blocks continued analytically. |
+| `0.7498 <= alpha <= 0.7502` | `1+AB` has a strict quantum gap. | Rational positive-definite moment witness, exact Sturm comparison and a Lipschitz extension. |
+| `0.94998 <= alpha <= 0.95002` | Level 2 has a strict quantum gap. | A separate rational moment witness and the same exact extension argument. |
+
+These certified regions do not locate the first transition or prove that the admission set is a single interval. The next problem is elimination of the two Gram gauges in the complete symmetric contact formulation.
 
 Up to a behavior-preserving convex reduction, real pure two-qubit strategies suffice. Extreme behaviors have such a realization. In Schmidt coordinates,
 
@@ -59,6 +70,16 @@ Optional numerical diagnostics need CVXPY and NumPy:
 py -3.14 -m npalevels bound 1+AB 1 0 0 0 1 1 1 -1 --solver CLARABEL
 ```
 
-Every numerical result is labeled `certified_exact: false`. The unstrengthened observable level 1 permits negative reconstructed probabilities; `--probabilities` adds those constraints explicitly. Level 1+AB already enforces them. Standard word counts are 5, 9, 13, 25, 41 at levels 1, 1+AB, 2, 3, 4; integer level L has 1+2L(L+1) words.
+Every numerical result is labeled `certified_exact: false`. The separate exact certificates have solver-free replays:
+
+```powershell
+py -3.14 analysis/tilt_sos/half_tilt_certificate.py
+py -3.14 analysis/ncpol_bounds/rational_check.py
+py -3.14 analysis/ncpol_bounds/interval_check.py
+```
+
+The first requires SymPy; the two rational gap replays use only the Python standard library. The diagnostic batch uses ncpol2sdpa/CVXPY/CLARABEL; its full settings, actual solver statuses, moments and residuals are retained in [bounds.json](analysis/ncpol_bounds/bounds.json). No optimization is needed to replay the proofs.
+
+The unstrengthened observable level 1 permits negative reconstructed probabilities; `--probabilities` adds those constraints explicitly. Level 1+AB already enforces them. Standard word counts are 5, 9, 13, 25, 41 at levels 1, 1+AB, 2, 3, 4; integer level L has 1+2L(L+1) words.
 
 Source collection is frozen to the manifest. Existing Q222 automations remain paused; this repository does not start background searches.

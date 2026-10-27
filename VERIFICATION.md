@@ -35,6 +35,24 @@ py -3.14 analysis/generic_contact_sos.py
 py -3.14 analysis/tilt_sos/exact_contact_rank.py
 ```
 
+## Exact certificates obtained from the bounded numerical batch
+
+The half-tilt certificate was replayed and its analytical continuation argument was separately reviewed. At alpha=1/2, all eleven coefficient equations and all 25 ordered universal-word coefficients hold exactly over the quartic number field. Rational root isolation and rational Horner bounds prove all ten nonempty principal minors of the PSD3 and PSD2 blocks strictly positive. The exact physical eigenvector attains the same value. The root is simple, and the contact and coefficient-chart pivots are nonzero. The analytical rank-seven argument therefore preserves every universal equation locally while positivity persists. This proves an open interval of admission, without an evaluated radius.
+
+Two rational gap witnesses were also replayed with no SDP solver. The 9x9 moment matrix at alpha=3/4 and the 13x13 matrix at alpha=19/20 obey every universal moment identity and have strictly positive rational LDL pivots. Their objective values are respectively 3520130149/1000000000 and 39003257637/10000000000. Exact Sturm comparisons put them above every real root of the corresponding physical quantum quartic. A second, stricter root comparison and the analytical 2-Lipschitz support bound prove the closed failure intervals recorded in `analysis/ncpol_bounds/nonadmission_intervals.json`.
+
+Commands, all replayed successfully:
+
+```
+py -3.14 analysis/tilt_sos/half_tilt_certificate.py
+py -3.14 analysis/ncpol_bounds/rational_check.py
+py -3.14 analysis/ncpol_bounds/interval_check.py
+```
+
+The half-tilt replay needs SymPy. The rational moment and interval replays use only the standard library. These checks certify the stated algebraic identities and signs; the accompanying proof notes explain how those facts imply quantum support equality or a strict gap.
+
+The proposal batch contains twelve specified ncpol2sdpa runs, not a threshold search. The actual installed versions are ncpol2sdpa 1.14.0, CVXPY 1.8.2 and CLARABEL 0.11.1. Actual `optimal_inaccurate` statuses are retained. The installed ncpol2sdpa solve wrapper duplicates its returned primal and dual values and replaces finite solver statuses with `optimal`; the batch bypasses that wrapper, obtains the actual CVXPY status, and reconstructs a distinct dual objective. The maximum reported duality gap is about 1.48e-7; these raw numerical results remain uncertified. An independent moment assembly agrees at alpha=1/2 to about 1.10e-10. A separate two-gauge numerical proposal selected the half-tilt certificate; neither proposal solver is needed for exact replay.
+
 ## Prior source replays
 
 The classification reviewer read all three prior C1/C2 obstruction reports and replayed their exact scripts with JSON writing suppressed, leaving the original evidence files unchanged:

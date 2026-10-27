@@ -25,6 +25,10 @@
 ## Immediate mathematical target: tilt and 1+AB
 
 - [x] Derive the symmetric doubly tilted contact-kernel Gram formulation: PSD3 and PSD2 blocks, generically two gauges and eight PSD inequalities; retain all eleven coefficient equations as the exceptional-chart fallback. The asymmetric two-tilt extension remains below.
+- [x] Obtain an exact five-square 1+AB certificate at alpha=1/2 and prove persistence on an unspecified open neighborhood using positive compressed blocks and analytic continuation.
+- [x] Convert two numerical gap proposals into exact rational moment witnesses: 1+AB at alpha=3/4 and level 2 at alpha=19/20, with complete moment identities, positive LDL pivots and rational Sturm comparisons.
+- [x] Extend those witnesses to the explicit closed failure intervals [0.7498,0.7502] and [0.94998,0.95002], respectively.
+- [x] Archive the bounded twelve-run ncpol2sdpa batch, word lists, versions, actual solver statuses, primal/dual reconstructions and residuals; keep it separate from the exact replays.
 - [ ] Determine its exact 1+AB admission region, first on the symmetric path and then in the two-tilt domain. Establish any interval boundary with an exact PSD identity or exact separator.
 - [ ] Extend the symmetry-specific compressed formulation to asymmetric two-sided tilt, where party-exchange averaging is unavailable.
 - [ ] Prove any proposed monotonicity/interval structure instead of reading it from solver plots.

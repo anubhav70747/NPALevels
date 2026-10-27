@@ -24,7 +24,11 @@ On the symmetric two-sided path a=b=alpha<1, our [no-finite-level paper](https:/
 
 This is stronger than failure of 1+AB near the critical point. It excludes a uniformly adequate finite word list along that limiting family.
 
-An interior interval of exact 1+AB certification for the two-sided path is a **separate** question. The companion [July preprint, Section 3](https://arxiv.org/html/2607.13774v1) reports numerical exactness thresholds. They are not an interval-wide exact Gram certificate, and no threshold from that discussion is promoted here to a theorem. Our source audit also identifies an unproved transfer in its pointwise finite-convergence argument; see [the scope review](analysis/recent_literature_scope.md).
+An interior interval of exact 1+AB certification for the two-sided path requires a separate proof. We now provide one: the [half-tilt certificate](analysis/tilt_sos/half_tilt_certificate_proof.md) gives five exact squares at alpha=1/2 with positive-definite compressed blocks. Keeping the rational Gram gauges g=1/12 and h=1/10 and analytically continuing the complete coefficient system proves exactness on some open neighborhood of 1/2. No explicit radius is claimed.
+
+Conversely, [rational moment witnesses](analysis/ncpol_bounds/INTERVAL_PROOF.md) prove strict 1+AB failure on [0.7498,0.7502] and strict level-2 failure on [0.94998,0.95002]. These are interval-wide statements obtained by exact root comparisons and a Lipschitz bound. They do not establish the first transition or a single-interval admission structure.
+
+The companion [July preprint, Section 3](https://arxiv.org/html/2607.13774v1) reports numerical exactness thresholds. No threshold from that discussion is promoted here to a theorem. Our source audit also identifies an unproved transfer in its pointwise finite-convergence argument; see [the scope review](analysis/recent_literature_scope.md).
 
 ## 2. Motzkin is a rescaled physical gap, not the original Bell polynomial
 

@@ -1,0 +1,93 @@
+{
+  "scope": "Two explicit subintervals of failure, not the full admission boundary.",
+  "results": [
+    {
+      "level": "1+AB",
+      "center": "3/4",
+      "radius": "1/5000",
+      "closed_interval": [
+        "3749/5000",
+        "3751/5000"
+      ],
+      "objective_at_center": "3520130149/1000000000",
+      "strict_quantum_upper_at_center": "3519330149/1000000000",
+      "upper_bound_sturm_proof": {
+        "signs_at_objective": [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        "signs_at_positive_infinity": [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        "signs_at_negative_infinity": [
+          1,
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "variations_at_objective": 1,
+        "variations_at_positive_infinity": 1,
+        "variations_at_negative_infinity": 3,
+        "real_roots_above_objective": 0,
+        "total_real_roots": 2,
+        "quartic_at_objective": "47862110557779951629970817697064401/1000000000000000000000000000000000000"
+      },
+      "certificate": "rational_certificate_1plusAB_alpha_3_4.json",
+      "certified_exact": true,
+      "conclusion": "strict NPA gap throughout the stated closed interval",
+      "analytic_dependency": "Both the quantum value and this fixed witness value are 2-Lipschitz in alpha; the center gap is strictly larger than 4*radius."
+    },
+    {
+      "level": "2",
+      "center": "19/20",
+      "radius": "1/50000",
+      "closed_interval": [
+        "47499/50000",
+        "47501/50000"
+      ],
+      "objective_at_center": "39003257637/10000000000",
+      "strict_quantum_upper_at_center": "39002457637/10000000000",
+      "upper_bound_sturm_proof": {
+        "signs_at_objective": [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        "signs_at_positive_infinity": [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        "signs_at_negative_infinity": [
+          1,
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "variations_at_objective": 1,
+        "variations_at_positive_infinity": 1,
+        "variations_at_negative_infinity": 3,
+        "real_roots_above_objective": 0,
+        "total_real_roots": 2,
+        "quartic_at_objective": "189159675869223493501790204625464765361/10000000000000000000000000000000000000000"
+      },
+      "certificate": "rational_certificate_2_alpha_19_20.json",
+      "certified_exact": true,
+      "conclusion": "strict NPA gap throughout the stated closed interval",
+      "analytic_dependency": "Both the quantum value and this fixed witness value are 2-Lipschitz in alpha; the center gap is strictly larger than 4*radius."
+    }
+  ]
+}
