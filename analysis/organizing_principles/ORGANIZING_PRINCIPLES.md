@@ -6,7 +6,7 @@ Anubhav Chaturvedi
 
 The precise proposed principle is: **after physical relabelings, every Bell objective for which 1+AB is inexact can be joined, through inexact objectives, to the positive critical-edge Motzkin collar.** The collar theorem proves that such a connection would provide a subsequent approach with finite NPA depths tending to infinity. It does not say that every excluded objective has a Motzkin polynomial as its own local gap, or that an endpoint requires an infinite level.
 
-The reductions below cover the whole scenario. The final connection assertion remains open.
+The reductions below cover the whole scenario. The final connection assertion remains open. The subsequent [global routing theorem](../connectivity_mixed_faces/RESULTS.md) proves that every failure component reaches an excluded C1/C2 source with two or three deterministic ties. It also proves local passage up to party exchange around the shared segment-face wall and classifies the twelve minimal angular circuits. The remaining global implication is now connection of all excluded C1/C2 representatives to the Motzkin collar.
 
 ## 1. One complete domain, with two different coordinate objects
 
@@ -67,6 +67,6 @@ Let g_Q and g_1AB be the continuous PR-ray thresholds on the closed radial simpl
 
 Its path components correspond exactly to those of the Bell support-gap domain. The positive critical edge has one connected excluded collar. Therefore the universal proposed principle is equivalent to saying that every component in the symmetry quotient belongs to that collar component.
 
-To close it, one must control passage around the admitted local-tie families and all remaining simplex faces, or produce an exhaustive exact component decomposition. Averaging to CHSH, counting only pure strategies, or reusing finitely many fixed witnesses does not supply this passage. The new results identify why each of those shortcuts fails and give the contact structure any valid deformation must respect.
+To close it, one must control passage from all excluded C1/C2 representatives to the collar, including the shared mixed-face incidences, or produce an exhaustive exact component decomposition. The [local quotient theorem](../connectivity_mixed_faces/local_topology.md) supplies actual two-sided passage near the admitted wall constructed above. Its normal-interval and uniform-neighborhood argument does not yet cover every wall. Averaging to CHSH, counting only pure strategies, or reusing finitely many fixed witnesses does not supply global coverage.
 
 The exact asymmetric transition curve and the complete minimum-level map are separate unfinished classifications. Their existing two-variable criterion and higher-level certificates should be reused; none of the new face results eliminates those remaining variables or assigns levels throughout the seven-dimensional domain.

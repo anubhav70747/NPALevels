@@ -1,0 +1,19 @@
+{
+  "author": "Anubhav Chaturvedi",
+  "source_sector": "E00-E01+E10+E11",
+  "parent_identity": true,
+  "determinant_identity": true,
+  "outer_coefficients": {
+    "(0, 0)": "4*alpha*lam*(2*A + 2*C + 2*D + d)*(2*beta + d + 2*m + 2*n)",
+    "(0, 2)": "4*D*lam*(2*A + 2*C + 2*alpha + d)*(2*beta + d + 2*m + 2*n) + 4*alpha*m*(2*A + 2*C + 2*D + d)*(2*beta + d + 2*lam + 2*n)",
+    "(0, 4)": "4*D*m*(2*A + 2*C + 2*alpha + d)*(2*beta + d + 2*lam + 2*n)",
+    "(2, 0)": "4*A*alpha*(2*C + 2*D + d + 2*lam)*(2*beta + d + 2*m + 2*n) + 4*lam*n*(2*A + 2*C + 2*D + d)*(2*alpha + 2*beta + d + 2*m)",
+    "(2, 4)": "4*C*D*(2*A + 2*alpha + d + 2*m)*(2*beta + d + 2*lam + 2*n) + 4*beta*m*(2*A + 2*C + 2*alpha + d)*(2*D + d + 2*lam + 2*n)",
+    "(4, 0)": "4*A*n*(2*C + 2*D + d + 2*lam)*(2*alpha + 2*beta + d + 2*m)",
+    "(4, 2)": "4*A*C*(2*D + d + 2*lam + 2*n)*(2*alpha + 2*beta + d + 2*m) + 4*beta*n*(2*A + 2*alpha + d + 2*m)*(2*C + 2*D + d + 2*lam)",
+    "(4, 4)": "4*C*beta*(2*A + 2*alpha + d + 2*m)*(2*D + d + 2*lam + 2*n)"
+  },
+  "positive_core_block": true,
+  "exact_support_cases": 256,
+  "scope": "Algebraic identities and finite support equivalence. Global contact validity follows from the separate log-convexity and state-kernel argument; no NPA admission or component connectivity is inferred from this replay."
+}

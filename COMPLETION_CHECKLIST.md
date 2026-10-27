@@ -60,13 +60,21 @@
 - [x] Prove the coarse Q1+AB support excess bound W tau^2 and the obstruction to fixed finite witness dictionaries, even after mixing with the critical triangle.
 - [x] Show that full CHSH-stabilizer averaging destroys strict gaps on both the objective and witness sides; state the valid fixed-witness partial-averaging condition.
 - [x] Construct an exact positive 1+AB certificate tying a nonlocal quantum contact with one deterministic vertex; prove a continuing six-dimensional family of positive-probability common radial endpoints and exact recovery of each segment face. This refutes the dimension-at-most-five connectivity shortcut, not the Motzkin coverage conjecture.
-- [ ] Prove that every excluded component modulo all relabelings joins the Motzkin collar, or give an exact counterexample within that quotient. Eight equivalent CHSH-sector copies are not a counterexample.
+- [x] Route every support-gap component to strict quantum advantage by positive cost contraction, with a fixed witness and an explicit retained gap margin.
+- [x] Independently verify the preserved finite-contact determinant and positive complementary block; use log-convexity to prove that the six complete contact equations and nonnegative source coefficients suffice for global quantum validity.
+- [x] Route every excluded component to an excluded vertex of its fixed-contact source polytope, without a generic tangent-rank assumption. The vertex is C1/C2 and exposes exactly one nonlocal contact with two or three deterministic ties.
+- [x] Prove that both sides of the recovered shared segment-face wall are excluded near the symmetric seed; prove uniform local passage after party exchange, using the complete quantum and 1+AB normal intervals.
+- [x] Classify all twelve minimal balanced angular circuits: eight explicit polynomial SOS and four non-SOS projective Motzkin reflections. Preserve the distinction between the scalar determinant and universal NPA certificates.
+- [x] Upgrade generic C2 nonadmission to universal exclusion for every genuine finite C2 source, including maximal and partial entanglement, unequal angles and n=0; prove strict nonvanishing of all kernel and forbidden-map factors on the complete native domain.
+- [x] Prove finite C2 contractible with an explicit source-domain-preserving retraction to the shared n=0 face. Combining it with full exclusion gives strict-gap paths throughout C2.
+- [x] Audit the global analytic contact graphs over positive source weights and literal-third-omission openings: the finite C1/C2 source union is path connected modulo physical relabelings. This is a source-domain theorem; full C1 exclusion remains separate.
+- [ ] Prove that every excluded C1/C2 representative joins the Motzkin collar through the full gap domain modulo physical relabelings, including exceptional source loci and all shared-face incidences. The global routing theorem reduces the original all-component assertion to this obligation; the local wall theorem does not complete it.
 - [ ] Identify which loss-of-PSD branches approach the verified Motzkin scaling regime and which need a different obstruction.
 - [ ] Establish a quantitative level/error relation if sought; the current divergence theorem does not provide one.
 
 ## Full classification after symmetry reduction
 
-- [ ] Resolve all exceptional C1/C2 loci where the selected forbidden-word minors vanish, including source and contact degenerations.
+- [ ] Resolve the finite C1 kernel-chart exception and reduced forbidden-determinant zero locus, or prove that all excluded C1 components can avoid admitted exceptions and reach the shared C2 face. Full finite C2 exclusion is complete; singular or commuting limits are separate from this native-domain theorem.
 - [ ] Check each permitted equality and non-exposed boundary stratum; do not discard them by assuming strict full alternation.
 - [ ] At each larger word list, supply exact supported-slack admission or exact nonmembership. Store the representative, inverse symmetry map, quantum bound, full coefficient identity and positivity proof.
 - [ ] Determine the resulting supporting normal cones, rather than assigning an ambiguous level to a behavior alone.

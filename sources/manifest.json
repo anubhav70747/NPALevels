@@ -154,16 +154,61 @@
       "sha256": "c8fc0af0b94e2c891fada63a66349f5da24edb334c02bbfe577d3b3738f5f6b1",
       "bytes": 8602,
       "upstream": "https://arxiv.org/abs/2607.14569"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/latex/chapters/04_geometry.tex",
+      "destination": "sources/q222/latex/chapters/04_geometry.tex",
+      "original_sha256": "dc29df377bc77beb209855d84f05f392ea7a160f5044436390e0f1c586697184",
+      "transformations": [],
+      "sha256": "dc29df377bc77beb209855d84f05f392ea7a160f5044436390e0f1c586697184",
+      "bytes": 27639,
+      "source_revision": "d01e5e089c5b4ad73667e922eec5b62b5d82485d",
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/d01e5e089c5b4ad73667e922eec5b62b5d82485d/latex/chapters/04_geometry.tex"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/latex/chapters/05_entry.tex",
+      "destination": "sources/q222/latex/chapters/05_entry.tex",
+      "original_sha256": "700a61b47e27d45b7db77ea9f03de394b83333ca8f3f4a43869f8bca26d7cbf3",
+      "transformations": [],
+      "sha256": "700a61b47e27d45b7db77ea9f03de394b83333ca8f3f4a43869f8bca26d7cbf3",
+      "bytes": 12922,
+      "source_revision": "d01e5e089c5b4ad73667e922eec5b62b5d82485d",
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/d01e5e089c5b4ad73667e922eec5b62b5d82485d/latex/chapters/05_entry.tex"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/latex/certificates/c2_short.tex",
+      "destination": "sources/q222/latex/certificates/c2_stationary_source_excerpt.tex",
+      "original_sha256": "7fb22ff3c61e1e124b512e02bdb4cd3bf65ebed30d930711aea604ed0cca93db",
+      "transformations": [
+        "Extract original lines 263-299 inclusive; no text edits"
+      ],
+      "sha256": "1ce314fb69b2d000578b9c19377d97bded214e7e3d0679d03a0016874c8c89d7",
+      "bytes": 1471,
+      "source_revision": "d01e5e089c5b4ad73667e922eec5b62b5d82485d",
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/d01e5e089c5b4ad73667e922eec5b62b5d82485d/latex/certificates/c2_short.tex"
     }
   ],
   "external_theorems": [
     {
       "arxiv": "2608.23073v1",
       "title": "Addendum to Factoring non-negative operator valued trigonometric polynomials in two variables",
-      "authors": ["Michael Dritschel", "Igor Klep", "Scott McCullough", "Jurij Volcic"],
+      "authors": [
+        "Michael Dritschel",
+        "Igor Klep",
+        "Scott McCullough",
+        "Jurij Volcic"
+      ],
       "submitted": "2026-08-24",
       "primary_url": "https://arxiv.org/html/2608.23073v1",
-      "inspected": ["Theorem 1.1", "Theorem 3.1", "Corollary 4.1", "Corollary 4.2 and its proof"],
+      "inspected": [
+        "Theorem 1.1",
+        "Theorem 3.1",
+        "Corollary 4.1",
+        "Corollary 4.2 and its proof"
+      ],
       "application": "Finite standard NPA support depth for every fixed full (2,2,2) Bell functional; no uniform degree bound.",
       "local_application": "analysis/depth_boundary/DEPTH_AND_BOUNDARIES.md",
       "local_scope_audit": "analysis/depth_boundary/SOURCES.md",

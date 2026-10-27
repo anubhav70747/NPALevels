@@ -209,3 +209,28 @@ py -3.14 -B analysis/organizing_principles/check_local_tie.py --verify
 ```
 
 The source audit additionally inspected the exact hypotheses of the recent face theorems. Those sources reduce positive-probability faces to a pure contact and local ties; the new certificate independently establishes a concrete admitted family. Neither result proves global connectivity. In particular, the six-dimensional family refutes the dimension-at-most-five shortcut without proving that it separates the excluded domain globally.
+
+## Global source routing, local mixed-face passage and full C2 exclusion
+
+The next 28 October pass restores the original contact-positivity input explicitly. Chapters `04_geometry.tex` and `05_entry.tex` are preserved from Q222 revision `d01e5e089c5b4ad73667e922eec5b62b5d82485d`, with file-specific hashes and an unchanged original collection baseline in the manifest. The C2 stationary-source excerpt preserves original lines 263–299 of `c2_short.tex`. These imports are used only for the stated physical contact and source-domain results; no later finite-lift assertion is substituted for an NPA certificate.
+
+The generic determinant replay independently reconstructs the actual four-by-four Bell operator and its cleared polynomial parent, verifies its complete determinant and all eight nonnegative outer coefficients, proves the positive complementary block identity, and checks all 256 source-support patterns. The analytical contact proof then uses stationary log-convexity and the positive block to establish global physical positivity. A normalized fixed-contact polytope has six homogeneous contact equations; selecting a vertex with a negative moment witness yields the global C1/C2 representative route. The preceding cost contraction covers local-only quantum maxima with a quantitative retained witness margin. Neither route assumes generic tangent rank or positive probabilities at the selected contact.
+
+At the shared segment-face seed, the exact complete normal intervals have half-widths approximately 0.755170506849065 for 1+AB and 5.70219593793820 for Q. Their strict separation and nonzero transverse slope give a gap on both sides of the wall. Simple endpoint eigenvalues and complete normal-plane persistence make the directional derivatives continuous on a wall patch. Separate Dini convergence for the two concave radial thresholds proves a uniform gap neighborhood. Party exchange identifies its two sides. [Independent review](analysis/connectivity_mixed_faces/LOCAL_AND_CIRCUIT_REVIEW.md) checks these analytical implications and the twelve-circuit angular classification; the determinant circuits are not universal-word certificates.
+
+The C2 calculation reconstructs every possible nine-word Gram from the seven deterministic-zero roots and a three-dimensional physical contact kernel. Six necessary forbidden-word equations have an exactly factored determinant strictly positive on all EN15 contacts, including n=0. The [independent C2 review](analysis/connectivity_mixed_faces/C2_FRONTIER_REVIEW.md) checks the universal rows, kernel coverage, native substitution and strict signs. This closes finite C2 nonadmission beyond its earlier generic scope. The domain contraction uses the original n>=0 constraint, an affine numerator in a², and explicit interval fibres; its paths keep every strict source gap. The source graph and literal-boundary arguments establish connectedness of the whole C1/C2 union separately from exclusion.
+
+The [converse and contraction review](analysis/connectivity_mixed_faces/C2_DOMAIN_REVIEW.md) also checks the stronger implication required for those paths: the preserved rational coefficients are positive under EN15 plus n>=0, and all four raw state derivatives and both independent angular derivatives vanish identically. The six exact residuals and the positive denominator/numerator rewrites passed a separate approximately eight-second replay. Thus every reconstructed path point is quantum-valid by SG7; physicality is not inferred merely from native inequalities or original-source necessity.
+
+New exact replays passed, with no SDP solves or numerical sweeps:
+
+```
+py -3.14 -B analysis/connectivity_mixed_faces/check_contact_determinant.py --verify
+py -3.14 -B analysis/connectivity_mixed_faces/check_local_topology.py --verify
+py -3.14 -B analysis/connectivity_mixed_faces/angular_circuits_check.py
+py -3.14 -B analysis/connectivity_mixed_faces/check_c2_native_frontier.py
+py -3.14 -B analysis/connectivity_mixed_faces/check_c2_domain.py
+py -3.14 -B analysis/connectivity_mixed_faces/check_c2_source_converse.py
+```
+
+The C2 general-contact determinant was derived exactly by the saved symbolic generator; its fast replay verifies the native factorization and word table. The analogous general C1 factorization was stopped before completion and is explicitly recorded as unfinished. Its four-by-four determinant and chart exceptions are not marked verified source-wide. Universal connection to Motzkin remains open at that C1 implication; the asymmetric transition and minimum-level map also remain open.
