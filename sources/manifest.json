@@ -1,0 +1,161 @@
+{
+  "collected_utc": "2026-10-27T16:39:47.575625+00:00",
+  "npalevels_initial_commit": "a7d3754",
+  "q222_revision": "1b293832ffeff46ebbee834b89554481d70f544e",
+  "files": [
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/latex/chapters/02_model.tex",
+      "destination": "sources/q222/latex/chapters/02_model.tex",
+      "original_sha256": "4349a886e16f00399bbe8970ac0db23e5fb43770f7c29512efed72952bcfab86",
+      "transformations": [],
+      "sha256": "4349a886e16f00399bbe8970ac0db23e5fb43770f7c29512efed72952bcfab86",
+      "bytes": 9776,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/latex/chapters/02_model.tex"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/independent-review/C1_NPA_OBSTRUCTION.md",
+      "destination": "sources/q222/independent-review/C1_NPA_OBSTRUCTION.md",
+      "original_sha256": "8994b2467705ee1dee84dca63f97f385285ff061dfdf3b0d0b676a215679aef8",
+      "transformations": [],
+      "sha256": "8994b2467705ee1dee84dca63f97f385285ff061dfdf3b0d0b676a215679aef8",
+      "bytes": 9548,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/independent-review/C1_NPA_OBSTRUCTION.md"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/independent-review/C2_MAXIMAL_NPA_OBSTRUCTION.md",
+      "destination": "sources/q222/independent-review/C2_MAXIMAL_NPA_OBSTRUCTION.md",
+      "original_sha256": "f8e2112e69dc78e81e68eb2e7ac5dc9877c106cb5041d9428079134d1c4fa789",
+      "transformations": [],
+      "sha256": "f8e2112e69dc78e81e68eb2e7ac5dc9877c106cb5041d9428079134d1c4fa789",
+      "bytes": 4918,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/independent-review/C2_MAXIMAL_NPA_OBSTRUCTION.md"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/independent-review/C2_NONMAXIMAL_NPA_OBSTRUCTION.md",
+      "destination": "sources/q222/independent-review/C2_NONMAXIMAL_NPA_OBSTRUCTION.md",
+      "original_sha256": "2ba08b41059f84558397aef5a57cff40d59e37cb78f689a0c7f83358e8b67256",
+      "transformations": [],
+      "sha256": "2ba08b41059f84558397aef5a57cff40d59e37cb78f689a0c7f83358e8b67256",
+      "bytes": 6126,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/independent-review/C2_NONMAXIMAL_NPA_OBSTRUCTION.md"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/independent-review/checks/c1_npa_separator.py",
+      "destination": "sources/q222/independent-review/checks/c1_npa_separator.py",
+      "original_sha256": "246e44ca698679a625a71f8cd1ae2a2f9661049b95d1000041c6accdc83531b3",
+      "transformations": [],
+      "sha256": "246e44ca698679a625a71f8cd1ae2a2f9661049b95d1000041c6accdc83531b3",
+      "bytes": 6744,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/independent-review/checks/c1_npa_separator.py"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/independent-review/checks/c1_npa_separator.json",
+      "destination": "sources/q222/independent-review/checks/c1_npa_separator.json",
+      "original_sha256": "1a87b104bf4823f81be82f2990bd9a3f9cee7a375ad2cc977795e8ddb67a78ab",
+      "transformations": [],
+      "sha256": "1a87b104bf4823f81be82f2990bd9a3f9cee7a375ad2cc977795e8ddb67a78ab",
+      "bytes": 13585,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/independent-review/checks/c1_npa_separator.json"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/independent-review/checks/c1_generic_seed.py",
+      "destination": "sources/q222/independent-review/checks/c1_generic_seed.py",
+      "original_sha256": "fe286ad75d1996d45d3e32ede922b02a824de75f36fe589eb538871bea277f09",
+      "transformations": [],
+      "sha256": "fe286ad75d1996d45d3e32ede922b02a824de75f36fe589eb538871bea277f09",
+      "bytes": 7908,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/independent-review/checks/c1_generic_seed.py"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/independent-review/checks/c1_generic_seed.json",
+      "destination": "sources/q222/independent-review/checks/c1_generic_seed.json",
+      "original_sha256": "0ff110a85e04f0a14c1d750f7af5460bba3fa49d605df01e6bdb75f3d36b344b",
+      "transformations": [],
+      "sha256": "0ff110a85e04f0a14c1d750f7af5460bba3fa49d605df01e6bdb75f3d36b344b",
+      "bytes": 3264,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/independent-review/checks/c1_generic_seed.json"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/independent-review/checks/c2_maximal_npa.py",
+      "destination": "sources/q222/independent-review/checks/c2_maximal_npa.py",
+      "original_sha256": "bd8779fd59ba3f170874e4ac510d6060aa3c06a4c99075b0ffddfc9752a0fc07",
+      "transformations": [],
+      "sha256": "bd8779fd59ba3f170874e4ac510d6060aa3c06a4c99075b0ffddfc9752a0fc07",
+      "bytes": 7291,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/independent-review/checks/c2_maximal_npa.py"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/independent-review/checks/c2_maximal_npa.json",
+      "destination": "sources/q222/independent-review/checks/c2_maximal_npa.json",
+      "original_sha256": "c9c62ba8009142d1b675ca20bf48cb0f264c7a012d88b0e5b5d95ed9e227e7fe",
+      "transformations": [],
+      "sha256": "c9c62ba8009142d1b675ca20bf48cb0f264c7a012d88b0e5b5d95ed9e227e7fe",
+      "bytes": 4732,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/independent-review/checks/c2_maximal_npa.json"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/independent-review/checks/c2_nonmaximal_npa_obstruction.py",
+      "destination": "sources/q222/independent-review/checks/c2_nonmaximal_npa_obstruction.py",
+      "original_sha256": "c47eb0007569a160075dd30a9a0b30caa32f8d065570cf5e1e303d9a5565db2c",
+      "transformations": [],
+      "sha256": "c47eb0007569a160075dd30a9a0b30caa32f8d065570cf5e1e303d9a5565db2c",
+      "bytes": 7565,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/independent-review/checks/c2_nonmaximal_npa_obstruction.py"
+    },
+    {
+      "collection": "q222",
+      "source_path": "q222/analytical-paper-2026-10-22/github-q222-finite-sdp/independent-review/checks/c2_nonmaximal_npa_obstruction.json",
+      "destination": "sources/q222/independent-review/checks/c2_nonmaximal_npa_obstruction.json",
+      "original_sha256": "d0eaa45f3d8aa3b32b95110322ab62d7972650ddc03085209d7953e7fe3fe404",
+      "transformations": [],
+      "sha256": "d0eaa45f3d8aa3b32b95110322ab62d7972650ddc03085209d7953e7fe3fe404",
+      "bytes": 3629,
+      "upstream": "https://github.com/anubhav70747/q222-finite-sdp/blob/1b293832ffeff46ebbee834b89554481d70f544e/independent-review/checks/c2_nonmaximal_npa_obstruction.json"
+    },
+    {
+      "collection": "npa-prl",
+      "source_path": "npa-prl/current/sources/main.tex",
+      "destination": "sources/npa-prl/main.tex",
+      "original_sha256": "2177ec4c593047b8f4744efbd0dbf28bf374259408b72fcca20117ad94da606b",
+      "transformations": [
+        "Omitted the nonmathematical supplementary disclosure input; proof and bibliography unchanged."
+      ],
+      "sha256": "5ceb1a4c41cf6df60bdc043143140e36cb988fecf5530d97210220ad525931d7",
+      "bytes": 30206,
+      "upstream": "https://arxiv.org/abs/2607.14569"
+    },
+    {
+      "collection": "npa-prl",
+      "source_path": "npa-prl/current/sources/supplement.tex",
+      "destination": "sources/npa-prl/supplement.tex",
+      "original_sha256": "f54cc00aa3f2b9fcad44e2377b06c491d03a1b5f0a78bde9b8aa4e7b29aac0e1",
+      "transformations": [],
+      "sha256": "f54cc00aa3f2b9fcad44e2377b06c491d03a1b5f0a78bde9b8aa4e7b29aac0e1",
+      "bytes": 70837,
+      "upstream": "https://arxiv.org/abs/2607.14569"
+    },
+    {
+      "collection": "npa-prl",
+      "source_path": "npa-prl/current/sources/references-main.tex",
+      "destination": "sources/npa-prl/references-main.tex",
+      "original_sha256": "c8fc0af0b94e2c891fada63a66349f5da24edb334c02bbfe577d3b3738f5f6b1",
+      "transformations": [],
+      "sha256": "c8fc0af0b94e2c891fada63a66349f5da24edb334c02bbfe577d3b3738f5f6b1",
+      "bytes": 8602,
+      "upstream": "https://arxiv.org/abs/2607.14569"
+    }
+  ],
+  "scope": "Selected original proof sources and checker dependencies, not a full project archive.",
+  "verification_note": "Hashes establish file identity, not theorem validity. See VERIFICATION.md."
+}

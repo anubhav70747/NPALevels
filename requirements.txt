@@ -1,0 +1,5 @@
+# Only numerical diagnostics and symbolic tests need these packages.
+# Exact rational symmetry/word/chart tools use the Python standard library.
+numpy
+sympy
+cvxpy

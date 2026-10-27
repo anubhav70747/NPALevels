@@ -1,0 +1,255 @@
+\documentclass[aps,prl,twocolumn,10pt,superscriptaddress,nofootinbib,longbibliography,nobalancelastpage]{revtex4-2}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\emergencystretch=2em
+\newtheorem{theorem}{Theorem}
+\newcommand{\Q}{\mathcal Q}
+\newcommand{\id}{\mathbf 1}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{No Finite NPA Level Characterizes the Complete Quantum Set in the Simplest Bell Scenario}
+\author{Anubhav Chaturvedi}
+\affiliation{Division of Quantum Optics and Information, Institute of Theoretical Physics and Astrophysics, Faculty of Mathematics, Physics and Informatics, University of Gda\'nsk, 80-308 Gda\'nsk, Poland}
+\date{Revised September 15, 2026}
+\begin{abstract}
+% BEGIN LOCKED: ABS
+Characterizing the set of correlations attainable within quantum theory is remarkably intricate. The Navascués–Pironio–Acín (NPA) hierarchy provides increasingly tighter semidefinite outer approximations, while its dual programs give sum-of-squares certificates that can establish exact quantum bounds for Bell inequalities and yield self-testing relations. We show that no finite level of the NPA hierarchy can exactly characterize the set of quantum correlations, even in the simplest Bell scenario. For the symmetric doubly tilted CHSH inequality, the maximal quantum violation vanishes cubically as the tilting parameter approaches its critical value, while the error of every fixed NPA level relative to this violation diverges. We construct a family of two-qubit strategies for which the gap between the exact quantum bound and the attained Bell value, divided by the quantum violation, tends to the Motzkin polynomial in rescaled measurement angles. If the relative error remained bounded, the fixed-level NPA certificates would yield a sum-of-squares representation of this limiting polynomial plus a nonnegative constant, which is impossible.
+% END LOCKED: ABS
+\end{abstract}
+\maketitle
+
+% BEGIN LOCKED: I01
+Which correlations between distant measurements are compatible with quantum theory? The Navascu\'es--Pironio--Ac\'in (NPA) hierarchy addresses this question through a sequence of semidefinite programs~\cite{NPA2007,NPA2008,Tavakoli2024}. For a Bell inequality, successive levels give tighter upper bounds on its maximal quantum value, with dual sum-of-squares decompositions that can certify the exact bound and furnish the operator relations underlying self-testing proofs~\cite{BampsPironio2015,SupicBowles2020}. The hierarchy converges asymptotically, but this does not determine whether some finite level already recovers the entire quantum set.
+% END LOCKED: I01
+
+% BEGIN REVISION: I02
+The simplest Bell scenario has two parties, each choosing between two binary measurements, yet much of its quantum boundary is already captured remarkably early in the NPA hierarchy. Level $1$ gives the quantum CHSH bound $2\sqrt2$~\cite{CHSH1969,Tsirelson1980,NPA2007}, while level $1+AB$ gives the exact quantum bound of every one-sided tilted CHSH inequality~\cite{AMP2012,BampsPironio2015}. Even the entire four-correlator projection admits an exact finite semidefinite description~\cite{Landau1988,LeEtAl2023}. Retaining the marginal averages gives the full quantum set, whose boundary has been studied through analytical extremality criteria~\cite{MikosKaniewski2023,Ishizaka2025} and a characterization of its nonlocal extreme points~\cite{BarizienBancal2025}. These geometric descriptions leave open whether finitely many NPA constraints recover the same set. Tilting both parties tests this question beyond the one-sided family, since the Bell expression then depends on both marginal averages.
+% END REVISION: I02
+
+% BEGIN REVISION: I03
+Doubly tilted CHSH inequalities arise naturally from CHSH tests with inefficient detectors on both sides, after assigning no-click events to one of the existing outcomes~\cite{MiklinEtAl2022,GigenaEtAl2025}. In earlier work~\cite{GigenaEtAl2025}, we derived their exact quantum bounds and self-tested the optimal strategies using Jordan's lemma and Gr\"obner-basis elimination. These exact bounds identify a critical tilt at which the quantum and local bounds coincide. Our earlier numerical calculations found a level-$10$ NPA bound above the exact quantum value near this tilt~\cite{GigenaEtAl2025}. In this Letter, we show that this separation persists at every fixed level: for the symmetric doubly tilted family, the NPA error divided by the quantum violation diverges as the critical tilt is approached, while the violation itself vanishes cubically.
+% END REVISION: I03
+
+% BEGIN REVISION: Q01
+\emph{Correlations and quantum models.} Alice and Bob receive settings $x,y\in\{0,1\}$ and record outcomes $a,b\in\{\pm1\}$. Their correlations are conditional distributions $p(a,b|x,y)$ satisfying the no-signaling constraints: the marginals $p_A(a|x)=\sum_b p(a,b|x,y)$ and $p_B(b|y)=\sum_a p(a,b|x,y)$ are independent of the distant setting. Such a correlation is specified by four marginal averages and four joint correlators
+\begin{align}
+\langle A_x\rangle&=\sum_a a\,p_A(a|x),&
+\langle B_y\rangle&=\sum_b b\,p_B(b|y),\nonumber\\
+\langle A_xB_y\rangle&=\sum_{a,b}ab\,p(a,b|x,y).
+\label{eq:correlators}
+\end{align}
+These eight numbers determine every no-signaling $p(a,b|x,y)$~\cite{BrunnerEtAl2014}.
+% END REVISION: Q01
+
+% BEGIN REVISION: Q02
+A correlation is quantum if its probabilities arise from local measurements on a shared quantum state. In the tensor-product model, $p(a,b|x,y)=\Tr[\rho(E_{a|x}\otimes F_{b|y})]$, where $\rho$ is a bipartite state and $E_{a|x},F_{b|y}$ are local measurement effects. Alternatively, the effects may act on a common Hilbert space, with $p(a,b|x,y)=\Tr[\rho E_{a|x}F_{b|y}]$ and $[E_{a|x},F_{b|y}]=0$. A common local Naimark dilation permits projective measurements~\cite{Naimark1940}, and Jordan's lemma reduces finite-dimensional strategies to mixtures of two-qubit correlations~\cite{Masanes2005,PanwarPandyaWiesniak2022}. Their convex hull is compact and equals both quantum-model sets~\cite{Masanes2005,Fritz2012}. We denote this common set by $\Q$; SM Secs.~S1 and S2.1 give the compactness and model-identification arguments~\cite{Supplement}. Maximizing a Bell functional over $\Q$ therefore reduces to maximizing over two-qubit strategies. The NPA hierarchy converges to $\Q$ as its level tends to infinity~\cite{NPA2008}.
+% END REVISION: Q02
+
+\emph{The Bell inequality and its NPA bounds.} Let us consider the symmetric doubly tilted CHSH expression
+\begin{align}
+\beta_\alpha(p)={}&\langle A_0B_0\rangle+\langle A_0B_1\rangle
++\langle A_1B_0\rangle-\langle A_1B_1\rangle\nonumber\\
+&+\alpha(\langle A_0\rangle+\langle B_0\rangle),\qquad 0\leq\alpha<1.
+\label{eq:bell}
+\end{align}
+Its local bound is $\omega_{\rm L}(\alpha)=2+2\alpha$. We denote its maximal quantum value by $\omega_{\rm Q}(\alpha)=\max_{p\in\Q}\beta_\alpha(p)$ and its quantum violation by $\Delta_\alpha=\omega_{\rm Q}(\alpha)-\omega_{\rm L}(\alpha)$. For $\alpha=2(1-\eta)/\eta$, the same strategies maximize the CHSH violation with equal independent detection efficiencies $\eta$ and every no-click assigned $+1$~\cite{GigenaEtAl2025}. The limit $\alpha\uparrow1$ approaches the critical efficiency $\eta^*=2/3$ from above~\cite{Eberhard1993}.
+
+To express the same optimization in operator form, use the projective measurements supplied by the dilation above. Their differences $A_x=E_{+1|x}-E_{-1|x}$ and $B_y=F_{+1|y}-F_{-1|y}$ are self-adjoint, with $A_x^2=B_y^2=\id$ and $[A_x,B_y]=0$. Replacing the averages in Eq.~\eqref{eq:bell} by the corresponding products defines the formal polynomial
+\[
+h_\alpha=A_0B_0+A_0B_1+A_1B_0-A_1B_1+\alpha(A_0+B_0).
+\]
+Substituting a strategy's measurement operators into $h_\alpha$ gives its Bell operator $H_\alpha$; the Bell value is its expectation $\beta_\alpha(p)=\Tr(\rho H_\alpha)$. Since both models give the same correlations here, we use the commuting-operator notation $A_xB_y$ throughout; in a tensor-product realization it denotes $A_x\otimes B_y$.
+
+The NPA hierarchy bounds this Bell value through expectations of products of observables. We call such a product $w$ a word and its expectation $\langle w\rangle$ a moment. For a finite list $w_1,\ldots,w_N$, its moment matrix has entries $\Gamma_{ij}=\langle w_i^*w_j\rangle$, where $*$ denotes the adjoint. For any coefficients $c_j$, the operator $f=\sum_jc_jw_j$ satisfies
+\[
+\bm c^*\Gamma\bm c=\langle f^*f\rangle\geq0.
+\]
+Thus every quantum realization supplies a positive semidefinite moment matrix. NPA imposes this necessary condition on candidate moments, without requiring an explicit realizing state and measurements.
+
+At level $L$, let $\mathcal W_L$ contain the identity and all words of length at most $L$. We remove repeated representations by cancelling adjacent equal observables and commuting Alice's symbols past Bob's. For example, $\mathcal W_1=(\id,A_0,A_1,B_0,B_1)$; level $1+AB$ adds the four products $A_xB_y$. The matrix entries involve products of two such words, so they require moments through length $2L$. NPA replaces each of these unknown expectations $\langle w\rangle$ by an optimization variable $y_w$. Words that reduce to the same product share the same variable. Thus $y_{\id}=1$, while $y_{w^*}=\overline{y_w}$ preserves the adjoint relation.
+
+To evaluate a polynomial from these variables, we replace each word by its assigned value: $\ell(\sum_wc_ww)=\sum_wc_wy_w$. We call this linear rule the truncated moment functional. In particular, $\ell(h_\alpha)$ is the candidate Bell value. We maximize it subject to moment-matrix positivity to obtain an upper bound on the quantum maximum:
+\begin{equation}
+\begin{aligned}
+\omega_{\rm NPA}^{(L)}(\alpha)={}&\max_{\ell}\bigl\{\ell(h_\alpha):\ell(\id)=1,\\
+&\quad\bigl[\ell(w_i^*w_j)\bigr]_{w_i,w_j\in\mathcal W_L}\succeq0\bigr\}.
+\end{aligned}
+\label{eq:level}
+\end{equation}
+Every quantum strategy supplies feasible moments, so $\omega_{\rm NPA}^{(L)}\geq\omega_{\rm Q}$. The maximum is attained: positivity and unit diagonal bound every matrix entry, and the constraints are closed, making the finite-dimensional feasible set compact. At level $1$ the candidate moments need not yet define nonnegative joint probabilities; level $2$ suffices for that extraction below.
+
+Near the critical tilt the quantum and local values approach one another. The relevant question is whether a fixed NPA level resolves their shrinking separation. Our main result shows that its error exceeds every constant multiple of the scale $(1-\alpha)^3$.
+\begin{theorem}\label{thm:main}
+For every fixed finite $L\geq1$,
+\begin{equation}
+\lim_{\alpha\uparrow1}\frac{\omega_{\rm NPA}^{(L)}(\alpha)-\omega_{\rm Q}(\alpha)}{(1-\alpha)^3}=+\infty.
+\label{eq:divergence}
+\end{equation}
+Every standard NPA relaxation defined by a fixed finite list of words in the measurement projectors admits a set of correlations strictly containing $\Q$.
+\end{theorem}
+
+An NPA upper bound comes with a sum-of-squares certificate: on any quantum strategy, the difference between the bound and the Bell value is a sum of squared norms. We construct strategies whose gap from the quantum bound, divided by the vanishing quantum violation, tends to the Motzkin polynomial. This polynomial is nonnegative~\cite{Motzkin1967}, but even adding a nonnegative constant cannot make it a sum of polynomial squares. An NPA error bounded by a constant multiple of the quantum violation would force such a representation. To derive the contradiction, we first calculate the quantum violation and then construct the strategies on that scale.
+
+\emph{The cubic quantum violation.} Theorem~1 of Ref.~\cite{GigenaEtAl2025} gives $\omega_{\rm Q}(\alpha)$ as the largest root of a quartic $F(\lambda,\alpha)$, where $\lambda$ is the Bell-eigenvalue variable (SM Sec.~S4). We find the gap above the local bound by comparing the polynomial at these two Bell values. Setting $T=1-\alpha$, direct substitution gives
+\[
+\begin{gathered}
+F(4-2T,1-T)=-4T^3(3-T)^4,\\
+F(\omega_{\rm Q}(1-T),1-T)=0,\\
+\left.\frac{\partial F}{\partial\lambda}\right|_{(\lambda,\alpha)=(4,1)}=243.
+\end{gathered}
+\]
+Thus, at fixed tilt $1-T$, the polynomial changes from a small negative number to zero as $\lambda$ moves from the local bound $4-2T$ to the quantum bound. The distance between these values is precisely the quantum violation $\Delta_{1-T}$.
+
+At $T=0$ both bounds equal $4$. Changing the tilt by $T$ changes any Bell value by at most $2T$, because each marginal average has magnitude at most one. Both endpoints therefore remain within $O(T)$ of $4$, and the derivative throughout the interval is $243+O(T)$. The mean-value theorem equates the change in the polynomial to its slope at an intermediate point times the distance between the bounds:
+\[
+[243+O(T)]\Delta_{1-T}=4T^3(3-T)^4.
+\]
+The leading coefficient on the right is $4\cdot3^4=324$. Dividing by the limiting slope gives $324/243=4/3$, hence $\Delta_{1-T}=\tfrac43T^3+O(T^4)$. Adding the local bound yields
+\begin{equation}
+\omega_{\rm Q}(1-T)=4-2T+\tfrac43T^3+O(T^4).
+\label{eq:quantum-series}
+\end{equation}
+The quantum violation therefore vanishes cubically. The optimal-angle formula in Ref.~\cite{GigenaEtAl2025} gives $\theta_*(T)\sim2\sqrt T$ for the angle between each party's observables, while the optimal state approaches a product state (SM Sec.~S4). These angle and violation scales determine the family of strategies used below.
+
+\emph{Constructing the Motzkin limit.} Writing $T=t^2$ makes the angles of order $t$ and the quantum violation of order $t^6$. With $X,Z$ the Pauli matrices, take
+\begin{align}
+A_0&=Z,& A_1&=\cos(tu)Z+\sin(tu)X,\nonumber\\
+B_0&=Z,& B_1&=\cos(tv)Z+\sin(tv)X,
+\label{eq:scaled-observables}
+\end{align}
+and write the resulting Bell operator as $H(t;u,v)$: it is $h_\alpha$ evaluated at $\alpha=1-t^2$ and on these measurements. Here $u,v\in\mathbb R$ vary independently; we write $H(t)$ when their values are fixed. An NPA certificate holds for every such pair, so we seek states with an order-$t^6$ gap throughout this two-parameter family.
+
+Substituting the measurements gives the operator explicitly. With $c_u=\cos(tu)$, $s_u=\sin(tu)$, and similarly for $v$, and writing $ZI=Z\otimes I$, etc.,
+\[
+\begin{aligned}
+H(t)={}&(1-t^2)(ZI+IZ)\\
+&+[2-(1-c_u)(1-c_v)]ZZ\\
+&+(1-c_u)s_vZX+(1-c_v)s_uXZ-s_us_vXX.
+\end{aligned}
+\]
+At $t=0$ this becomes $2ZZ+ZI+IZ=\operatorname{diag}(4,-2,-2,0)$ in the computational basis. Its top eigenvector is $|00\rangle$, with eigenvalue gaps $6,6,4$ to the other basis states. For small $t$, the off-diagonal entries couple it to the other basis states:
+\[
+\begin{aligned}
+\langle01|H(t;u,v)|00\rangle&=\tfrac12t^3u^2v+O(t^5),\\
+\langle10|H(t;u,v)|00\rangle&=\tfrac12t^3uv^2+O(t^5),\\
+\langle11|H(t;u,v)|00\rangle&=-t^2uv+O(t^4).
+\end{aligned}
+\]
+The last entry, for example, is exactly $-\sin(tu)\sin(tv)$. A real correction $z$ along $|11\rangle$ contributes $4z^2+2t^2uvz$ at leading order to the gap, so minimizing it requires $z$ of order $t^2$. The other two couplings similarly require corrections of order $t^3$.
+
+We therefore take a real vector $\zeta_t=(1,at^3,bt^3,ct^2)^T$ and determine its coefficients by minimizing the leading terms of the gap. Its expectation of $\omega_{\rm Q}(1-t^2)I-H(t;u,v)$ starts with $t^4(4c+uv)^2/4$. Since this term would dominate a gap of order $t^6$, it must vanish, giving $c=-uv/4$. The coefficient of $t^6$ is then
+\begin{align}
+&6\left(a-\frac{u^2v}{12}\right)^2+6\left(b-\frac{uv^2}{12}\right)^2\nonumber\\
+&\qquad+\frac43+\frac{u^4v^2+u^2v^4}{48}-\frac{u^2v^2}{4}.
+\label{eq:completion}
+\end{align}
+Choosing $a=u^2v/12$ and $b=uv^2/12$ cancels the two squares. Thus the required polynomial vector is
+\begin{equation}
+\xi_t=\left(1,\frac{t^3u^2v}{12},\frac{t^3uv^2}{12},-\frac{t^2uv}{4}\right)^T.
+\label{eq:xi}
+\end{equation}
+With these choices, expanding the sines and cosines gives the leading gap. Their remainders are uniform on each bounded range of $u,v$, yielding (SM Sec.~S6)
+\begin{equation}
+t^{-6}\langle\xi_t,[\omega_{\rm Q}(1-t^2)I-H(t)]\xi_t\rangle
+\xrightarrow[t\downarrow0]{}\tfrac43M(u/2,v/2),
+\label{eq:motzkin-limit}
+\end{equation}
+locally uniformly, where $M(U,V)=U^4V^2+U^2V^4-3U^2V^2+1$ is the Motzkin polynomial~\cite{Motzkin1967}. Its nonnegativity follows from the arithmetic--geometric mean inequality applied to $U^4V^2,U^2V^4,1$.
+
+For the physical state $\psi_t=\xi_t/\|\xi_t\|$, the Bell value is $\langle\psi_t,H(t)\psi_t\rangle$. Since $\|\xi_t\|^2=1+O(t^4)$ and $\Delta_{1-t^2}\sim4t^6/3$, normalization and division by the quantum violation turn Eq.~\eqref{eq:motzkin-limit} into
+\begin{equation}
+\frac{\omega_{\rm Q}(1-t^2)-\langle\psi_t,H(t)\psi_t\rangle}
+{\Delta_{1-t^2}}
+\xrightarrow[t\downarrow0]{}M(u/2,v/2).
+\label{eq:strategy-gap}
+\end{equation}
+If either angle is zero, the state is $|00\rangle$, its Bell value equals the local bound, and the ratio is exactly $1$. At $u=v=2$ it tends to zero, agreeing with the optimal angular scale. Although the optimal angles are equal, an NPA certificate must hold for independently varied angles. This will force a polynomial identity in both variables.
+
+\emph{From NPA certificates to polynomial squares.} To relate these gaps to the NPA error, we fix a level $L$ and write the words in $\mathcal W_L$ as $\bm w=(w_1,\ldots,w_N)^T$. An identity $b\id-h_\alpha=\sum_j f_j^*f_j$ certifies the upper bound $b$, because its expectation on any strategy gives $b-\beta_\alpha(p)\geq0$. Semidefinite duality supplies such an identity at the NPA optimum: the moment assignment $\ell(\id)=1$, $\ell(w)=0$ for all other reduced words gives the positive definite identity matrix, satisfying the strict-feasibility condition (SM Sec.~S5). Thus, after reducing words by the measurement relations,
+
+\begin{equation}
+\omega_{\rm NPA}^{(L)}(\alpha)\id-h_\alpha=\bm w^*Q\bm w,\qquad Q\succeq0.
+\label{eq:dual}
+\end{equation}
+Factoring $Q=C^*C$ gives $f_j=\sum_kC_{jk}w_k$. On a vector $\xi$, the right side is therefore $\sum_j\|f_j\xi\|^2$. The words remain fixed as $\alpha$ changes, but their coefficients $C_{jk}$ may vary. We need a uniform bound on these coefficients to control the limit of the evaluated squares.
+
+The required bound follows by comparing the coefficients of the identity word in Eq.~\eqref{eq:dual}. In $\sum_{i,j}Q_{ij}w_i^*w_j$, a product reduces to the identity exactly when $i=j$. Since $h_\alpha$ has no identity term, this comparison gives
+\begin{equation}
+\Tr Q=\sum_iQ_{ii}=\omega_{\rm NPA}^{(L)}(\alpha)\leq4+2\alpha\leq6.
+\label{eq:trace}
+\end{equation}
+The upper bound follows because each observable moment entering the Bell expression has modulus at most one. Taking $C=Q^{1/2}$, we have $\|C\|\leq\sqrt6$. In particular, every coefficient $C_{jk}$ stays bounded independently of the tilt.
+
+To obtain a contradiction, assume that Eq.~\eqref{eq:divergence} is false. This means that the nonnegative NPA error divided by $t^6$ stays bounded along some sequence $t_n\downarrow0$. We may choose a subsequence along which these ratios converge to a number $r\geq0$, and write
+\begin{equation}
+\omega_{\rm NPA}^{(L)}(1-t_n^2)-\omega_{\rm Q}(1-t_n^2)=r_nt_n^6,
+\qquad r_n\to r.
+\label{eq:bounded-excess}
+\end{equation}
+At each tilt $1-t_n^2$, let $Q_n$ be an optimal certificate and $C_n=Q_n^{1/2}$. Evaluating its factors on the measurements in Eq.~\eqref{eq:scaled-observables} and applying them to $\xi_t$ gives $N$ four-component vectors. Collecting them in $g_n(t,u,v)$ turns their sum of squared norms into $\|g_n\|^2$. The certificate at $t=t_n$ then gives
+\[
+\|g_n(t_n,u,v)\|^2
+=\langle\xi_{t_n},[\omega_{\rm NPA}^{(L)}(1-t_n^2)I-H(t_n)]\xi_{t_n}\rangle.
+\]
+The right side separates into the expectation in Eq.~\eqref{eq:motzkin-limit} and the NPA error times $\|\xi_{t_n}\|^2$. Dividing the factors by $t_n^3$ divides their squared norm by $t_n^6$, giving
+\begin{align}
+v_n(u,v)&=t_n^{-3}g_n(t_n,u,v),\nonumber\\
+\|v_n(u,v)\|^2&\longrightarrow\tfrac43M(u/2,v/2)+r.
+\label{eq:certificate-limit}
+\end{align}
+On every fixed bounded range of $u,v$, the difference between the two sides tends to zero uniformly. The additional term is $r$ because the error contribution is $r_n\|\xi_{t_n}\|^2$ and $\|\xi_{t_n}\|^2\to1$.
+
+To obtain polynomial squares from this limit, we approximate the trigonometric factors by Taylor polynomials before taking the limit. Their coefficients are polynomials in the angles: for example, $\sin(tu)=tu-t^3u^3/6+O(t^5)$ and $\cos(tu)=1-t^2u^2/2+O(t^4)$. For each fixed $n$, expanding $g_n(t,u,v)$ in $t$ while holding $C_n$ fixed gives coefficient vectors $g_{n,j}(u,v)$ at order $t^j$. Each component of $g_{n,j}$ has degree at most $j$: the Taylor coefficients of both the measurements and $\xi_t$ have angle degree no greater than their order in $t$. We approximate the rescaled vector $v_n$ by retaining terms through $t^3$:
+\begin{equation}
+p_n(u,v)=t_n^{-3}\sum_{j=0}^3t_n^jg_{n,j}(u,v).
+\label{eq:polynomial-factors}
+\end{equation}
+This truncation leaves terms of order $t_n^4$ or higher before rescaling. Their error bound can be chosen independently of $n$: the word list is fixed, and multiplying by $C_n$ enlarges the error by at most $\sqrt6$. After division by $t_n^3$, the error is therefore at most a constant times $t_n$, throughout any fixed bounded range of $u,v$. Thus $p_n-v_n\to0$, and replacing $v_n$ by $p_n$ leaves the squared-norm limit in Eq.~\eqref{eq:certificate-limit} unchanged.
+
+The same limit also bounds the values of these polynomial factors on $[-1,1]^2$: Eq.~\eqref{eq:certificate-limit} bounds $v_n$, and the approximation error tends to zero. Each component of $p_n$ has total degree at most three, and hence degree at most three in either variable. Its values at four fixed distinct choices of $u$ and four of $v$ therefore determine its coefficients. The interpolation formula expresses each coefficient as a fixed linear combination of these sixteen values. Hence the coefficients of every component of $p_n$ are bounded. There are only finitely many of them at fixed $L$, so we may choose a subsequence along which they all converge. Let $q(u,v)$ be the resulting polynomial vector. Coefficient convergence at fixed degree gives convergence on every bounded range of the variables, and Eq.~\eqref{eq:certificate-limit} becomes
+\begin{equation}
+\|q(u,v)\|^2=\tfrac43M(u/2,v/2)+r.
+\label{eq:polynomial-identity}
+\end{equation}
+For each component, $|q_j|^2=(\operatorname{Re}q_j)^2+(\operatorname{Im}q_j)^2$, so the left side is a sum of squares of real polynomials. SM Sec.~S8 gives the full estimates.
+
+Substituting $u=2U,v=2V$ in Eq.~\eqref{eq:polynomial-identity} and multiplying by $3/4$ would give $M(U,V)+c=\sum_j\varphi_j(U,V)^2$ for some real polynomials $\varphi_j$ and $c=3r/4\geq0$. Each $\varphi_j$ has degree at most three: squares of highest-degree homogeneous terms cannot cancel. On either axis the sum equals the constant $1+c$, so each restricted polynomial is bounded on the whole real line and is therefore constant. Apart from the constant, the remaining monomials of degree at most three contain both variables. Hence
+\[
+\varphi_j(U,V)=a_j+b_jUV+d_jU^2V+e_jUV^2.
+\]
+Only $(b_jUV)^2$ contributes to $U^2V^2$ in the sum, giving coefficient $\sum_jb_j^2\geq0$, whereas $M+c$ has coefficient $-3$. This contradiction proves Eq.~\eqref{eq:divergence}. SM Sec.~S7 gives an alternative proof of the monomial restriction using the Newton-polytope theorem~\cite{Reznick1978}.
+
+\emph{The complete correlation set.} Equation~\eqref{eq:divergence} gives feasible moments with Bell values above the quantum maximum. To obtain nonquantum correlations in an arbitrary finite NPA relaxation, these moments must give valid probabilities and satisfy that relaxation's moment constraints. Let its projector-word list be $\mathcal S$. Substituting $E_{a|x}=(\id+aA_x)/2$ and $F_{b|y}=(\id+bB_y)/2$ expresses each of its words as a linear combination of words in $\mathcal W_d$, for some finite $d\geq2$. The observable relations imply the projector relations. Writing the $j$th projector word as $s_j=\sum_iR_{ij}w_i$, the corresponding moment matrices obey $\Gamma_{\mathcal S}=R^*\Gamma_dR$. Positivity is preserved because $z^*\Gamma_{\mathcal S}z=(Rz)^*\Gamma_d(Rz)\geq0$.
+
+At $d\geq2$, the candidate joint probability $p(a,b|x,y)=\ell(E_{a|x}F_{b|y})$ is nonnegative: write $P=E_{a|x}F_{b|y}=\sum_i\sigma_iw_i$ and let $\boldsymbol\sigma=(\sigma_i)_i$ be its coefficient vector in $\mathcal W_d$. Since $P$ is a projector, $\ell(P)=\ell(P^*P)=\boldsymbol\sigma^*\Gamma_d\boldsymbol\sigma\geq0$. Completeness gives normalization and no-signaling. An optimizer of the level-$d$ bound therefore supplies a valid correlation feasible for $\mathcal S$. For $\alpha$ sufficiently close to one, its Bell value exceeds $\omega_{\rm Q}(\alpha)$ by Eq.~\eqref{eq:divergence}; no quantum correlation can attain that value. Thus every fixed finite projector-word relaxation contains correlations outside $\Q$.
+
+Since $\Delta_\alpha\sim4(1-\alpha)^3/3$, the NPA error also exceeds every constant multiple of the quantum violation:
+\begin{equation}
+\lim_{\alpha\uparrow1}
+\frac{\omega_{\rm NPA}^{(L)}(\alpha)-\omega_{\rm Q}(\alpha)}
+{\omega_{\rm Q}(\alpha)-\omega_{\rm L}(\alpha)}=+\infty.
+\label{eq:relative}
+\end{equation}
+This diverging ratio lets us mix the nonquantum correlations with an increasingly large fraction of a local one without losing their Bell violation above the quantum bound. Let $p_{d,\alpha}$ attain $\omega_{\rm NPA}^{(d)}$, put $e_{d,\alpha}=\omega_{\rm NPA}^{(d)}-\omega_{\rm Q}$, and let $p_{\rm det}$ always output $a=b=1$. The mixture $q_\alpha=\lambda_\alpha p_{d,\alpha}+(1-\lambda_\alpha)p_{\rm det}$ has Bell value $\omega_{\rm L}+\lambda_\alpha(\Delta_\alpha+e_{d,\alpha})$. Choosing $\lambda_\alpha=2\Delta_\alpha/(\Delta_\alpha+e_{d,\alpha})$ makes this value $\omega_{\rm Q}+\Delta_\alpha$. Equation~\eqref{eq:relative} gives $\lambda_\alpha\to0$, so the weights lie in $(0,1)$ for tilts sufficiently close to one. The mixtures remain feasible and converge to $p_{\rm det}$ while violating the quantum bound (SM Sec.~S10). These conclusions include the almost quantum set, defined by the $1+AB$ projector list~\cite{NGHA2015}.
+
+\emph{Discussion.} For each fixed NPA level, nonquantum feasible correlations occur arbitrarily close to a local deterministic correlation. Here $\Q$ is compact and every Bell maximum is attained on two qubits, so the failure of finite-level certification does not require nonclosure or unbounded physical dimension. In the one-sided tilted family the optimal state also approaches a product state, while the quantum bound remains certified at $1+AB$ throughout the limit~\cite{BampsPironio2015}.
+
+For the doubly tilted family, each fixed level fails for every tilt sufficiently close to one. This answers the question in Ref.~\cite{GigenaEtAl2025} of whether one level suffices for the whole family. The interval of failure may shrink as the level increases, leaving open whether one fixed Bell functional in $(2,2,2)$ is missed at every finite level. Such a functional would give one Bell inequality whose exact quantum bound has no finite NPA certificate. The polynomial obstruction here emerges as the tilt varies, so it does not establish this stronger result. A fixed game with a strict gap at every finite NPA level is known in a larger scenario~\cite{FanizzaEtAl2025}.
+
+Failure of a finite NPA description still allows membership in $\Q$ to be decided by other means. Its eight correlation coordinates and Carathéodory's theorem give a mixture of at most nine two-qubit correlations. The states, measurements and mixture weights then form a finite set of unknown real numbers subject to polynomial constraints. Given probabilities specified as ratios of integers or exact real roots of integer polynomials, real quantifier elimination decides whether these constraints have a solution. With a distance threshold specified in the same way, this method also decides whether the distribution lies within that Euclidean distance of $\Q$ (SM Sec.~S12). These procedures need not be efficient, but they show why undecidability for unrestricted nonlocal games~\cite{MIPstarRE} does not extend to this fixed scenario.
+
+One may also strengthen the NPA constraints with conditions expressing optimality of the state or measurements~\cite{AraujoEtAl2026}. Such conditions change the form of the dual certificate, so determining whether they remove this family's finite-level gap requires a further argument. More generally, the polynomial description above does not ensure a finite semidefinite representation~\cite{Scheiderer2018}. This leaves the broader question~\cite{FarkasQLunch2026}:
+
+Does the complete quantum set in the simplest Bell scenario admit an exact finite semidefinite representation?
+
+\emph{Note added.} This work was completed independently and submitted to Physical Review Letters on 14 July 2026. Pakhunov's preprints, submitted to arXiv on 15 July 2026, prove finite-level nonexactness for the same doubly tilted family using feasible NPA moments~\cite{Pakhunov2026a} and identify the Motzkin limit~\cite{Pakhunov2026b}. Our analytical proof evaluates dual NPA certificates on explicit two-qubit strategies: bounded relative error would give coefficientwise limits of polynomial approximations to the evaluated factors, yielding the forbidden sum-of-squares representation of the Motzkin polynomial plus a nonnegative constant.
+
+\begin{acknowledgments}
+We thank Mateus Ara\'ujo, Nicol\'as Gigena, and M\'at\'e Farkas for discussions and insights.
+We acknowledge support from the KLAR Grant No. BNI/PST/2023/1/00013/U/00001, funded by NAWA.
+\end{acknowledgments}
+\paragraph*{Data availability.}
+All analytical derivations needed to reproduce the results are provided in the Supplemental Material.
+\input{references-main.tex}
+\end{document}
