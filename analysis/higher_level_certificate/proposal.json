@@ -1,0 +1,33 @@
+{
+  "author": "Anubhav Chaturvedi",
+  "certified_exact": false,
+  "solve_calls": 2,
+  "solver": "CLARABEL",
+  "options": {
+    "tol_gap_abs": 1e-10,
+    "tol_gap_rel": 1e-10,
+    "tol_feas": 1e-10,
+    "max_iter": 400
+  },
+  "status": "optimal",
+  "epsilon": 0.0005602302143567944,
+  "gauge_values": [
+    0.19339953546151614,
+    0.23463938952379465,
+    0.007919604289915212,
+    -0.04456408873020532,
+    -0.053482945997651854,
+    0.0022887739677327065,
+    -0.014606062365664906,
+    0.00509140896756023,
+    0.1333682965797522,
+    -0.07527693118515155,
+    0.12637757449383658
+  ],
+  "versions": {
+    "cvxpy": "1.8.2",
+    "clarabel": "0.11.1",
+    "sympy": "1.14.0"
+  },
+  "call_note": "Two targeted identical CLARABEL solves at alpha3/4 were made; the second regenerated the same proposal after adding independent exact continuation checks. Both returned optimal with the same epsilon and gauges."
+}

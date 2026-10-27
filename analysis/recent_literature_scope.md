@@ -2,6 +2,8 @@
 
 Checked 27 October 2026. Scope: the two specified July preprints, plus the September paper's abstract. This checks statement scope and the displayed argument; it does not reproduce ancillary-code verification.
 
+**Subsequent source update:** [Dritschel–Klep–McCullough–Volčič, arXiv:2608.23073v1, Corollary 4.2](https://arxiv.org/html/2608.23073v1#S4) independently establishes finite exact standard support depth for every fixed full-(2,2,2) Bell objective. See [the same-algebra application](depth_boundary/DEPTH_AND_BOUNDARIES.md) and [primary audit](depth_boundary/SOURCES.md). The argument gaps recorded below concern those particular July proofs; they do not leave the pointwise conclusion open after this additional theorem is included.
+
 ## arXiv:2607.13762v1
 
 [Theorem 1.1, Sections 2.1 and 7](https://arxiv.org/html/2607.13762v1) give

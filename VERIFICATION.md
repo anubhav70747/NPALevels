@@ -165,3 +165,25 @@ py -3.14 analysis/connectivity/check_chsh_components.py
 ```
 
 The additional `rank_normal_form.py` replay checks the local reflection multiplication table, independent Schmidt-kernel basis, physical and defect minors and their row relations. Its analytical interval and stationarity arguments justify global nonvanishing. The finite replays establish the recorded algebra, ranks, orbit coverage and signs. Their mathematical implications use the analytical proofs just described. In particular, exact predicates, source identity and successful execution do not complete the asymmetric boundary or global connectivity proof.
+
+## Pointwise finite depth and the first exact higher-level certificate
+
+The primary August addendum arXiv:2608.23073v1 was inspected directly, including the non-strict factorization theorem and the complete proof of Corollary 4.2. Its result is a theorem about finite sums of squares in the same universal reflection algebra. The application was checked through the explicit four-by-four torus representation: every torus fiber is a physical tensor-product qubit strategy, the tight Bell slack is matrix-positive there, and the source's SOS-preserving conditional expectation returns a certificate in the original algebra. Averaging complex factors with their coefficientwise conjugates gives real factors. This proves finite standard support depth for each fixed objective without assuming an unconstructed commutative-to-NPA transfer. The general Positivstellensatz is a cited external theorem; the Bell application and depth-topology consequences are proved locally in [DEPTH_AND_BOUNDARIES.md](analysis/depth_boundary/DEPTH_AND_BOUNDARIES.md).
+
+The continuous-support and Baire arguments were checked independently: finite-level admission sets are closed and cover direction space, their failure sets are open and nested, and the locus of locally unbounded depth is closed and nowhere dense. Boundaries of 1+AB failure components are themselves admitted at 1+AB. The exact event identities and raw-observable level-one witness verify the positive critical edge's finite depth, while the existing Motzkin theorem proves divergence of finite depths along inward normals. None of these statements identifies every excluded component or proves finite recovery of its full optimal face.
+
+At symmetric tilt 3/4, the exact level-2 certificate was independently replayed over the specified real quartic embedding. Both original-word and compressed expansions agree in all 41 ordered universal coefficients. Exact rational interval arithmetic proves every LDL pivot of its five- and four-dimensional blocks greater than 1/1000. The physical eigenvector attains the same value. The nonzero continuation minors, eighteen-dimensional ambient coefficient space, three independent state constraints and independent common-angle derivative justify local continuation of all equations, not merely numerical continuity. This proves an open interval of level-2 admission intersecting the exact 1+AB failure interval. The interval radius is not evaluated.
+
+Two targeted identical CLARABEL proposal solves were used for this certificate, both reported optimal; both calls are recorded in `proposal.json`. They propose eleven rationalized gauges and are not required for exact replay. No numerical parameter sweep was performed. The independent continuation review is [INDEPENDENT_REVIEW.md](analysis/depth_boundary/INDEPENDENT_REVIEW.md).
+
+The asymmetric completion criterion was independently reduced to four quadratic and five cubic minors with a degree-twelve alternative. Exact cancellation identities and separate zero-centre cases retain every singular completion. The regular-branch theorem was reviewed analytically: external interval touch gives a rank-three primal, semidefinite separation gives a rank-two dual, and the additional Hessian/gradient hypotheses select a genuine nearby transition by convexity and trace compactness. No asymmetric point satisfying all those selection hypotheses has yet been isolated. See [the review](analysis/asymmetric_transition/REVIEW.md).
+
+New bounded replays:
+
+```
+py -3.14 -B analysis/higher_level_certificate/level2_certificate.py --verify
+py -3.14 -B analysis/asymmetric_transition/minor_completion_check.py
+py -3.14 -B analysis/depth_boundary/exact_edge_checks.py
+```
+
+The remaining unsolved tasks are the exact minimum-level regions, final asymmetric transition elimination, all-component Motzkin coverage and the separate optimal-face questions. The fixed-functional infinite-depth alternative has been resolved by the newly incorporated source theorem.

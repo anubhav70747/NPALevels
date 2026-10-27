@@ -156,6 +156,20 @@
       "upstream": "https://arxiv.org/abs/2607.14569"
     }
   ],
-  "scope": "Selected original proof sources and checker dependencies, not a full project archive.",
+  "external_theorems": [
+    {
+      "arxiv": "2608.23073v1",
+      "title": "Addendum to Factoring non-negative operator valued trigonometric polynomials in two variables",
+      "authors": ["Michael Dritschel", "Igor Klep", "Scott McCullough", "Jurij Volcic"],
+      "submitted": "2026-08-24",
+      "primary_url": "https://arxiv.org/html/2608.23073v1",
+      "inspected": ["Theorem 1.1", "Theorem 3.1", "Corollary 4.1", "Corollary 4.2 and its proof"],
+      "application": "Finite standard NPA support depth for every fixed full (2,2,2) Bell functional; no uniform degree bound.",
+      "local_application": "analysis/depth_boundary/DEPTH_AND_BOUNDARIES.md",
+      "local_scope_audit": "analysis/depth_boundary/SOURCES.md",
+      "storage": "External citation only; original article not copied into this repository."
+    }
+  ],
+  "scope": "Selected original proof sources and checker dependencies, plus identified external theorems; not a full project archive.",
   "verification_note": "Hashes establish file identity, not theorem validity. See VERIFICATION.md."
 }

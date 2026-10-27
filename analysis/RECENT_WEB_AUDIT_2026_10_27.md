@@ -2,6 +2,8 @@
 
 Checked 27 October 2026. This is a bounded live literature search, not a claim of exhaustive bibliographic coverage. No numerical runs, ancillary verifier replays, or manuscript edits were performed. The starting inventories were `KNOWN_RESULTS.md` and `analysis/recent_literature_scope.md`; their conclusions were treated as leads to verify, not as evidence about newly posted papers.
 
+**Later focused audit:** the August addendum [arXiv:2608.23073v1, Corollary 4.2](https://arxiv.org/html/2608.23073v1#S4), missed by this inventory, supplies a perfect Positivstellensatz for the same universal (2,2,2) algebra. It settles finite standard support depth for every fixed Bell objective, while leaving the first-level map and uniform bounds unresolved. The complete update and application are in [depth_boundary/SOURCES.md](depth_boundary/SOURCES.md) and [DEPTH_AND_BOUNDARIES.md](depth_boundary/DEPTH_AND_BOUNDARIES.md). The evidence table below retains the scope of the earlier eleven-source pass.
+
 ## Material new finding
 
 [Sun–Wang–Yu, arXiv:2610.34364v1](https://arxiv.org/html/2610.34364v1), submitted **25 October 2026**, supplies a new full-set characterization. Primary submission history lists v1 only; a third-party “updated October 27” label is not evidence of a new arXiv version.

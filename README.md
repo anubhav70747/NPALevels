@@ -2,10 +2,15 @@
 
 Exact reductions and certificate classification for the **full (2,2,2) quantum correlation set**, including all four marginals. Current scope was confirmed on 27 October 2026.
 
-One exhaustive eight-dimensional behavior representation is now fixed: the local branch plus a CHSH-cap simplex, with every probability-zero face and symmetry seam retained. Complete polynomial membership predicates specify both Q and Q1+AB. The asymmetric contact test now has only two remaining scalar variables throughout the positive interior, with finite chart changes. **The final asymmetric transition curve and global connection of every excluded region to the Motzkin edge remain unproved.** Every quantum behavior is feasible at every NPA level; the meaningful classification concerns exact Bell bounds, supporting normal cones, and recovery of optimal faces.
+**Every fixed Bell functional in full (2,2,2) has a finite exact standard NPA level, but no level works uniformly over all functionals.** The pointwise statement follows from [Dritschel–Klep–McCullough–Volčič, Corollary 4.2](https://arxiv.org/html/2608.23073v1#S4), through an explicit transfer in the same universal observable algebra. Our Motzkin results show that these finite depths grow without bound near the positive critical edge. The edge itself is exact at 1+AB. See the [depth theorem and its precise quantifiers](analysis/depth_boundary/DEPTH_AND_BOUNDARIES.md).
+
+One exhaustive eight-dimensional behavior representation is fixed, with every probability-zero face and symmetry seam retained. Complete polynomial predicates specify Q and Q1+AB. At symmetric tilt 3/4, an explicit level-2 SOS and an exact 1+AB exclusion now establish a genuine higher-level region. **The full minimum-level map, final asymmetric 1+AB transition curve, and connection of every excluded component to the Motzkin edge remain unproved.** Support exactness is distinct from recovery of the entire optimal face.
 
 ## Start here
 
+* [Finite depth and boundary accumulation](analysis/depth_boundary/DEPTH_AND_BOUNDARIES.md): every fixed support has finite depth, the closed nowhere-dense locus of locally unbounded depth, and the remaining component-coverage question. [Primary-source audit](analysis/depth_boundary/SOURCES.md).
+* [Exact level 2 beyond 1+AB](analysis/higher_level_certificate/PROOF.md): a complete thirteen-word SOS at tilt 3/4 and an open interval of continuation, with exact positive Gram blocks and physical attainment.
+* [Asymmetric cubic-minor criterion](analysis/asymmetric_transition/CUBIC_MINORS_AND_BRANCH_SELECTION.md): reduces the remaining two-variable test to degree at most twelve and supplies a sufficient test for regular transition branches.
 * [The exhaustive map](analysis/exhaustive_map/EXHAUSTIVE_MAP.md): the chosen minimal behavior coordinates, all boundaries, complete membership predicates, solved slices, and the separate seven-dimensional Bell-cost chart.
 * [All probability-zero faces](analysis/exhaustive_map/FACE_REDUCTION.md): 255 support masks reduce to 29 symmetry types; all 162 masks with at most four positive losing events are excluded from the nonlocal Q1+AB region.
 * [Asymmetric two-variable admission test](analysis/asymmetric_boundary/TWO_GAUGE_COMPLETION.md): a global contact kernel, two eliminated completion gauges, all singular Schur cases, and [constant rank eleven](analysis/asymmetric_boundary/GLOBAL_RANK_ELEVEN.md) throughout the positive interior.
@@ -40,12 +45,15 @@ For the symmetric path `H_alpha=CHSH+alpha(A0+B0)`, the current exact results in
 |---|---|---|
 | `0 <= alpha <= alpha_*`, where `alpha_*=0.650967...` | `1+AB` is exact, including the algebraic transition. | Rational contact pencil, exhaustive singular-block elimination, exact Sturm counts and strict certificates fixing the connected cells. |
 | `alpha_* < alpha < 1` | `1+AB` has a strict quantum gap. | The same exhaustive elimination and an exact rational moment witness fixing the excluded cell. |
+| `alpha=3/4`, and some open interval around it | Level 2 is exact while 1+AB fails. | Complete universal thirteen-word SOS, positive compressed PSD5 and PSD4 blocks, physical attainment and analytical continuation. The interval radius is not evaluated. |
 | `alpha=1` | `1+AB` is exact again; the bound is already nonsignaling-valid. | Explicit positive-event decomposition and an attaining deterministic strategy. |
 | `0.94998 <= alpha <= 0.95002` | Level 2 has a strict quantum gap. | A separate rational moment witness and the same exact extension argument. |
 
 The [transition proof](analysis/tilt_boundary/TRANSITION_PROOF.md) eliminates both symmetric Gram variables without assuming monotonicity. It isolates the active root of an explicit degree-32 polynomial and excludes the other candidate as a transition. The isolated admitted endpoint matters: the full admission region on `[0,1]` is not a single interval.
 
 For `a,b>0`, `a+b<2`, the [asymmetric contact proof](analysis/asymmetric_boundary/EXACT_CONTACT_AND_FOUR_GAUGES.md) gives a uniquely selected polynomial quantum contact and a global five-dimensional kernel. The [Schmidt-basis proof](analysis/asymmetric_boundary/GLOBAL_RANK_ELEVEN.md) establishes coefficient rank eleven everywhere in this domain, excluding the formerly unresolved rank-drop case. Four conditional annihilators expose two free Gram-completion entries. Their [exact four-cycle elimination](analysis/asymmetric_boundary/TWO_GAUGE_COMPLETION.md) leaves two outer variables, with explicit scalar polynomial inequalities and all zero-pivot cases retained. Individual linear-solve minors may require chart changes. Eliminating the last two variables and selecting actual boundary branches remain necessary to obtain the exact asymmetric transition curve.
+
+The [small-minor refinement](analysis/asymmetric_transition/CUBIC_MINORS_AND_BRANCH_SELECTION.md) cancels redundant factors and lowers the final degree bound from 24 to 12. It retains the zero-centre branch and proves a genuine local transition test under explicit Hessian and gradient conditions. Those conditions have not yet been verified at an asymmetric transition point.
 
 Up to a behavior-preserving convex reduction, real pure two-qubit strategies suffice. Extreme behaviors have such a realization. In Schmidt coordinates,
 
@@ -68,6 +76,8 @@ The latest [geometric test](analysis/motzkin_test/geometry/CHSH_SECTOR.md) prove
 The [asymmetric critical-edge theorem](analysis/motzkin_test/analytic/ASYMMETRIC_CRITICAL_EDGE.md) proves that for positive tilts the product transition is `a+b=2`. Every violating measurement pair localizes to the aligned corner as this edge is approached. The global quantum violation is cubic, and the rescaled quantum gap is the standard Motzkin polynomial throughout the positive edge. The [finite-word extension](analysis/motzkin_test/analytic/ASYMMETRIC_NPA_DIVERGENCE.md) proves that the relative error of every fixed NPA level, including `1+AB`, diverges along the inward normal at every positive edge point.
 
 The [connectivity proof](analysis/connectivity/CONNECTIVITY_REDUCTION.md) strengthens this to a connected excluded collar accumulating on the entire positive edge. It also matches the path components of excluded Bell directions with those of the supraquantum behavior shell. All eight CHSH sector copies are related by physical relabelings. Whether every excluded component within the remaining symmetry quotient joins the Motzkin collar is still open; the coordinates, vertex count and collar alone do not prove it.
+
+There is no fixed infinite-depth Bell functional in this scenario, by the cited same-algebra theorem. Instead, finite depths can be unbounded in every neighborhood of a finite-depth functional. This accumulation locus is closed and nowhere dense; off it, depth is locally bounded. Every boundary point of the 1+AB support-gap domain is itself admitted at 1+AB. The meaningful remaining conjecture asks whether each excluded component contains an approach to its boundary with depths tending to infinity. These statements concern Bell-direction space, not arbitrary quantum-behavior boundary points.
 
 ## Exact tools
 
@@ -111,6 +121,9 @@ py -3.14 analysis/tilt_boundary/contact_kernel_check.py
 py -3.14 analysis/tilt_boundary/endpoint.py
 py -3.14 analysis/asymmetric_boundary/conditional_completion_check.py
 py -3.14 analysis/asymmetric_boundary/rank_normal_form.py
+py -3.14 analysis/asymmetric_transition/minor_completion_check.py
+py -3.14 analysis/higher_level_certificate/level2_certificate.py --verify
+py -3.14 analysis/depth_boundary/exact_edge_checks.py
 py -3.14 analysis/exhaustive_map/atlas.py --verify
 py -3.14 analysis/exhaustive_map/check_atlas.py
 py -3.14 analysis/exhaustive_map/check_top.py

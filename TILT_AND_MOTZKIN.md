@@ -2,6 +2,8 @@
 
 27 October 2026. This note sharpens the proposed picture: a region certified at 1+AB, followed by a region in which a rescaled Motzkin obstruction controls the NPA difficulty. It separates that useful research hypothesis from the implications already proved.
 
+The finite-versus-infinite distinction is now settled for fixed Bell supports. [Dritschel–Klep–McCullough–Volčič, Corollary 4.2](https://arxiv.org/html/2608.23073v1#S4) gives finite SOS representations in the universal (2,2,2) algebra. Thus every fixed functional reaches its quantum support at a finite standard level. Near the Motzkin edge those finite levels are unbounded, while the limiting edge itself is admitted at 1+AB. The [application and depth topology](analysis/depth_boundary/DEPTH_AND_BOUNDARIES.md) retain all quantifiers and distinguish support from full-face recovery.
+
 ## 1. Use two tilt parameters first
 
 Let
@@ -28,7 +30,9 @@ The entire symmetric 1+AB admission region is now proved separately from the Mot
 
 The earlier [rational moment witnesses](analysis/ncpol_bounds/INTERVAL_PROOF.md) also retain explicit strict 1+AB failure on [0.7498,0.7502] and strict level-2 failure on [0.94998,0.95002]. Those local interval proofs use exact root comparisons and a Lipschitz bound. The full 1+AB transition requires the additional elimination and connected-cell proof; the level-2 transition is still open.
 
-The companion [July preprint, Section 3](https://arxiv.org/html/2607.13774v1) reports numerical exactness thresholds. No threshold from that discussion is promoted here to a theorem. Our source audit also identifies an unproved transfer in its pointwise finite-convergence argument; see [the scope review](analysis/recent_literature_scope.md).
+There is now an [explicit level-2 universal SOS](analysis/higher_level_certificate/PROOF.md) at alpha=3/4, with positive compressed blocks and an attaining strategy. It persists on an unspecified open interval. Intersecting that interval with the exact 1+AB failure interval proves a region where the first exact listed level is 2. Failure of 1+AB therefore includes rigorously certified finite higher-level behavior.
+
+The companion [July preprint, Section 3](https://arxiv.org/html/2607.13774v1) reports numerical exactness thresholds. No threshold from that discussion is promoted here to a theorem. Our source audit identifies an unproved transfer in its pointwise finite-convergence argument; see [the scope review](analysis/recent_literature_scope.md). The pointwise conclusion is now established by the independent August theorem, rather than by that proposed transfer.
 
 ## 2. Motzkin is a rescaled physical gap, not the original Bell polynomial
 
@@ -93,9 +97,9 @@ The [connectivity reduction](analysis/connectivity/CONNECTIVITY_REDUCTION.md) al
 
 The first priorities are:
 
-1. Eliminate the final two outer asymmetric Gram variables and identify the true transition branches. Constant coefficient rank, the full cone and singular completion cases are already established throughout the positive interior.
+1. Eliminate the final two outer asymmetric Gram variables and identify the true transition branches. The [cubic-minor refinement](analysis/asymmetric_transition/CUBIC_MINORS_AND_BRANCH_SELECTION.md) reduces the final degree bound to twelve and gives a sufficient regular-branch selection theorem; its hypotheses still need verification on actual asymmetric transitions.
 2. Evaluate the remaining exact support predicates in the [exhaustive atlas](analysis/exhaustive_map/EXHAUSTIVE_MAP.md). The 255 probability supports reduce to 29 symmetry types; all supports of size at most four are now excluded from the nonlocal Q1+AB set, leaving eleven types with explicit reduced PSD predicates.
 3. Prove that every excluded component modulo physical relabelings meets the connected Motzkin collar. A finite chain of exact common witnesses is a certificate for a proposed connection; a universal coverage argument remains necessary.
-4. Establish quantitative word-length requirements for a specified error, or pointwise finite exactness, only with the necessary certificate arguments. The existing theorem gives neither an explicit growth law nor a fixed functional of infinite depth.
+4. Determine quantitative word-length requirements and the minimum-level regions. Pointwise finite exactness is proved, while neither an explicit growth law nor a complete map of the first exact level is available. Fixed infinite-depth Bell functionals are ruled out in this scenario.
 
 Our generic C1/C2 exclusions provide additional finite-level information away from this asymptotic argument. They must be reconciled with the tilt subfamilies rather than assumed to be equivalent to a Motzkin limit. The [complete Q1+AB cone and its dual](analysis/q1ab_cone/CONE_CHARACTERIZATION.md) now identify exactly which algebraic certificate cone is involved. The remaining quantum-valid slacks outside that cone are not proved equivalent to one polynomial normal form. A Motzkin-based classification would require an explicit equivalence and a coverage theorem for those slacks. The symmetric transition theorem does not supply that global claim.

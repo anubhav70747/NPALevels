@@ -4,6 +4,8 @@ Bounded mathematical review, 27 October 2026. All paths below are relative to
 the parent manuscript workspace. This report
 does not claim a complete classification at higher levels.
 
+Current update: the [same-algebra finite-depth theorem](depth_boundary/DEPTH_AND_BOUNDARIES.md), based on Dritschel–Klep–McCullough–Volčič, arXiv:2608.23073v1, settles finite exact support for every fixed Bell objective. There are no fixed infinite-depth full-(2,2,2) objectives, although depths are unbounded near the Motzkin edge. The support/normal-cone/optimal-face distinctions below remain essential; the theorem does not settle the latter two uniform recovery questions.
+
 ## 1. Fix the objects before assigning levels
 
 Use the full eight-coordinate behavior

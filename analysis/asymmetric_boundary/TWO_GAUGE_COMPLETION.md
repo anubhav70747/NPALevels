@@ -12,6 +12,11 @@ identify the full asymmetric transition curve.
 The construction uses the contact and universal coefficient map from
 `EXACT_CONTACT_AND_FOUR_GAUGES.md`; no party-exchange averaging is used.
 
+The subsequent [cubic-minor refinement](../asymmetric_transition/CUBIC_MINORS_AND_BRANCH_SELECTION.md)
+cancels redundant factors in the criterion below, lowering its final
+degree bound from 24 to 12. It also gives sufficient regular-branch
+selection conditions. The final two-variable elimination remains open.
+
 ## 1. Four independent conditional annihilators
 
 Let the optimal real two-qubit state be `psi`. It is entangled, so its

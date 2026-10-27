@@ -39,12 +39,15 @@
 - [x] Obtain an exact five-square 1+AB certificate at alpha=1/2 and prove persistence on an unspecified open neighborhood using positive compressed blocks and analytic continuation.
 - [x] Convert two numerical gap proposals into exact rational moment witnesses: 1+AB at alpha=3/4 and level 2 at alpha=19/20, with complete moment identities, positive LDL pivots and rational Sturm comparisons.
 - [x] Extend those witnesses to the explicit closed failure intervals [0.7498,0.7502] and [0.94998,0.95002], respectively.
+- [x] Construct a complete exact universal level-2 SOS at alpha=3/4, with positive compressed blocks of orders five and four, all 41 ordered coefficients and an attaining physical strategy; prove an unspecified open interval of continuation beyond 1+AB.
 - [x] Archive the bounded twelve-run ncpol2sdpa batch, word lists, versions, actual solver statuses, primal/dual reconstructions and residuals; keep it separate from the exact replays.
 - [x] Eliminate both symmetric Gram gauges completely: prove admission precisely on [0,alpha_*] union {1}, isolate the exact algebraic transition, and cover every interior denominator and singular-rank branch.
 - [ ] Determine the exact 1+AB admission region in the full asymmetric two-tilt domain.
 - [x] Extend the complete contact formulation to asymmetric two-sided tilt without party-exchange averaging: globally selected quantum contact, nonmaximally entangled state, invertible AB evaluation block, full PSD5 kernel and all seventeen universal coefficients.
 - [x] Prove coefficient rank eleven throughout the genuine positive asymmetric interior: physical rank six, defect rank five with explicit nonzero minors, and stationarity excluding simultaneous Schmidt-axis measurements. Individual minor charts can still change.
 - [x] Eliminate two asymmetric Gram-completion entries exactly by conditional annihilators and four-cycle completion, including zero diagonals and zero-centre Schur branches; retain exactly two outer variables throughout the positive interior through finite chart changes.
+- [x] Reduce the two-variable completion criterion to five cubic minors and degree at most twelve; prove a sufficient regular-branch selection theorem with explicit nondegeneracy hypotheses.
+- [ ] Verify those branch-selection hypotheses on actual asymmetric transition points and resolve the remaining degenerate branches.
 - [ ] Eliminate the final two outer variables and identify actual transition branches. Complementarity projections are only necessary boundary covers; coefficient-rank drops inside the positive interior have now been excluded.
 - [x] Prove the symmetric interval structure by exhaustive transition analysis, including its isolated re-admitted endpoint, without assuming monotonicity from solver plots.
 - [x] Prove that the first symmetric departure has finite entanglement, strictly positive probabilities and a nondegenerate two-angle Hessian, while the excluded segment approaches the Motzkin product endpoint.
@@ -63,7 +66,10 @@
 - [ ] At each larger word list, supply exact supported-slack admission or exact nonmembership. Store the representative, inverse symmetry map, quantum bound, full coefficient identity and positivity proof.
 - [ ] Determine the resulting supporting normal cones, rather than assigning an ambiguous level to a behavior alone.
 - [ ] Where point recovery is claimed, prove the relaxation's entire optimal face equals the intended quantum face. Physical self-testing is insufficient for this step.
-- [ ] Resolve pointwise finite exactness versus a fixed-functional infinite-depth example in this scenario, or leave that alternative explicitly open.
+- [x] Resolve pointwise finite support exactness: apply Dritschel–Klep–McCullough–Volčič, arXiv:2608.23073v1, Corollary 4.2 in the same universal algebra. Every fixed full-(2,2,2) Bell objective has finite standard depth; no fixed infinite-depth objective exists.
+- [x] Reconcile pointwise finiteness with unbounded finite depth near every positive Motzkin edge point; prove that the edge itself and every boundary point of the 1+AB support-gap domain are admitted at 1+AB.
+- [x] Prove that the locally unbounded-depth locus is closed and nowhere dense, with uniform finite bounds on compact sets outside it; formulate the exact within-component boundary-accumulation question.
+- [x] Give a terminating exact level-search algorithm for algebraic Bell coefficients using the compact quantum optimum predicate and exact universal SOS feasibility. No efficient bound or general implementation is claimed.
 - [x] Prove exhaustive coordinate coverage of the full behavior and Bell-direction domains, including their intersections and boundary strata.
 - [ ] Evaluate the general remaining Q/Q1+AB membership boundaries and support regions in those coordinates. Exhaustive predicates and coordinate coverage do not supply this classification.
 - [ ] Reconcile the geometric theorem against its complete published version; the present equation-level implementation uses arXiv v1 with its counting typos corrected independently.
