@@ -27,6 +27,11 @@
 - [x] Eliminate two primal auxiliary moments exactly by four-cycle completion; cover singular PSD5 and zero residual diagonals, and construct the remaining moments from six supplied auxiliaries.
 - [x] Prove the exact nonsignaling CHSH-cap simplex: one PR vertex, eight deterministic vertices, unique event-probability barycentrics, and covariance under all 128 relabelings.
 - [x] Supply two exact radial discrepancy intervals, with explicit feasible moment completions and quantum separation at every point; retain the seven-dimensional local remainder.
+- [x] Choose one exhaustive eight-dimensional behavior atlas: local branch and unique CHSH-cap branch, residual sixteen-element canonicalization, all support/isotropy seams and compact polynomial Q/Q1+AB membership predicates.
+- [x] Give an exhaustive seven-dimensional Bell-cost chart for every potentially excluded direction; prove exact support equality outside strict PR cones and on all zero-cost boundaries.
+- [x] Prove Q=Q1+AB on the whole zero-marginal slice and uniqueness of the CHSH-maximal full behavior already at Q1+AB.
+- [x] Reduce all 255 probability supports to 29 symmetry orbits; exclude all 162 masks with at most four positive losing events, with exact certificates and a sharp three-zero quantum example.
+- [x] Store necessary-and-sufficient reduced Q1+AB PSD predicates for the remaining eleven support orbits, including every singular case. Their general feasibility regions are not yet eliminated.
 
 ## Immediate mathematical target: tilt and 1+AB
 
@@ -37,11 +42,17 @@
 - [x] Archive the bounded twelve-run ncpol2sdpa batch, word lists, versions, actual solver statuses, primal/dual reconstructions and residuals; keep it separate from the exact replays.
 - [x] Eliminate both symmetric Gram gauges completely: prove admission precisely on [0,alpha_*] union {1}, isolate the exact algebraic transition, and cover every interior denominator and singular-rank branch.
 - [ ] Determine the exact 1+AB admission region in the full asymmetric two-tilt domain.
-- [ ] Extend the symmetry-specific compressed formulation to asymmetric two-sided tilt, where party-exchange averaging is unavailable.
+- [x] Extend the complete contact formulation to asymmetric two-sided tilt without party-exchange averaging: globally selected quantum contact, nonmaximally entangled state, invertible AB evaluation block, full PSD5 kernel and all seventeen universal coefficients.
+- [x] Prove coefficient rank eleven throughout the genuine positive asymmetric interior: physical rank six, defect rank five with explicit nonzero minors, and stationarity excluding simultaneous Schmidt-axis measurements. Individual minor charts can still change.
+- [x] Eliminate two asymmetric Gram-completion entries exactly by conditional annihilators and four-cycle completion, including zero diagonals and zero-centre Schur branches; retain exactly two outer variables throughout the positive interior through finite chart changes.
+- [ ] Eliminate the final two outer variables and identify actual transition branches. Complementarity projections are only necessary boundary covers; coefficient-rank drops inside the positive interior have now been excluded.
 - [x] Prove the symmetric interval structure by exhaustive transition analysis, including its isolated re-admitted endpoint, without assuming monotonicity from solver plots.
 - [x] Prove that the first symmetric departure has finite entanglement, strictly positive probabilities and a nondegenerate two-angle Hessian, while the excluded segment approaches the Motzkin product endpoint.
 - [x] Prove the asymmetric positive product-transition edge `a+b=2`, global localization of every violating measurement pair, cubic quantum violation and the actual Motzkin gap limit across that edge.
 - [x] Transfer the asymmetric limit to every fixed standard NPA level, including `1+AB`, along the inward normal at each positive critical-edge point, with an explicit polynomial test vector and audited trace/Taylor-limit hypotheses.
+- [x] Extend that fixed-word argument uniformly on compact positive-edge intervals and prove one connected excluded Motzkin collar accumulating on the entire positive edge.
+- [x] Relate excluded-objective components to the supraquantum shell and to the exact radial discrepancy set on the closed local simplex; retain the separate Bell-cost simplex and the residual physical symmetries.
+- [ ] Prove that every excluded component modulo all relabelings joins the Motzkin collar, or give an exact counterexample within that quotient. Eight equivalent CHSH-sector copies are not a counterexample.
 - [ ] Identify which loss-of-PSD branches approach the verified Motzkin scaling regime and which need a different obstruction.
 - [ ] Establish a quantitative level/error relation if sought; the current divergence theorem does not provide one.
 
@@ -53,7 +64,8 @@
 - [ ] Determine the resulting supporting normal cones, rather than assigning an ambiguous level to a behavior alone.
 - [ ] Where point recovery is claimed, prove the relaxation's entire optimal face equals the intended quantum face. Physical self-testing is insufficient for this step.
 - [ ] Resolve pointwise finite exactness versus a fixed-functional infinite-depth example in this scenario, or leave that alternative explicitly open.
-- [ ] Prove exhaustive coverage of the reduced domains and their intersections. No finite batch of witnesses establishes this.
+- [x] Prove exhaustive coordinate coverage of the full behavior and Bell-direction domains, including their intersections and boundary strata.
+- [ ] Evaluate the general remaining Q/Q1+AB membership boundaries and support regions in those coordinates. Exhaustive predicates and coordinate coverage do not supply this classification.
 - [ ] Reconcile the geometric theorem against its complete published version; the present equation-level implementation uses arXiv v1 with its counting typos corrected independently.
 - [ ] Extend exact canonical ordering to algebraic data and handle chart endpoints if a fully automated algebraic classifier is delivered.
 

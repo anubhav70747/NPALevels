@@ -1,0 +1,40 @@
+{
+  "author": "Anubhav Chaturvedi",
+  "sector_count": 8,
+  "pairwise_CHSH_exclusion_checks": 28,
+  "exact_cap_coordinate_identities": 8,
+  "relabeling_sector_orbit_size": 8,
+  "reused_exact_certificate": {
+    "level": "1+AB",
+    "alpha": "3/4",
+    "size": 9,
+    "objective": "3520130149/1000000000",
+    "exact_positive_definite": true,
+    "exact_objective_above_quantum_quartic_largest_real_root": true
+  },
+  "standard_witness_CHSH": "435367637/200000000",
+  "flipped_witness_standard_CHSH": "-435367637/200000000",
+  "bplus": [
+    "3/4",
+    "0",
+    "3/4",
+    "0",
+    "1",
+    "1",
+    "1",
+    "-1"
+  ],
+  "bminus": [
+    "-3/4",
+    "0",
+    "3/4",
+    "0",
+    "-1",
+    "-1",
+    "-1",
+    "1"
+  ],
+  "Bell_event_chart_rank": 8,
+  "Bell_event_chart_determinant": "32",
+  "conclusion": "Different CHSH-sector labels cannot connect before quotienting; all eight labels are equivalent under physical relabelings. Within-sector connectivity remains open."
+}

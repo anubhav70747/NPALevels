@@ -134,4 +134,34 @@ The numerical probe separately records 32 distinct objective-level pairs and 52 
 
 ## Current scope
 
-Recent literature was read for exact hypotheses and quantifiers. Previously reported numerical thresholds, a proposed commutative-to-noncommutative finite-convergence transfer, and abstract-only claims are labeled accordingly. Full publisher reconciliation of the extremality theorem remains pending. The new exact transition theorem concerns symmetric double tilt at 1+AB. No universal H1/H2 admission, complete higher-level classification, or classification of every missing slack as Motzkin-equivalent is inferred.
+Recent literature was read for exact hypotheses and quantifiers. Previously reported numerical thresholds, a proposed commutative-to-noncommutative finite-convergence transfer, and abstract-only claims are labeled accordingly. Full publisher reconciliation of the extremality theorem remains pending. The evaluated transition theorem concerns symmetric double tilt at 1+AB. The asymmetric test below is reduced but not fully eliminated. No universal H1/H2 admission, complete higher-level classification, or classification of every missing slack as Motzkin-equivalent is inferred.
+
+## Asymmetric contact, exhaustive atlas and connectivity integration
+
+This integration used no new numerical SDP solves. The global asymmetric contact argument was independently reviewed: characteristic-polynomial monotonicity, commuting boundary bounds and the two interior stationary branches establish the unique physical solution. The maximizer is entangled and not maximally entangled; the AB evaluation determinant therefore gives a global five-dimensional kernel. Contact and derivative identities bound the universal coefficient rank by eleven, and the exact half-tilt minor first establishes generic equality. The subsequent global proof below resolves the remaining rank question.
+
+The review found and repaired one substantive boundary gap. A positive definite Gram at a coefficient-rank drop need not persist under parameter variation. The complementary PSD projection therefore needs a constant-rank justification. The subsequent Schmidt-basis argument supplies it throughout the genuine positive interior: the physical coefficient map has rank six with an explicitly nonzero minor, its nine-dimensional kernel has an everywhere independent polynomial basis, and the remaining defect map has rank five. Exact minors cover every orientation except simultaneous Schmidt-axis measurements. Measurement stationarity excludes that last case at any violating optimum, for every setting and sign choice. All seventeen universal classes remain present. The final proof consequently excludes coefficient-rank drops throughout the stated domain, while individual prescribed minors may still vanish. Complementarity remains only a necessary boundary condition, not a sufficient transition characterization.
+
+Four independent conditional annihilators give two universally zero Gram coefficient columns. Their independence and cancellation hold on the full stated physical domain, without a fixed-angle identity being imposed on the universal algebra. The four-cycle completion theorem was checked analytically by intersection of two closed Gram intervals and singular Gram gluing. The positive-centre and zero-centre Schur cases are both present. The exact replay checks arbitrary-state rational conditional formulas, all ordered zero coefficients, the rank-eleven chart, two remaining outer variables, and the scalar completion identities. The final two-variable elimination is not performed.
+
+The chosen behavior atlas was checked against the complete compact real-qubit mixture proof, the universal PSD9 matrix, all 128 relabelings, local seams and exact quantum and supraquantum examples. Its 511 principal-minor specification and lower-triangular-factor SMT specification both include singular matrices. No SMT solver or general quantifier elimination was run. The top-CHSH linear null equations force the unique unbiased full behavior over Q(sqrt(2)); its physical attainment is checked separately. The zero-marginal slice equality follows from the Gram-vector/Clifford realization proof.
+
+The face reduction recomputes all 29 support orbits covering 255 masks. Fourteen orbits force zero PR weight, two give a negative squared norm, and two give the displayed negative PSD5 determinant factorizations. These 18 orbits comprise exactly the 162 supports of size at most four. Each remaining orbit retains a complete affine solution and compressed PSD matrix. All kernel and compression bases are stored. The three-zero bound is sharp by the explicit quantum realization; no general feasibility claim is made for the eleven remaining support types.
+
+The connectivity argument was checked separately from the finite identities. Convex incidence fibers identify path components of excluded directions and the supraquantum shell. Concavity and upper semicontinuity of homogeneous radial thresholds, with a minimal-face argument at the simplex boundary, give full continuity and the shell product description. Compact-edge uniformity of the trace/Taylor/interpolation proof gives a connected Motzkin collar. These proofs do not establish that all excluded components meet that collar. The independent review is [INTEGRATION_REVIEW.md](analysis/connectivity/INTEGRATION_REVIEW.md).
+
+The following new solver-free checks were replayed successfully:
+
+```
+py -3.14 analysis/asymmetric_boundary/contact_algebra.py
+py -3.14 analysis/asymmetric_boundary/universal_coefficients.py
+py -3.14 analysis/asymmetric_boundary/full_gram_rank.py
+py -3.14 analysis/asymmetric_boundary/conditional_completion_check.py
+py -3.14 analysis/exhaustive_map/atlas.py --verify
+py -3.14 analysis/exhaustive_map/check_atlas.py
+py -3.14 analysis/exhaustive_map/check_top.py
+py -3.14 analysis/exhaustive_map/face_reduction.py --verify
+py -3.14 analysis/connectivity/check_chsh_components.py
+```
+
+The additional `rank_normal_form.py` replay checks the local reflection multiplication table, independent Schmidt-kernel basis, physical and defect minors and their row relations. Its analytical interval and stationarity arguments justify global nonvanishing. The finite replays establish the recorded algebra, ranks, orbit coverage and signs. Their mathematical implications use the analytical proofs just described. In particular, exact predicates, source identity and successful execution do not complete the asymmetric boundary or global connectivity proof.
