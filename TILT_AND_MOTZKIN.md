@@ -1,6 +1,8 @@
 # Tilt, low-level certificates, and the Motzkin mechanism
 
-27 October 2026. This note sharpens the proposed picture: a region certified at 1+AB, followed by a region in which a rescaled Motzkin obstruction controls the NPA difficulty. It separates that useful research hypothesis from the implications already proved.
+28 October 2026. This note sharpens the proposed picture: a region certified at 1+AB, followed by a region in which a rescaled Motzkin obstruction controls the NPA difficulty. It separates that useful research hypothesis from the implications already proved.
+
+The [latest organizing results](analysis/organizing_principles/ORGANIZING_PRINCIPLES.md) prove quantitative collapse of inward separating witnesses onto the common critical local triangle, classify 162 completely local zero-cost faces, and construct six-dimensional shared radial boundary families with exact segment-face recovery. These results show why full symmetry averaging, fixed witness dictionaries and a dimension-at-most-five argument cannot prove universal connectivity. The connection of every excluded component to the Motzkin collar remains the main open implication.
 
 The finite-versus-infinite distinction is now settled for fixed Bell supports. [Dritschel–Klep–McCullough–Volčič, Corollary 4.2](https://arxiv.org/html/2608.23073v1#S4) gives finite SOS representations in the universal (2,2,2) algebra. Thus every fixed functional reaches its quantum support at a finite standard level. Near the Motzkin edge those finite levels are unbounded, while the limiting edge itself is admitted at 1+AB. The [application and depth topology](analysis/depth_boundary/DEPTH_AND_BOUNDARIES.md) retain all quantifiers and distinguish support from full-face recovery.
 

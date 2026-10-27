@@ -187,3 +187,25 @@ py -3.14 -B analysis/depth_boundary/exact_edge_checks.py
 ```
 
 The remaining unsolved tasks are the exact minimum-level regions, final asymmetric transition elimination, all-component Motzkin coverage and the separate optimal-face questions. The fixed-functional infinite-depth alternative has been resolved by the newly incorporated source theorem.
+
+## Organizing principles: local faces, witness collapse and shared radial endpoints
+
+On 28 October 2026, a bounded analytical pass tested the proposed universal connection to Motzkin. No SDP solve or numerical parameter sweep was used. The new [organizing note](analysis/organizing_principles/ORGANIZING_PRINCIPLES.md) retains the universal connection as an open theorem and supplies the following exact results.
+
+The whole exposed face for a nonnegative cost vector is obtained by setting its positive-cost event probabilities to zero. The previously proved three-zero bound makes all 162 boundary masks with at least four positive costs entirely local. The new rational inventory checks all 254 proper nonempty masks, their 28 symmetry types, all sixteen deterministic vertices, and the critical triangle. The implication from four zeros to locality uses the earlier analytical support proof; it is not inferred from a list of vertices.
+
+The critical-edge Gram identity was expanded independently in the universal real word algebra. Its five residual vectors have squared norms equal to sixteen times the corresponding event probabilities. Positivity and Cauchy--Schwarz prove the complete critical face, the defect and marginal estimates, the coarse quadratic support bound, and concentration of every separating witness onto the local triangle. The fixed-dictionary obstruction follows from the exact affine defect/deficit ratio, not from sampling witnesses. Full stabilizer averaging and the subgroup dimensions were also checked exactly.
+
+The local-tie certificate uses the preserved half-tilt contact but constructs a new universally valid Bell functional. Rational interval signs in its isolated quartic field establish positive definiteness of both compressed blocks, strict PR support excess, and positivity of all probabilities. The full unaveraged forbidden map has rank eight, equal to its universal upper bound. Together with joint-evaluation rank five this supplies an analytic frame and a solvable coefficient system with two fixed free Gram coordinates. Positive definiteness therefore persists; rank at one point alone would not have been enough. Exact physical, mixture and radial Jacobians have ranks five, six and six. This proves a six-dimensional common radial-endpoint family. The independent continuation review is [geometry_review.md](analysis/organizing_principles/geometry_review.md).
+
+The normalized real moment equations for the positive local-tie Gram have affine dimension one. The physical and deterministic endpoint matrices have ranks four and one, with combined rank five; positivity on their affine line therefore holds precisely between the endpoints. This establishes exact recovery of each segment behavior face, including nearby continued contacts. Complex moment completions give the same behavior face by conjugation averaging; an affine-line claim about all imaginary moment coordinates is not made.
+
+New solver-free replays:
+
+```
+py -3.14 -B analysis/organizing_principles/cost_faces.py
+py -3.14 -B analysis/organizing_principles/deformation_check.py
+py -3.14 -B analysis/organizing_principles/check_local_tie.py --verify
+```
+
+The source audit additionally inspected the exact hypotheses of the recent face theorems. Those sources reduce positive-probability faces to a pure contact and local ties; the new certificate independently establishes a concrete admitted family. Neither result proves global connectivity. In particular, the six-dimensional family refutes the dimension-at-most-five shortcut without proving that it separates the excluded domain globally.

@@ -1,0 +1,926 @@
+{
+  "events": [
+    [
+      -1,
+      -1,
+      1,
+      1
+    ],
+    [
+      -1,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      -1,
+      1,
+      0
+    ],
+    [
+      -1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0
+    ],
+    [
+      -1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "deterministic_vertices": [
+    [
+      "-1",
+      "-1",
+      "-1",
+      "-1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    [
+      "-1",
+      "-1",
+      "-1",
+      "1",
+      "1",
+      "-1",
+      "1",
+      "-1"
+    ],
+    [
+      "-1",
+      "-1",
+      "1",
+      "-1",
+      "-1",
+      "1",
+      "-1",
+      "1"
+    ],
+    [
+      "-1",
+      "-1",
+      "1",
+      "1",
+      "-1",
+      "-1",
+      "-1",
+      "-1"
+    ],
+    [
+      "-1",
+      "1",
+      "-1",
+      "-1",
+      "1",
+      "1",
+      "-1",
+      "-1"
+    ],
+    [
+      "-1",
+      "1",
+      "-1",
+      "1",
+      "1",
+      "-1",
+      "-1",
+      "1"
+    ],
+    [
+      "-1",
+      "1",
+      "1",
+      "-1",
+      "-1",
+      "1",
+      "1",
+      "-1"
+    ],
+    [
+      "-1",
+      "1",
+      "1",
+      "1",
+      "-1",
+      "-1",
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "-1",
+      "-1",
+      "-1",
+      "-1",
+      "-1",
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "-1",
+      "-1",
+      "1",
+      "-1",
+      "1",
+      "1",
+      "-1"
+    ],
+    [
+      "1",
+      "-1",
+      "1",
+      "-1",
+      "1",
+      "-1",
+      "-1",
+      "1"
+    ],
+    [
+      "1",
+      "-1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "-1",
+      "-1"
+    ],
+    [
+      "1",
+      "1",
+      "-1",
+      "-1",
+      "-1",
+      "-1",
+      "-1",
+      "-1"
+    ],
+    [
+      "1",
+      "1",
+      "-1",
+      "1",
+      "-1",
+      "1",
+      "-1",
+      "1"
+    ],
+    [
+      "1",
+      "1",
+      "1",
+      "-1",
+      "1",
+      "-1",
+      "1",
+      "-1"
+    ],
+    [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ]
+  ],
+  "deterministic_loss_masks": [
+    1,
+    2,
+    41,
+    42,
+    4,
+    134,
+    8,
+    138,
+    81,
+    16,
+    97,
+    32,
+    84,
+    148,
+    64,
+    128
+  ],
+  "boundary_orbits": [
+    {
+      "zero_cost_mask": 1,
+      "zero_cost_count": 1,
+      "orbit": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "deterministic_indices": [
+        0
+      ],
+      "local_face_dimension": 0,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 3,
+      "zero_cost_count": 2,
+      "orbit": [
+        3,
+        5,
+        12,
+        18,
+        48,
+        72,
+        160,
+        192
+      ],
+      "deterministic_indices": [
+        0,
+        1
+      ],
+      "local_face_dimension": 1,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 6,
+      "zero_cost_count": 2,
+      "orbit": [
+        6,
+        9,
+        17,
+        34,
+        68,
+        96,
+        136,
+        144
+      ],
+      "deterministic_indices": [
+        1,
+        4
+      ],
+      "local_face_dimension": 1,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 7,
+      "zero_cost_count": 3,
+      "orbit": [
+        7,
+        13,
+        19,
+        50,
+        76,
+        176,
+        200,
+        224
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        4
+      ],
+      "local_face_dimension": 2,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 10,
+      "zero_cost_count": 2,
+      "orbit": [
+        10,
+        20,
+        33,
+        40,
+        65,
+        80,
+        130,
+        132
+      ],
+      "deterministic_indices": [
+        1,
+        6
+      ],
+      "local_face_dimension": 1,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 11,
+      "zero_cost_count": 3,
+      "orbit": [
+        11,
+        14,
+        21,
+        22,
+        35,
+        49,
+        69,
+        73,
+        104,
+        112,
+        140,
+        146,
+        162,
+        168,
+        196,
+        208
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        6
+      ],
+      "local_face_dimension": 2,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 15,
+      "zero_cost_count": 4,
+      "orbit": [
+        15,
+        23,
+        51,
+        77,
+        178,
+        204,
+        232,
+        240
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        4,
+        6
+      ],
+      "local_face_dimension": 3,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 24,
+      "zero_cost_count": 2,
+      "orbit": [
+        24,
+        36,
+        66,
+        129
+      ],
+      "deterministic_indices": [
+        6,
+        9
+      ],
+      "local_face_dimension": 1,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 25,
+      "zero_cost_count": 3,
+      "orbit": [
+        25,
+        38,
+        70,
+        98,
+        100,
+        137,
+        145,
+        152
+      ],
+      "deterministic_indices": [
+        0,
+        6,
+        9
+      ],
+      "local_face_dimension": 2,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 26,
+      "zero_cost_count": 3,
+      "orbit": [
+        26,
+        28,
+        37,
+        44,
+        52,
+        56,
+        67,
+        74,
+        82,
+        88,
+        131,
+        133,
+        161,
+        164,
+        193,
+        194
+      ],
+      "deterministic_indices": [
+        1,
+        6,
+        9
+      ],
+      "local_face_dimension": 2,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 27,
+      "zero_cost_count": 4,
+      "orbit": [
+        27,
+        29,
+        39,
+        54,
+        71,
+        78,
+        108,
+        114,
+        141,
+        147,
+        177,
+        184,
+        201,
+        216,
+        226,
+        228
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        6,
+        9
+      ],
+      "local_face_dimension": 3,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 30,
+      "zero_cost_count": 4,
+      "orbit": [
+        30,
+        53,
+        75,
+        120,
+        163,
+        172,
+        197,
+        210
+      ],
+      "deterministic_indices": [
+        1,
+        4,
+        6,
+        9
+      ],
+      "local_face_dimension": 3,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 31,
+      "zero_cost_count": 5,
+      "orbit": [
+        31,
+        55,
+        79,
+        179,
+        205,
+        236,
+        242,
+        248
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        4,
+        6,
+        9
+      ],
+      "local_face_dimension": 4,
+      "whole_quantum_and_Q1AB_face_is_local": false
+    },
+    {
+      "zero_cost_mask": 41,
+      "zero_cost_count": 3,
+      "orbit": [
+        41,
+        42,
+        81,
+        84,
+        97,
+        134,
+        138,
+        148
+      ],
+      "deterministic_indices": [
+        0,
+        2,
+        6,
+        11
+      ],
+      "local_face_dimension": 3,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 43,
+      "zero_cost_count": 4,
+      "orbit": [
+        43,
+        85,
+        105,
+        113,
+        142,
+        150,
+        170,
+        212
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        11
+      ],
+      "local_face_dimension": 4,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 45,
+      "zero_cost_count": 4,
+      "orbit": [
+        45,
+        58,
+        83,
+        92,
+        135,
+        180,
+        202,
+        225
+      ],
+      "deterministic_indices": [
+        0,
+        2,
+        4,
+        6,
+        11
+      ],
+      "local_face_dimension": 4,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 46,
+      "zero_cost_count": 4,
+      "orbit": [
+        46,
+        57,
+        86,
+        89,
+        99,
+        101,
+        106,
+        116,
+        139,
+        149,
+        154,
+        156,
+        166,
+        169,
+        198,
+        209
+      ],
+      "deterministic_indices": [
+        1,
+        3,
+        4,
+        6,
+        11
+      ],
+      "local_face_dimension": 4,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 47,
+      "zero_cost_count": 5,
+      "orbit": [
+        47,
+        59,
+        87,
+        93,
+        109,
+        115,
+        143,
+        151,
+        182,
+        186,
+        206,
+        220,
+        233,
+        234,
+        241,
+        244
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        11
+      ],
+      "local_face_dimension": 5,
+      "whole_quantum_and_Q1AB_face_is_local": false
+    },
+    {
+      "zero_cost_mask": 60,
+      "zero_cost_count": 4,
+      "orbit": [
+        60,
+        90,
+        165,
+        195
+      ],
+      "deterministic_indices": [
+        4,
+        6,
+        9,
+        11
+      ],
+      "local_face_dimension": 3,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 61,
+      "zero_cost_count": 5,
+      "orbit": [
+        61,
+        62,
+        91,
+        94,
+        122,
+        124,
+        167,
+        173,
+        181,
+        188,
+        199,
+        203,
+        211,
+        218,
+        227,
+        229
+      ],
+      "deterministic_indices": [
+        0,
+        2,
+        4,
+        6,
+        9,
+        11
+      ],
+      "local_face_dimension": 5,
+      "whole_quantum_and_Q1AB_face_is_local": false
+    },
+    {
+      "zero_cost_mask": 63,
+      "zero_cost_count": 6,
+      "orbit": [
+        63,
+        95,
+        183,
+        207,
+        237,
+        243,
+        250,
+        252
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        11
+      ],
+      "local_face_dimension": 6,
+      "whole_quantum_and_Q1AB_face_is_local": false
+    },
+    {
+      "zero_cost_mask": 102,
+      "zero_cost_count": 4,
+      "orbit": [
+        102,
+        153
+      ],
+      "deterministic_indices": [
+        1,
+        4,
+        11,
+        14
+      ],
+      "local_face_dimension": 3,
+      "whole_quantum_and_Q1AB_face_is_local": true
+    },
+    {
+      "zero_cost_mask": 103,
+      "zero_cost_count": 5,
+      "orbit": [
+        103,
+        110,
+        118,
+        155,
+        157,
+        185,
+        217,
+        230
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        4,
+        10,
+        11,
+        14
+      ],
+      "local_face_dimension": 5,
+      "whole_quantum_and_Q1AB_face_is_local": false
+    },
+    {
+      "zero_cost_mask": 107,
+      "zero_cost_count": 5,
+      "orbit": [
+        107,
+        117,
+        121,
+        158,
+        171,
+        174,
+        213,
+        214
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        10,
+        11,
+        14
+      ],
+      "local_face_dimension": 5,
+      "whole_quantum_and_Q1AB_face_is_local": false
+    },
+    {
+      "zero_cost_mask": 111,
+      "zero_cost_count": 6,
+      "orbit": [
+        111,
+        119,
+        159,
+        187,
+        221,
+        238,
+        246,
+        249
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        10,
+        11,
+        14
+      ],
+      "local_face_dimension": 6,
+      "whole_quantum_and_Q1AB_face_is_local": false
+    },
+    {
+      "zero_cost_mask": 123,
+      "zero_cost_count": 6,
+      "orbit": [
+        123,
+        125,
+        175,
+        190,
+        215,
+        222,
+        235,
+        245
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        14
+      ],
+      "local_face_dimension": 6,
+      "whole_quantum_and_Q1AB_face_is_local": false
+    },
+    {
+      "zero_cost_mask": 126,
+      "zero_cost_count": 6,
+      "orbit": [
+        126,
+        189,
+        219,
+        231
+      ],
+      "deterministic_indices": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        11,
+        12,
+        14
+      ],
+      "local_face_dimension": 6,
+      "whole_quantum_and_Q1AB_face_is_local": false
+    },
+    {
+      "zero_cost_mask": 127,
+      "zero_cost_count": 7,
+      "orbit": [
+        127,
+        191,
+        223,
+        239,
+        247,
+        251,
+        253,
+        254
+      ],
+      "deterministic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "local_face_dimension": 7,
+      "whole_quantum_and_Q1AB_face_is_local": false
+    }
+  ],
+  "critical_edge": {
+    "zero_cost_mask": 224,
+    "costs": [
+      "4",
+      "4",
+      "4",
+      "2",
+      "2",
+      "0",
+      "0",
+      "0"
+    ],
+    "deterministic_indices": [
+      11,
+      14,
+      15
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 # Completion checklist
 
-27 October 2026. Checked boxes mean the stated deliverable exists, not that the full research problem is closed.
+28 October 2026. Checked boxes mean the stated deliverable exists, not that the full research problem is closed.
 
 ## Completed reduction and source recovery
 
@@ -55,6 +55,11 @@
 - [x] Transfer the asymmetric limit to every fixed standard NPA level, including `1+AB`, along the inward normal at each positive critical-edge point, with an explicit polynomial test vector and audited trace/Taylor-limit hypotheses.
 - [x] Extend that fixed-word argument uniformly on compact positive-edge intervals and prove one connected excluded Motzkin collar accumulating on the entire positive edge.
 - [x] Relate excluded-objective components to the supraquantum shell and to the exact radial discrepancy set on the closed local simplex; retain the separate Bell-cost simplex and the residual physical symmetries.
+- [x] Classify the whole quantum and Q1+AB maximizing face on all 162 zero-cost masks with at least four positive costs: each is the same explicitly tabulated local face. Retain additional deterministic vertices outside the selected CHSH cap.
+- [x] Prove the common critical exposed triangle directly from universal Gram identities; bound every inward separating witness's critical defect by 4W tau^2 and its distance to the triangle by O(tau).
+- [x] Prove the coarse Q1+AB support excess bound W tau^2 and the obstruction to fixed finite witness dictionaries, even after mixing with the critical triangle.
+- [x] Show that full CHSH-stabilizer averaging destroys strict gaps on both the objective and witness sides; state the valid fixed-witness partial-averaging condition.
+- [x] Construct an exact positive 1+AB certificate tying a nonlocal quantum contact with one deterministic vertex; prove a continuing six-dimensional family of positive-probability common radial endpoints and exact recovery of each segment face. This refutes the dimension-at-most-five connectivity shortcut, not the Motzkin coverage conjecture.
 - [ ] Prove that every excluded component modulo all relabelings joins the Motzkin collar, or give an exact counterexample within that quotient. Eight equivalent CHSH-sector copies are not a counterexample.
 - [ ] Identify which loss-of-PSD branches approach the verified Motzkin scaling regime and which need a different obstruction.
 - [ ] Establish a quantitative level/error relation if sought; the current divergence theorem does not provide one.

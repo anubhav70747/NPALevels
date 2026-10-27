@@ -8,6 +8,7 @@ One exhaustive eight-dimensional behavior representation is fixed, with every pr
 
 ## Start here
 
+* [Minimal organizing principles and the exact remaining conjecture](analysis/organizing_principles/ORGANIZING_PRINCIPLES.md): all-cost coordinate coverage, 162 completely local boundary patterns, quantitative witness collapse onto the Motzkin triangle, and six-dimensional shared radial boundary families that prevent a dimension-only connectivity proof.
 * [Finite depth and boundary accumulation](analysis/depth_boundary/DEPTH_AND_BOUNDARIES.md): every fixed support has finite depth, the closed nowhere-dense locus of locally unbounded depth, and the remaining component-coverage question. [Primary-source audit](analysis/depth_boundary/SOURCES.md).
 * [Exact level 2 beyond 1+AB](analysis/higher_level_certificate/PROOF.md): a complete thirteen-word SOS at tilt 3/4 and an open interval of continuation, with exact positive Gram blocks and physical attainment.
 * [Asymmetric cubic-minor criterion](analysis/asymmetric_transition/CUBIC_MINORS_AND_BRANCH_SELECTION.md): reduces the remaining two-variable test to degree at most twelve and supplies a sufficient test for regular transition branches.
@@ -118,6 +119,9 @@ py -3.14 analysis/q1ab_cone/completion.py
 py -3.14 analysis/representation/check_representation.py
 py -3.14 analysis/tilt_boundary/transition_check.py
 py -3.14 analysis/tilt_boundary/contact_kernel_check.py
+py -3.14 -B analysis/organizing_principles/cost_faces.py
+py -3.14 -B analysis/organizing_principles/deformation_check.py
+py -3.14 -B analysis/organizing_principles/check_local_tie.py --verify
 py -3.14 analysis/tilt_boundary/endpoint.py
 py -3.14 analysis/asymmetric_boundary/conditional_completion_check.py
 py -3.14 analysis/asymmetric_boundary/rank_normal_form.py
