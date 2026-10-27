@@ -1,0 +1,10 @@
+word,I,A0,A1,B0,B1,A0B0,A0B1,A1B0,A1B1
+I,z,a0,a1,b0,b1,E00,E01,E10,E11
+A0,a0,z,a,E00,E01,b0,b1,c0,c1
+A1,a1,a,z,E10,E11,c0,c1,b0,b1
+B0,b0,E00,E10,z,b,a0,d0,a1,d1
+B1,b1,E01,E11,b,z,d0,a0,d1,a1
+A0B0,E00,b0,c0,a0,d0,z,b,a,e
+A0B1,E01,b1,c1,d0,a0,b,z,f,a
+A1B0,E10,c0,b0,a1,d1,a,f,z,b
+A1B1,E11,c1,b1,d1,a1,e,a,b,z

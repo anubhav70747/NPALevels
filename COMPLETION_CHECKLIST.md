@@ -21,6 +21,10 @@
 - [x] Incorporate the 25 October full-membership theorem with the precise pure-strategy component specified in its Theorem 1.
 - [x] Reduce the full-alternation domain to an ordered simplex and residual reflection region; separate maximal entanglement and all boundary types.
 - [x] Derive the generic PSD5 contact formulation, its three-dimensional Bell image and four Gram gauges; normalize to a two-dimensional direction plane.
+- [x] Prove minimal dimensions for the distinct quotient objects: full behaviors 8, real generator/extreme atoms 5, normalized directions/contact incidence 7; give exact finite canonicalization under all 128 relabelings.
+- [x] Correct the partial-entanglement reflection domain at one-zero and two-zero axis seams, retaining exact counterexamples to the old rule.
+- [x] Give the complete homogeneous Q1+AB primal PSD9 matrix and its universal SOS dual, with all 17 moment/coefficient classes and all 128 congruence actions.
+- [x] Eliminate two primal auxiliary moments exactly by four-cycle completion; cover singular PSD5 and zero residual diagonals, and construct the remaining moments from six supplied auxiliaries.
 
 ## Immediate mathematical target: tilt and 1+AB
 

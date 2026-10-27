@@ -1,6 +1,6 @@
 # Reduced regions for the nonlocal extreme behaviors
 
-27 October 2026. This note starts from the proved five-parameter Schmidt chart and full-alternation criterion in `local_isometry_reduction_review.md`. It does not repeat their dimension proof or the enumeration of relabelings. The new reductions below are direct changes of coordinates and an additional discrete fundamental-domain cut. `region_checks.py` checks specified rational representatives exactly; it is not a numerical coverage argument.
+27 October 2026. This note starts from the proved five-parameter Schmidt chart and full-alternation criterion in `local_isometry_reduction_review.md`. It does not repeat their dimension proof or the enumeration of relabelings. The reductions below are direct changes of coordinates and a discrete cut with the corrected axis-seam rules below. The complete quotient and minimal-dimension statements are in [the representation audit](representation/MINIMAL_REPRESENTATION.md). `region_checks.py` checks specified rational representatives exactly; it is not a numerical coverage argument.
 
 ## 1. An ordered simplex makes full alternation automatic
 
@@ -63,7 +63,12 @@ In angles this is alpha0+beta1<=pi. Every positive-angle pair {q,Rq} meets this 
 
 equivalently z1 z2<=t^3(1-z1)(1-z2), or alpha1+beta0<=pi. If both products equal 1 the angle tuple itself is fixed by R. Thus the tie rule removes the remaining reflected duplicate there.
 
-When u0=0 the finite chart already obeys R5. The reflected tuple has an infinite last half-angle, so there is no missing alternative finite representative to compare. Original angles equal to pi are exactly outcome-flipped angles equal to zero; they do not require an independent physical stratum. One may retain infinity as a redundant projective boundary, but division formulas and R4 must then be interpreted projectively, never by multiplying zero by infinity.
+The positive-angle rule R5 alone does not handle u0=0. Reflection must be followed by projective seam normalization: j(u)=1/u for u>0, while j(0)=0. Sort each party's reflected pair and then order the two parties. The corrected additional cuts are:
+
+    u0=0<v0: u1<1, or [u1=1 and v0 v1<=1];
+    u0=v0=0: u1 v1<=1.
+
+The earlier claim that no second finite representative existed at u0=0 was false. For example, at t=1/2, (0,1/2,0,1) and (0,1,0,2) are distinct nonlocal extreme tuples in the old cut and belong to the same physical relabeling orbit. The new rules select the first. Original angles equal to pi are output-flipped to zero; retaining infinity must not erase this finite seam identification. See the representation audit for the complete piecewise proof and a second one-zero counterexample.
 
 For generic nonlocal partial-entanglement tuples, distinct Schmidt coefficients fix the real state frame up to reflection, and sorting fixes the input/outcome conventions. Thus R5 and its tie rule remove the remaining generic discrete duplication. At repeated measurement lines and physical stabilizers use the explicit orbit action, rather than counting representatives by a generic orbit size. These are regions for behavior orbits under physical relabelings; a fixed Bell functional must be transformed with the behavior unless it has the relevant symmetry.
 

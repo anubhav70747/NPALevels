@@ -21,6 +21,8 @@ Local isometries preserve observed behavior. A Jordan-block/real-part convex red
 
 ## NPA exactness already available
 
+The full normalized Q1+AB set is the bipartite almost-quantum set, as established in [Navascués et al. (2015)](https://www.nature.com/articles/ncomms7288). Our [complete cone formula](analysis/q1ab_cone/CONE_CHARACTERIZATION.md) specifies every entry and dual equation, and eliminates two of eight primal auxiliaries by an elementary exact PSD-completion proof. The resulting six-auxiliary criterion includes singular cases. This is a global characterization of Q1+AB, distinct from the contact-specific PSD5 reduction and from an identification with the true quantum set.
+
 Use observable lists W1={I,A0,A1,B0,B1}, W_(1+AB)=W1 plus four A_x B_y, and W_L containing all reduced words of total length <=L. Probability-strengthened W1 is a different convention.
 
 | Family or claim | Established conclusion | Remaining limitation |

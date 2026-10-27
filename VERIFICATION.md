@@ -77,6 +77,20 @@ CVXPY/CLARABEL, unstrengthened observable convention:
 
 All were reported optimal. The smallest moment eigenvalues were about 3.95e-9, -5.65e-10 and 1.17e-10 respectively. These are numerical diagnostics only, and every solver return carries `certified_exact: false`. Exact reference values are justified by the algebraic certificates/theorems, not these solver outputs.
 
+## Global cone and representation checks
+
+The complete cone checker verifies all 17 independent moment classes, the rank-eight auxiliary map, all 128 symbolic moment congruences and all 16 probability-square identities. The global six-auxiliary completion theorem was checked directly using the generalized Schur complement and gluing two PSD triples along their common Gram block. The constructive replay produces exactly PSD9 completions at the zero cone, unbiased behavior, rank-one deterministic behavior and the existing rational supraquantum witness. It rejects floating-point inputs; rejection of a selected auxiliary tuple is explicitly distinguished from behavior nonmembership.
+
+The representation checker verifies full affine dimension from all 16 deterministic points, the two missed seam equivalences, corrected piecewise cuts, maximal-entanglement gauge behavior and joint canonicalization. An exact nonlocal complex-pure counterexample verifies the limit of the real-planar isometry reduction. The global contact-dimension-seven result follows analytically from the bijection (q,n) to q+n on the unit parallel boundary of Q, with inverse nearest-point projection.
+
+Commands replayed successfully:
+
+```
+py -3.14 analysis/q1ab_cone/check_cone.py
+py -3.14 analysis/q1ab_cone/completion.py
+py -3.14 analysis/representation/check_representation.py
+```
+
 ## Scope audit
 
 Recent literature was read for exact hypotheses and quantifiers. Reported thresholds, a proposed commutative-to-noncommutative finite-convergence transfer, and abstract-only claims are labeled accordingly. Full publisher reconciliation of the extremality theorem remains pending. No universal H1/H2 claim, higher-level classification, or completed theorem is inferred from this verification record.

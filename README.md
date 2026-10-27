@@ -8,6 +8,8 @@ The geometric reduction, current literature inventory, and exact contact-SOS red
 
 * [Tilt, low-level certificates, and the Motzkin mechanism](TILT_AND_MOTZKIN.md): the current organizing question, what our proof establishes, and the exact missing implications.
 * [Known results and primary sources](KNOWN_RESULTS.md): geometry, exact NPA certificates, prior C1/C2 exclusions, and limits of recent claims.
+* [Minimal representations under all relabelings](analysis/representation/MINIMAL_REPRESENTATION.md): exact canonical domains, corrected axis seams, and the distinct minimal dimensions 8, 5 and 7.
+* [Complete Q1+AB primal and dual cones](analysis/q1ab_cone/CONE_CHARACTERIZATION.md): the full PSD9 matrix, eight auxiliary moments, and an exact six-auxiliary completion criterion with a constructive implementation.
 * [Minimal regions](analysis/MINIMAL_REGIONS.md): an ordered-simplex chart, residual reflection cut, maximal-entanglement gap simplex and all boundary types.
 * [Generic contact SOS](analysis/GENERIC_CONTACT_SOS.md) and [symmetric tilt SOS](analysis/SYMMETRIC_TILT_SOS.md): exact small Gram formulations retaining every universal word equation.
 * [Exact half-tilt admission](analysis/tilt_sos/half_tilt_certificate_proof.md) and [exact failure intervals](analysis/ncpol_bounds/INTERVAL_PROOF.md): analytical certificates obtained from a bounded numerical batch.
@@ -15,6 +17,10 @@ The geometric reduction, current literature inventory, and exact contact-SOS red
 * [Verification record](VERIFICATION.md) and [source manifest](sources/manifest.json).
 
 ## The reduction
+
+The full normalized behavior set has dimension eight, even after quotienting all 128 physical relabelings. The real pure generator set and generic nonlocal extreme set have dimension five; normalized Bell directions and the entire supporting-contact incidence each have dimension seven. Local isometries preserve observed behaviors and do not turn an arbitrary supplied strategy into one pure real qubit pair. The [representation audit](analysis/representation/MINIMAL_REPRESENTATION.md) proves these distinctions, gives exact finite canonicalization, and repairs duplicates at zero-angle seams in the earlier chart.
+
+The entire homogeneous `Q1+AB` cone is now explicit, with its universal SOS dual. Two of its eight auxiliary moments can be eliminated by a four-cycle PSD completion: test a PSD5 matrix and its range condition, then overlap two scalar intervals. This is exact also at singular boundaries. [completion.py](analysis/q1ab_cone/completion.py) reconstructs the remaining moments from nine physical coordinates and six chosen auxiliaries, using exact arithmetic. Failure at chosen auxiliary values does not by itself reject the behavior. No minimum PSD lift order or complete elimination of all auxiliaries is claimed.
 
 For the symmetric path `H_alpha=CHSH+alpha(A0+B0)`, the current exact results include:
 
@@ -76,6 +82,9 @@ Every numerical result is labeled `certified_exact: false`. The separate exact c
 py -3.14 analysis/tilt_sos/half_tilt_certificate.py
 py -3.14 analysis/ncpol_bounds/rational_check.py
 py -3.14 analysis/ncpol_bounds/interval_check.py
+py -3.14 analysis/q1ab_cone/check_cone.py
+py -3.14 analysis/q1ab_cone/completion.py
+py -3.14 analysis/representation/check_representation.py
 ```
 
 The first requires SymPy; the two rational gap replays use only the Python standard library. The diagnostic batch uses ncpol2sdpa/CVXPY/CLARABEL; its full settings, actual solver statuses, moments and residuals are retained in [bounds.json](analysis/ncpol_bounds/bounds.json). No optimization is needed to replay the proofs.
